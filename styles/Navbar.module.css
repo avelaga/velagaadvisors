@@ -1,0 +1,28 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    border: solid red 1px;
+}
+
+.right{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.link {
+    margin-left: 2rem;
+    text-align: right;
+}
+
+.logo {
+    width: 300px !important;
+    margin-left: 0;
+    margin-right: auto;
+}
