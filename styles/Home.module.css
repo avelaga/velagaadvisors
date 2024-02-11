@@ -1,10 +1,63 @@
-.main {
+.home{ 
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap:wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header {
+  font-size: 5rem;
+  width: 100vw;
+  height: fit-content;
+}
+
+.subheader {
+  font-size: 2rem;
+  width: 100vw;
+  height: fit-content;
+}
+
+.body {
+  display: flex;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  justify-content: space-between;
+  text-align: left;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bodyText {
+  width: 35%;
+  font-size: 1.5rem;
+}
+
+.bodyImage {
+  width: 60% !important;
+}
+
+.whyChooseUs {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.reason {
+  border: solid var(--white) 1px;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 20%;
+}
+
+.reasonHeader {
+  font-size: 2rem;
+  padding-bottom: 1rem;
 }
 
 .description {
