@@ -1,0 +1,58 @@
+.about {
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.header {
+    font-size: 5rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.subheader {
+    font-size: 2rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.body {
+    text-align: left;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.left {
+    width: 25%;
+    display: flex;
+    align-items:center;
+    /* justify-content: center; */
+    /* min-height: 80vh; */
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: 10rem;
+}
+
+.right { 
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.education {
+    height: auto;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.krishna {
+    margin: 0;
+}
