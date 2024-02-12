@@ -13,12 +13,14 @@
     font-size: 5rem;
     width: 100%;
     height: fit-content;
+    font-weight: 500;
 }
 
 .subheader {
     font-size: 2rem;
     width: 100%;
     height: fit-content;
+    font-weight: 500;
 }
 
 .body {
@@ -56,3 +58,4 @@
 .krishna {
     margin: 0;
 }
+

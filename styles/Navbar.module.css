@@ -6,7 +6,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
 .right{
@@ -19,8 +19,8 @@
 .link {
     margin-left: 2rem;
     text-align: right;
-    font-family: var(--font-sukhumvitSet);
-    font-weight: 300;
+    font-family: var(--font-stereogothic);
+    font-size: 1.2rem;
 }
 
 .logo {

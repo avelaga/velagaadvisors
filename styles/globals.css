@@ -112,6 +112,7 @@ a {
 }
 
 button {
+  font-weight: 500;
   color: var(--green);
   background: var(--white);
   padding: 1rem;
@@ -125,3 +126,4 @@ main {
   font-family: var(--font-sukhumvitSet);
   font-weight: 300;
 }
+

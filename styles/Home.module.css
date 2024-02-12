@@ -12,12 +12,14 @@
   font-size: 5rem;
   width: 100vw;
   height: fit-content;
+  font-weight: 500;
 }
 
 .subheader {
   font-size: 2rem;
   width: 100vw;
   height: fit-content;
+  font-weight: 500;
 }
 
 .body {
@@ -46,6 +48,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100vw;
+  font-weight: 500;
 }
 
 .reason {
@@ -58,6 +61,7 @@
 .reasonHeader {
   font-size: 2rem;
   padding-bottom: 1rem;
+  font-weight: 500;
 }
 
 .description {

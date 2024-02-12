@@ -27,10 +27,15 @@ const sukhumvitSet = localFont({
   ],
   variable: '--font-sukhumvitSet'
 })
+
+const stereogothic = localFont({
+  src: '../public/stereogothic/StereoGothic-400.ttf',
+  variable: '--font-stereogothic'
+})
  
 export default function Layout({ children }) {
   return (
-    <div className={sukhumvitSet.variable}>
+    <div className={`${sukhumvitSet.variable} ${stereogothic.variable}`}>
       <Navbar />
       <main>{children}</main>
       {/* <Footer /> */}
