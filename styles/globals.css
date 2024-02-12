@@ -120,3 +120,8 @@ button {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+main {
+  font-family: var(--font-sukhumvitSet);
+  font-weight: 300;
+}
