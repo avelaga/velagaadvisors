@@ -1,0 +1,41 @@
+.services {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.subheader {
+    font-size: 2rem;
+    width: 100%;
+    /* height: fit-content; */
+}
+
+.body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.graphicText {
+    width: 50%;
+    font-size: 1.2rem;
+    line-height: 2rem;;
+}
+
+.bodyGraphic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.bodyImage {
+    width: 50%;
+   /* width: 200px !important; */
+   /* height: auto !important; */
+}
