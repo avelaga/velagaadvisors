@@ -87,17 +87,13 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  animation-name: appear;
+  animation-duration: 1s;
 }
 
 body {
   color: rgb(var(--white));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--green))
-    )
-    rgb(var(--end-green)); */
-    background: var(--green);
+    background: linear-gradient(var(--green), #60887B);
 }
 
 a {
@@ -111,19 +107,27 @@ a {
   }
 }
 
-button {
-  font-weight: 500;
-  color: var(--green);
-  background: var(--white);
-  padding: 1rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 main {
   font-family: var(--font-sukhumvitSet);
-  font-weight: 300;
+  font-weight: 100;
+
+  animation-name: appear;
+  animation-duration: 1s;
 }
 
+.appear {
+
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.layout {
+  min-height: 100vh;
+}

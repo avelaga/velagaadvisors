@@ -26,7 +26,8 @@
 .graphicText {
     width: 50%;
     font-size: 1.2rem;
-    line-height: 2rem;;
+    line-height: 2.5rem;;
+    font-weight: 400;
 }
 
 .bodyGraphic {
@@ -37,7 +38,7 @@
 }
 
 .bodyImage {
-    width: 50%;
+    width: 50% !important;
    /* width: 200px !important; */
    /* height: auto !important; */
 }

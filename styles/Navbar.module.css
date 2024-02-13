@@ -21,6 +21,21 @@
     text-align: right;
     font-family: var(--font-stereogothic);
     font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.link:hover {
+    background: var(--white);
+    color: var(--green)
+}
+
+.active {
+    background: var(--white);
+    color: var(--green)
 }
 
 .logo {
