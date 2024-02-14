@@ -3,10 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
-    /* border: solid red 1px; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--white);
+    color: black;
+    padding-right: max((calc(100vw - 1500px))/2, 1rem);
+    padding-left: max((calc(100vw - 1500px))/2, 1rem);
 }
 
 .right{

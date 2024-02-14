@@ -35,9 +35,9 @@ const stereogothic = localFont({
  
 export default function Layout({ children }) {
   return (
-    <div className={`${sukhumvitSet.variable} ${stereogothic.variable} layout`}>
+    <div className={`${sukhumvitSet.variable} ${stereogothic.variable}`}>
       <Navbar />
-      <main>{children}</main>
+      <main className='layout'>{children}</main>
       {/* <Footer /> */}
     </div>
   )
