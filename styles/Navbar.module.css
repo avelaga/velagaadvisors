@@ -30,14 +30,19 @@
     transition: background 0.3s, color 0.3s;
 }
 
+.contact {
+    background-color: var(--green);
+    color: var(--white)
+}
+
 .link:hover {
-    background: var(--white);
-    color: var(--green)
+    background: rgb(114, 145, 129);
+    color: var(--white)
 }
 
 .active {
-    background: var(--white);
-    color: var(--green)
+    background: rgb(28, 28, 28);
+    color: var(--white)
 }
 
 .logo {

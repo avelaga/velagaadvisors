@@ -129,9 +129,12 @@ main {
 }
 
 .layout {
-  min-height: 100vh;
   max-width: 1500px;
   margin: auto;
+}
+
+.background {
+  min-height: 100vh;
 }
 
 bold {
