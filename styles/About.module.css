@@ -32,13 +32,12 @@
 
 .left {
     width: 25%;
+    height: 100%;
+    margin: auto;
     display: flex;
     align-items:center;
-    /* justify-content: center; */
-    /* min-height: 80vh; */
     flex-wrap: wrap;
     text-align: left;
-    margin-top: 10rem;
 }
 
 .right { 
@@ -58,4 +57,3 @@
 .krishna {
     margin: 0;
 }
-

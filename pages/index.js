@@ -18,7 +18,7 @@ export default function Home() {
           <div className={styles.header}>Investment Management & Financial Planning</div>
           <div className={styles.subheader}>Your Partner in the Pursuit of Wealth and Prosperity</div>
           <div className={styles.body}>
-            <div className={styles.bodyText}>We design personalized financial solutions that resonate with your values and objectives, guiding you towards a future markedby financial security and enduring success.
+            <div className={styles.bodyText}>We design personalized financial solutions that resonate with your values and objectives, guiding you towards a future marked by financial security and enduring success.
           </div>
           <Image src="/homestock.png" width={200} height={0} style={{ width: '600px', height: 'auto' }} className={styles.bodyImage}/>
         </div>

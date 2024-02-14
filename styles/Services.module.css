@@ -7,20 +7,22 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
-    
+    margin: auto;
 }
 
 .subheader {
     font-size: 2rem;
     width: 100%;
     font-weight: 500;
-    /* height: fit-content; */
 }
 
 .body {
-    padding-top: 3rem;
     padding-bottom: 3rem;
     font-size: 1.2rem;
+}
+
+.finPlan {
+    padding-bottom: 0 !important;
 }
 
 .graphicText {
@@ -38,7 +40,5 @@
 }
 
 .bodyImage {
-    width: 50% !important;
-   /* width: 200px !important; */
-   /* height: auto !important; */
+   width: 600px !important;
 }
