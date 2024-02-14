@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           <Image src="/homestock.png" width={200} height={0} style={{ width: '600px', height: 'auto' }} className={styles.bodyImage}/>
         </div>
-        <div className={styles.subheader}>Why Choose Us</div>
+        <div className={styles.whyChooseUsHeader}>Why Choose Us</div>
         <div className={styles.whyChooseUs}>
           <div className={styles.reason}>
             <div className={styles.reasonHeader}>Simplified Approach</div>

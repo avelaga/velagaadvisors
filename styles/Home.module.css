@@ -1,16 +1,16 @@
-.home{ 
+.home { 
   display: flex;
   text-align: center;
   align-items: flex-start;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   padding-left: 2rem;
   padding-right: 2rem;
   margin-top: 2rem;
 }
 
 .header {
-  font-size: 5rem;
+  font-size: var(--header-size);
   line-height: 4.5rem;
   width: 100vw;
   height: fit-content;
@@ -18,10 +18,10 @@
 }
 
 .subheader {
-  font-size: 2rem;
+  font-size: calc(var(--header-size) / 2);
   width: 100vw;
   height: fit-content;
-  font-weight: 500;
+  font-weight: 200;
   margin-top: 1rem;
 }
 
@@ -30,24 +30,30 @@
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  padding-left: 8rem;
-  padding-right: 8rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem;
 }
 
 .bodyText {
-  width: 40%;
+  width: 60%;
   margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: calc((var(--header-size) / 3) * 2);
+  line-height: 3rem;
 }
 
 .bodyImage {
-  width: 60% !important;
+  width: 40% !important;
+}
+
+.whyChooseUsHeader {
+  font-size: calc((var(--header-size) / 3) * 2);
+  width: 100vw;
+  height: fit-content;
+  font-weight: 500;
+  margin-top: 1rem;
 }
 
 .whyChooseUs {
-  padding-top: 3rem;
+  padding-top: 1rem;
   display: flex;
   align-items: stretch;
   justify-content: space-evenly;
@@ -57,7 +63,6 @@
 
 .reason {
   flex: 1;
-  /* border: solid var(--white) 1px; */
   background-color: var(--green);
   border-radius: 10px;
   padding: 1rem;
@@ -70,14 +75,14 @@
 }
 
 .reasonHeader {
-  font-size: 2rem;
-  padding-bottom: 1rem;
+  font-size: calc(var(--header-size) / 2);
   font-weight: 500;
   width: 100%;
 }
 
 .reasonBody {
   font-weight: 100;
+  font-size: calc(var(--header-size) * 0.39);
 }
 
 .button{
@@ -85,9 +90,11 @@
   color: var(--green);
   background: var(--white);
   padding: 1rem;
-  font-size: 1.5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: calc(var(--header-size) / 2);
   border-radius: 10px;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   transition: background 0.3s, color 0.3s;
 }
