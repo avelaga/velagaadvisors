@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.home}>
-          <div className={styles.header}>Investment Management & Financial Planning</div>
+          <div className={styles.header}>Investment Management & <br/> Financial Planning</div>
           <div className={styles.subheader}>Your Partner in the Pursuit of Wealth and Prosperity</div>
           <div className={styles.body}>
             <div className={styles.bodyText}>We design personalized financial solutions that resonate with your values and objectives, guiding you towards a future marked by financial security and enduring success.
