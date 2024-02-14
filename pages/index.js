@@ -35,12 +35,12 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.reason}>
-            <div className={styles.reasonHeader}>Transparent Communication</div>
+            <div className={styles.reasonHeader}>Communication</div>
             <div className={styles.reasonBody}>We believe in open and honest communication. Stay informed and empowered throughout our journey.
             </div>
           </div>
           <div className={styles.reason}>
-            <div className={styles.reasonHeader}>Your Partner in Success</div>
+            <div className={styles.reasonHeader}>Partnership</div>
             <div className={styles.reasonBody}>We are committed to fostering a relationship built on trust & reliability and want to be your long-term partner on the journey to financial success.
             </div>
           </div>
