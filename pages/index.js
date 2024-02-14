@@ -26,7 +26,7 @@ export default function Home() {
         <div className={styles.whyChooseUs}>
           <div className={styles.reason}>
             <div className={styles.reasonHeader}>Simplified Approach</div>
-            <div className={styles.reasonBody}>We break down complex financial concepts into clear, easy-to-understand financial strategies tailored to your needsand risk tolerance.
+            <div className={styles.reasonBody}>We break down complex financial concepts into clear, easy-to-understand financial strategies tailored to your needs and risk tolerance.
             </div>
           </div>
           <div className={styles.reason}>

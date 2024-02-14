@@ -25,7 +25,7 @@ export default function Services() {
           Financial Planning
         </div>
         <div className={`${styles.body} ${styles.finPlan}`} >
-          Our holistic approach to financial planning involves a thorough evaluation of client’s current financial situation, goals and aspirations and creating a robust plan to help the client navigate through the life stages and achieve those goals. We will use current net worth, tax liabilities, asset allocation, and future retirement and estate plans to predict future cash flows, asset values and withdrawal plans.
+          Our holistic approach to financial planning involves a thorough evaluation of client's current financial situation, goals and aspirations and creating a robust plan to help the client navigate through the life stages and achieve those goals. We will use current net worth, tax liabilities, asset allocation, and future retirement and estate plans to predict future cash flows, asset values, and withdrawal plans.
           <br /><br />
           Typical topics reviewed in a financial plan may include but are not limited to:
           </div>
@@ -48,7 +48,7 @@ export default function Services() {
           Consultation Services
         </div>
         <div className={styles.body}>
-          This service is appropriate for clients who need assistance with individual topics.This is not a detailed financial review and will not provide/result in a complete financial plan. Client may select individual topics above, or other topics as may be deemed appropriate. The individual topics that will be included in this service will be outlined and agreed upon on the financial planning and consulting agreement.</div>
+          This service is appropriate for clients who need assistance with individual topics. This is not a detailed financial review and will not provide/result in a complete financial plan. Client may select individual topics above, or other topics as may be deemed appropriate. The individual topics that will be included in this service will be outlined and agreed upon on the financial planning and consulting agreement.</div>
       </main>
     </>
   );
