@@ -6,7 +6,7 @@ import styles from "@/styles/Navbar.module.css";
 export default function Navbar() {
     return (
         <div className={styles.navbar}>
-            <Link href="/"><Image src="/logoBlack.png" width={200} height={0} style={{ width: '300px', height: 'auto' }} className={styles.logo}/></Link>
+            <Link href="/"><Image src="/logo.png" width={200} height={0} style={{ width: '300px', height: 'auto' }} className={styles.logo}/></Link>
             
             <div className={styles.right}>
                 <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>

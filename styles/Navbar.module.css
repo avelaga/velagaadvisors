@@ -29,13 +29,13 @@
 }
 
 .link:hover {
-    background-color: rgb(207, 207, 207);
-    color: black;
+    background: var(--white);
+    color: var(--green)
 }
 
 .active {
-    background-color: rgb(207, 207, 207);
-    color: black;
+    background: var(--white);
+    color: var(--green)
 }
 
 .logo {

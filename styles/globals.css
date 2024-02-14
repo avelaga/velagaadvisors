@@ -89,8 +89,8 @@ body {
   overflow-x: hidden;
   animation-name: appear;
   animation-duration: 1s;
-  /* color: var(--white); */
-  /* background: linear-gradient(var(--green), #60887B); */
+  color: var(--white);
+  background: linear-gradient(var(--green), #60887B);
 }
 
 /* body {
