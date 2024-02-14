@@ -18,8 +18,8 @@ export default function About() {
                 <div className={styles.left}>
                     <Image src="/krishna.jpg" width={200} height={200} style={{ width: '90%', height: 'auto' }} className={styles.krisha} />
                     <div className={styles.education}>
-                        <b>MS</b>, Computer Science, Kansas State University<br />
-                        <b>MBA</b>, Cox School of Business, SMU<br />
+                        <bold>MS</bold>, Computer Science, Kansas State University<br />
+                        <bold>MBA</bold>, Cox School of Business, SMU<br />
                         Passed CFA Level I and Level II Examinations
                     </div>
                 </div>

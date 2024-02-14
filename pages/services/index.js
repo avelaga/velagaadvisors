@@ -39,7 +39,7 @@ export default function Services() {
             Investment Planning<br />
             Tax Planning<br />
             Estate Preservation</div>
-            <Image src="/services.png" width={200} height={0} style={{ width: '600px', height: 'auto' }} className={styles.bodyImage}/>
+            <Image src="/services.png" width={1000} height={0} style={{ width: '1000px', height: 'auto' }} className={styles.bodyImage}/>
           </div>
 
          

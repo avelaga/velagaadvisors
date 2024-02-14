@@ -37,6 +37,7 @@
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    padding-bottom: 3rem;
 }
 
 .bodyImage {
