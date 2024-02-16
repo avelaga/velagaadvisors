@@ -39,7 +39,7 @@ export default function Layout({ children }) {
       <Navbar />
       <main className='layout'>{children}</main>
       {/* <a target="_blank" href="http://www.adviserinfo.sec.gov/individual/summary/7833799" ><img className='finra' src="//www.finra.org/themes/custom/finra_bootstrap_sass/images/bc_badge_style_5.svg" /></a> */}
-      <a href="http://www.adviserinfo.sec.gov/individual/summary/7833799" target="_blank"><img src='/finra.png' className='finra'/></a>
+      <a href="http://www.adviserinfo.sec.gov/individual/summary/7833799" target="_blank"><img src='/finraBackground.png' className='finra'/></a>
       <Footer />
     </div>
   )

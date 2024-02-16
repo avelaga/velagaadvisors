@@ -109,3 +109,9 @@
   background: #142e27;
   color: var(--white);
 }
+
+@media only screen and (max-width: 600px) {
+  /* .header {
+    font-size: 1rem;
+  } */
+}
