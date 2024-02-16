@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <>
       <Head>
-      <title>Velaga Advisors - Services</title>
+        <title>Velaga Advisors - Services</title>
         <meta name="description" content="Velaga Advisors - Services" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -28,21 +28,26 @@ export default function Services() {
           Our holistic approach to financial planning involves a thorough evaluation of client's current financial situation, goals and aspirations and creating a robust plan to help the client navigate through the life stages and achieve those goals. We will use current net worth, tax liabilities, asset allocation, and future retirement and estate plans to predict future cash flows, asset values, and withdrawal plans.
           <br /><br />
           Typical topics reviewed in a financial plan may include but are not limited to:
+        </div>
+        <div className={styles.bodyGraphic}>
+          <div className={styles.graphicText}>
+            Financial Goals <br/>
+            Personal Net worth<br/>
+            Cash Flow Analysis<br/>
+            Employee Benefits<br/>
+            Education Planning<br/>
           </div>
-          <div className={styles.bodyGraphic}>
-            <div className={styles.graphicText}> 
-            Cash Flow, Expenses and Net Worth<br />
-            Employee Benefits Optimization<br />
-            Education/College Savings<br />
-            Risk Management<br />
-            Retirement Planning<br />
-            Investment Planning<br />
-            Tax Planning<br />
-            Estate Preservation</div>
-            <Image src="/services.png" width={1000} height={0} style={{ width: '1000px', height: 'auto' }} className={styles.bodyImage}/>
+          <div className={styles.graphicText}>
+            Risk Management<br/>
+            Retirement Planning<br/>
+            Investment Planning<br/>
+            Tax Planning<br/>
+            Estate Preservation
           </div>
+          <Image src="/services.png" width={1000} height={0} style={{ width: '1000px', height: 'auto' }} className={styles.bodyImage} />
+        </div>
 
-         
+
 
         <div className={styles.subheader}>
           Consultation Services
