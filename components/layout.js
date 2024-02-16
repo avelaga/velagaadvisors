@@ -4,23 +4,23 @@ import localFont from 'next/font/local';
 
 const sukhumvitSet = localFont({
   src: [
-    { 
+    {
       path: '../public/sukhumvit-set/SukhumvitSet-Thin.ttf',
       weight: '100'
     },
-    { 
+    {
       path: '../public/sukhumvit-set/SukhumvitSet-Light.ttf',
       weight: '200'
     },
-    { 
+    {
       path: '../public/sukhumvit-set/SukhumvitSet-Medium.ttf',
       weight: '300'
     },
-    { 
+    {
       path: '../public/sukhumvit-set/SukhumvitSet-SemiBold.ttf',
       weight: '400'
     },
-    { 
+    {
       path: '../public/sukhumvit-set/SukhumvitSet-Bold.ttf',
       weight: '500'
     }
@@ -32,12 +32,14 @@ const stereogothic = localFont({
   src: '../public/stereogothic/StereoGothic-400.ttf',
   variable: '--font-stereogothic'
 })
- 
+
 export default function Layout({ children }) {
   return (
     <div className={`${sukhumvitSet.variable} ${stereogothic.variable} background`}>
       <Navbar />
       <main className='layout'>{children}</main>
+      {/* <a target="_blank" href="http://www.adviserinfo.sec.gov/individual/summary/7833799" ><img className='finra' src="//www.finra.org/themes/custom/finra_bootstrap_sass/images/bc_badge_style_5.svg" /></a> */}
+      <a href="http://www.adviserinfo.sec.gov/individual/summary/7833799" target="_blank"><img src='/finra.png' className='finra'/></a>
       {/* <Footer /> */}
     </div>
   )
