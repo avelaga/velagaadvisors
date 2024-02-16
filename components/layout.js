@@ -1,5 +1,5 @@
 import Navbar from './navbar'
-// import Footer from './footer'
+import Footer from './footer'
 import localFont from 'next/font/local';
 
 const sukhumvitSet = localFont({
@@ -40,7 +40,7 @@ export default function Layout({ children }) {
       <main className='layout'>{children}</main>
       {/* <a target="_blank" href="http://www.adviserinfo.sec.gov/individual/summary/7833799" ><img className='finra' src="//www.finra.org/themes/custom/finra_bootstrap_sass/images/bc_badge_style_5.svg" /></a> */}
       <a href="http://www.adviserinfo.sec.gov/individual/summary/7833799" target="_blank"><img src='/finra.png' className='finra'/></a>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

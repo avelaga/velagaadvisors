@@ -1,0 +1,32 @@
+.disclaimer {
+    width: 70%;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 1s;
+}
+
+.body {
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+.header{
+    font-size: 1.5rem;
+    width: 100%;
+    height: fit-content;
+    font-weight: 500;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }

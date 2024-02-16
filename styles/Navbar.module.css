@@ -31,7 +31,6 @@
 }
 
 .contact {
-    /* background-color: var(--green); */
     border: solid 1px var(--green);
     color: var(--green);
 }
