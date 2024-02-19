@@ -1,4 +1,8 @@
 .services {
+    min-height: calc(100vh - 156.5px);
+}
+
+.content {
     display: flex;
     text-align: left;
     align-items: center;

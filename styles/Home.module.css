@@ -1,4 +1,8 @@
 .home { 
+  min-height: calc(100vh - 156.5px);
+}
+
+.content {
   display: flex;
   text-align: center;
   align-items: flex-start;
@@ -6,7 +10,7 @@
   flex-wrap: wrap;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-top: 2rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 

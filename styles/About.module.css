@@ -1,4 +1,9 @@
 .about {
+    /* 107.5 navbar + 49 footer  */
+    min-height: calc(100vh - 156.5px);
+}
+
+.content {
     display: flex;
     text-align: center;
     align-items: flex-start;
