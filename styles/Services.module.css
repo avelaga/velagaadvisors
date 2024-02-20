@@ -1,5 +1,5 @@
 .services {
-    min-height: calc(100vh - 156.5px);
+    min-height: var(--content-min-height)
 }
 
 .content {
@@ -21,7 +21,7 @@
 }
 
 .body {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     font-size: 1.2rem;
 }
 

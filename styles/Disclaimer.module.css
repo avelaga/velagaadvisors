@@ -5,7 +5,7 @@
     text-align: center;
     animation-name: appear;
     animation-duration: 1s;
-    min-height: calc(100vh - 156.5px);
+    min-height: var(--content-min-height)
 }
 
 .body {
