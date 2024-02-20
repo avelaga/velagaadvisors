@@ -15,8 +15,8 @@
 }
 
 .header {
-  font-size: var(--header-size);
-  line-height: 4.5rem;
+  font-size: calc( var(--header-size) - .5rem);
+  line-height: 3.5rem;
   width: 100vw;
   height: fit-content;
   font-weight: 500;
@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: space-between;
   text-align: left;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .bodyText {
@@ -54,7 +54,6 @@
   width: 100vw;
   height: fit-content;
   font-weight: 500;
-  margin-top: 1rem;
 }
 
 .whyChooseUs {
