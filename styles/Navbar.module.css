@@ -11,7 +11,7 @@
     padding-left: max((calc(100vw - 1500px))/2, 1rem);
 }
 
-.right{
+.right {
     width: 80vw;
     display: flex;
     align-items: center;
@@ -50,4 +50,68 @@
     margin-left: 0;
     margin-right: auto;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+
+    .logo {
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .mobileHeader {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background: none;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        padding: 1rem;
+        padding-left: 1.15rem;
+        padding-right: 1.4rem;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        height: 82px;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0;
+        background: none;
+    }
+
+    .dropDown {
+        width: 100vw;
+        display: flex;
+        align-items: space-around;
+        height: calc( 100vh - 82px);
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: opacity .4s ease;
+        background: none;
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        opacity: 1;
+    }
+
+    .link {
+        width: 80%;
+        margin: .5rem;
+        text-align: center;
+        justify-content: center;
+        color: var(--white)
+    }
+
+    .none {
+        opacity: 0;
+        pointer-events: none;
+        z-index: -1000 !important;
+    }
 }

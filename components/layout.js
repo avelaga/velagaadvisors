@@ -1,6 +1,9 @@
-import Navbar from './navbar'
+// import Navbar from './navbar'
 import Footer from './footer'
 import localFont from 'next/font/local';
+import dynamic from 'next/dynamic'
+
+const NavbarNoSSR = dynamic(() => import('./navbar'), { ssr: false })
 
 const sukhumvitSet = localFont({
   src: [
@@ -36,7 +39,7 @@ const stereogothic = localFont({
 export default function Layout({ children }) {
   return (
     <div className={`${sukhumvitSet.variable} ${stereogothic.variable} background`}>
-      <Navbar />
+      <NavbarNoSSR />
       <main className='layout'>{children}</main>
       {/* <a target="_blank" href="http://www.adviserinfo.sec.gov/individual/summary/7833799" ><img className='finra' src="//www.finra.org/themes/custom/finra_bootstrap_sass/images/bc_badge_style_5.svg" /></a> */}
       <a href="http://www.adviserinfo.sec.gov/individual/summary/7833799" target="_blank"><img src='/finraBackground.png' className='finra'/></a>

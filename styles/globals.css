@@ -131,6 +131,12 @@ main {
   margin: auto;
 }
 
+@media only screen and (max-width: 950px) {
+  .layout{
+    margin-top : 82px;
+  }
+}
+
 .background {
   min-height: 100vh;
 }
