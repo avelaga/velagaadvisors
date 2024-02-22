@@ -6,6 +6,7 @@
   justify-content: space-around;
   align-items: center;
   font-family: var(--font-sukhumvitSet);
+  margin-bottom: 1rem;
 }
 
 .link {
@@ -22,12 +23,13 @@
 }
 
 .abhi {
+  font-size: .75rem;
   padding-bottom: 1rem;
   font-family: var(--font-sukhumvitSet);
   font-weight: 100;
   color: #a2bab4;
   text-align: center;
-  width: 50%;
+  width: 40%;
   margin: auto;
   justify-content: center;
   line-height: 1rem;
