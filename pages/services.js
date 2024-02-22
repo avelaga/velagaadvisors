@@ -10,11 +10,11 @@ export default function Services() {
     <>
       <Head>
         <title>Velaga Advisors - Services</title>
-        <meta property="title" content="Velaga Advisors - Services" />
-        <meta name="description" content="Velaga Advisors - Services" />
-        <meta name="og:description" content="Velaga Advisors - Services" />
-        <meta property="og:title" content="Velaga Advisors - Services" />
-        <meta property="og:site_name" content="Velaga Advisors - Services" />
+        <meta property="title" content="Velaga Advisors" />
+        <meta name="description" content="Velaga Advisorss" />
+        <meta name="og:description" content="Velaga Advisors" />
+        <meta property="og:title" content="Velaga Advisors" />
+        <meta property="og:site_name" content="Velaga Advisors" />
         <meta property="og:image" content="./krishna.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />

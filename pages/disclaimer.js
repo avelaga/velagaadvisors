@@ -10,11 +10,11 @@ export default function Disclaimer() {
         <>
             <Head>
                 <title>Velaga Advisors - Disclaimer</title>
-                <meta property="title" content="Velaga Advisors - Disclaimer" />
-                <meta name="description" content="Velaga Advisors - Disclaimer" />
-                <meta name="og:description" content="Velaga Advisors - Disclaimer" />
-                <meta property="og:title" content="Velaga Advisors - Disclaimer" />
-                <meta property="og:site_name" content="Velaga Advisors - Disclaimer" />
+                <meta property="title" content="Velaga Advisors" />
+                <meta name="description" content="Velaga Advisors" />
+                <meta name="og:description" content="Velaga Advisors" />
+                <meta property="og:title" content="Velaga Advisors" />
+                <meta property="og:site_name" content="Velaga Advisorsr" />
                 <meta property="og:image" content="./krishna.jpg" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
