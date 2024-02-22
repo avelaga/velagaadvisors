@@ -14,9 +14,9 @@ export default function Contact() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <div  >
+            <main>
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMMxbGF3DE7R_Kl9oRXhH7V-WnvSFIOdwN5XE_-fsPNY35PA/viewform?embedded=true" width="100%" height="1100px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
+            </main>
         </>
     )
 }
