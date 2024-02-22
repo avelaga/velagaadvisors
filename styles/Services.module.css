@@ -49,6 +49,9 @@
 }
 
 @media only screen and (max-width: 950px) {
+    .subheader {
+        line-height: 2.2rem;
+    }
     .graphicText {
         width: 100%;
         text-align: center;
