@@ -41,7 +41,7 @@ export default function Navbar() {
                 <div className={isCollapsed ? `${styles.none} ${styles.dropDown}` : styles.dropDown}>
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
-                    <Link href="https://docs.google.com/forms/d/18oA11rmQZ94HzUDiNUoW-95oIC-rVxt0POIYccwZRT8/edit" target="blank" className={`${styles.link} ${styles.contact}`}>CONTACT US</Link>
+                    <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT US</Link>
                 </div>
             </MediaQuery>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
                 <div className={styles.right}>
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
-                    <Link href="https://docs.google.com/forms/d/18oA11rmQZ94HzUDiNUoW-95oIC-rVxt0POIYccwZRT8/edit" target="blank" className={`${styles.link} ${styles.contact}`}>CONTACT US</Link>
+                    <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT US</Link>
                 </div>
             </MediaQuery>
         </div>
