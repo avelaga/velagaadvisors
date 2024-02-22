@@ -5,8 +5,6 @@
   margin: auto;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 1rem;
-  font-family: var(--font-sukhumvitSet);
 }
 
 .link {
@@ -20,6 +18,18 @@
 .link:hover {
   background: rgb(114, 145, 129);
   color: var(--white)
+}
+
+.abhi {
+  padding-bottom: 1rem;
+  font-family: var(--font-sukhumvitSet);
+  font-weight: 100;
+  color: #a2bab4;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  line-height: 1rem;
 }
 
 @media only screen and (max-width: 950px) {
