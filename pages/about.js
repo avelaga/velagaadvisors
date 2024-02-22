@@ -10,7 +10,12 @@ export default function About() {
         <>
             <Head>
                 <title>Velaga Advisors - About</title>
+                <meta property="title" content="Velaga Advisors - About" />
                 <meta name="description" content="Velaga Advisors - About" />
+                <meta name="og:description" content="Velaga Advisors - About" />
+                <meta property="og:title" content="Velaga Advisors - About" />
+                <meta property="og:site_name" content="Velaga Advisors - About" />
+                <meta property="og:image" content="./krishna.jpg" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
