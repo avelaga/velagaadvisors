@@ -17,7 +17,7 @@ export default function Disclaimer() {
                 <meta property="og:site_name" content="Velaga Advisors - Disclaimer" />
                 <meta property="og:image" content="./krishna.jpg" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <div className={styles.disclaimer} >
                 <div className={styles.header}>
