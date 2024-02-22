@@ -1,4 +1,4 @@
-.home { 
+.home {
   min-height: var(--content-min-height)
 }
 
@@ -15,7 +15,7 @@
 }
 
 .header {
-  font-size: calc( var(--header-size) - .75rem);
+  font-size: calc(var(--header-size) - .75rem);
   line-height: 2.8rem;
   width: 100vw;
   height: fit-content;
@@ -86,7 +86,7 @@
   font-size: calc(var(--header-size) * 0.39);
 }
 
-.button{
+.button {
   font-weight: 600;
   color: var(--green);
   background: var(--white);
@@ -110,8 +110,57 @@
   color: var(--white);
 }
 
-@media only screen and (max-width: 600px) {
-  /* .header {
-    font-size: 1rem;
-  } */
+@media only screen and (max-width: 950px) {
+  .content {
+    padding: 1.25rem;
+  }
+
+  .header {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .subheader {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .body {
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    flex-wrap: wrap-reverse;
+    margin-top: 1rem;
+  }
+
+  .bodyImage {
+    width: 100% !important;
+  }
+
+  .bodyText {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .whyChooseUsHeader {
+    font-size: 2rem;
+  }
+
+  .whyChooseUs {
+    padding-top: 0;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .reason {
+    flex: none;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
