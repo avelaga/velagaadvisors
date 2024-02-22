@@ -131,11 +131,7 @@ main {
   margin: auto;
 }
 
-@media only screen and (max-width: 950px) {
-  .layout{
-    margin-top : 82px;
-  }
-}
+
 
 .background {
   min-height: 100vh;
@@ -147,9 +143,15 @@ bold {
 
 .finra {
   border: none;
-  width:150px;
+  width: 150px;
   position: fixed;
   right: 0;
   bottom: 0;
   z-index: 2;
+}
+
+@media only screen and (max-width: 950px) {
+  .layout {
+    margin-top: 82px;
+  }
 }
