@@ -48,8 +48,6 @@ export default function Services() {
             <Image src="/services.png" width={1000} height={0} style={{ width: '1000px', height: 'auto' }} className={styles.bodyImage} />
           </div>
 
-
-
           <div className={styles.subheader}>
             Consultation Services
           </div>

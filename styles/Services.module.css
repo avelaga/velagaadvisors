@@ -7,7 +7,7 @@
     text-align: left;
     align-items: center;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
@@ -32,7 +32,7 @@
 .graphicText {
     width: 14%;
     font-size: 1.2rem;
-    line-height: 2.5rem;;
+    line-height: 2.5rem;
     font-weight: 400;
 }
 
@@ -45,5 +45,23 @@
 
 .bodyImage {
     margin-left: 22%;
-   width: 600px !important;
+    width: 600px !important;
+}
+
+@media only screen and (max-width: 950px) {
+    .graphicText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bodyGraphic {
+        margin-top: 1rem;
+    }
+
+    .bodyImage {
+        margin-left: 0;
+        width: 100% !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }
