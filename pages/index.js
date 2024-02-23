@@ -18,6 +18,15 @@ export default function Home() {
         <meta property="og:image" content="./krishna.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
+        {/* google tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0GC6KBE56"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-Y0GC6KBE56');
+        </script>
       </Head>
       <main className={styles.home}>
         <div className={styles.content}>
@@ -37,7 +46,7 @@ export default function Home() {
             </div>
             <div className={styles.reason}>
               <div className={styles.reasonHeader}>Your Values Matter</div>
-              <div className={styles.reasonBody}>We collaborate with you, ensuring your financial strategies and plans reflect the values that matter the most to you.  
+              <div className={styles.reasonBody}>We collaborate with you, ensuring your financial strategies and plans reflect the values that matter the most to you.
               </div>
             </div>
             <div className={styles.reason}>

@@ -18,6 +18,15 @@ export default function Disclaimer() {
                 <meta property="og:image" content="./krishna.jpg" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
+                {/* google tag */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0GC6KBE56"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments)}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-Y0GC6KBE56');
+                </script>
             </Head>
             <div className={styles.disclaimer} >
                 <div className={styles.header}>

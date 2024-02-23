@@ -13,6 +13,15 @@ export default function Contact() {
                 <meta property="og:image" content="./krishna.jpg" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
+                {/* google tag */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0GC6KBE56"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments)}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-Y0GC6KBE56');
+                </script>
             </Head>
             <main>
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMMxbGF3DE7R_Kl9oRXhH7V-WnvSFIOdwN5XE_-fsPNY35PA/viewform?embedded=true" width="100%" height="1100px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
