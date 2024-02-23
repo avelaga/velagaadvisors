@@ -31,9 +31,9 @@ export default function Services() {
             Financial Planning
           </div>
           <div className={`${styles.body} ${styles.finPlan}`} >
-            Our holistic approach to financial planning involves a thorough evaluation of client's current financial situation, goals and aspirations and creating a robust plan to help the client navigate through the life stages and achieve those goals. We will use current net worth, tax liabilities, asset allocation, and future retirement and estate plans to predict future cash flows, asset values, and withdrawal plans.
+            Our holistic approach to financial planning involves a thorough evaluation of the client's current financial situation, earning & saving potential, goals & aspirations, and creating a robust plan - helping the client navigate through the life stages, achieve those goals, and have a financially secure life in retirement.
             <br /><br />
-            Typical topics reviewed in a financial plan may include but are not limited to:
+            Typical topics reviewed in a financial plan include:
           </div>
           <div className={styles.bodyGraphic}>
             <div className={styles.graphicText}>

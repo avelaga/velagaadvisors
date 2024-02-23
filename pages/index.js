@@ -32,12 +32,12 @@ export default function Home() {
           <div className={styles.whyChooseUs}>
             <div className={styles.reason}>
               <div className={styles.reasonHeader}>Simplified Approach</div>
-              <div className={styles.reasonBody}>We break down complex financial concepts into clear, easy-to-understand financial strategies tailored to your needs and risk tolerance.
+              <div className={styles.reasonBody}>We break down complex financial concepts into easy-to-understand financial strategies tailored to your needs and risk tolerance.
               </div>
             </div>
             <div className={styles.reason}>
               <div className={styles.reasonHeader}>Your Values Matter</div>
-              <div className={styles.reasonBody}>We collaborate with you to integrate your values into your financial strategy, ensuring your plan reflects what matters most to you.
+              <div className={styles.reasonBody}>We collaborate with you, ensuring your financial strategies and plans reflect the values that matter the most to you.  
               </div>
             </div>
             <div className={styles.reason}>
@@ -47,7 +47,7 @@ export default function Home() {
             </div>
             <div className={styles.reason}>
               <div className={styles.reasonHeader}>Partnership</div>
-              <div className={styles.reasonBody}>We are committed to fostering a relationship built on trust & reliability and want to be your long-term partner on the journey to financial success.
+              <div className={styles.reasonBody}>We are committed to fostering a relationship built on trust & reliability and being your partner on the journey to financial success.
               </div>
             </div>
           </div>
