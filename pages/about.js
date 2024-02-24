@@ -34,6 +34,7 @@ export default function About() {
                 <div className={styles.content}>
                     <div className={styles.left}>
                         <Image src="/krishna.jpg" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.krishna} />
+                        <div className={styles.photoCredit}>Photo by Abhi Velaga</div>
                         <div className={styles.education}>
                             <bold>MS</bold>, Computer Science, Kansas State University<br /><br />
                             <bold>MBA</bold>, Cox School of Business,
