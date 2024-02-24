@@ -37,7 +37,7 @@ export default function Home() {
           <div className={styles.body}>
             <div className={styles.bodyText}>We design personalized financial solutions that resonate with your values and objectives, guiding you towards a future marked by financial security and enduring success.
             </div>
-            <Image src="/homestock.jpg" width={200} height={0} style={{ width: '600px', height: 'auto' }} className={styles.bodyImage} />
+            <Image src="/homestock.png" width={200} height={0} style={{ width: '600px', height: 'auto' }} className={styles.bodyImage} />
           </div>
           <div className={styles.whyChooseUsHeader}>Why Choose Us</div>
           <div className={styles.whyChooseUs}>
