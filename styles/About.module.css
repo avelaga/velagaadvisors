@@ -13,6 +13,12 @@
     padding-top: 2rem;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
 .header {
     font-size: 3rem;
     width: 100%;
@@ -46,7 +52,6 @@
 
 .right {
     width: 72%;
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     text-align: left;
@@ -59,7 +64,7 @@
     line-height: 1rem;
 }
 
-.krishna {
+.profilePic {
     margin-right: 1rem;
     width: 100%;
 }
