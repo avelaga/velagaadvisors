@@ -26,7 +26,7 @@ export default function Contact() {
                 </script>
             </Head>
             <main>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMMxbGF3DE7R_Kl9oRXhH7V-WnvSFIOdwN5XE_-fsPNY35PA/viewform?embedded=true" width="100%" height="1100px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMMxbGF3DE7R_Kl9oRXhH7V-WnvSFIOdwN5XE_-fsPNY35PA/viewform?embedded=true" width="100%" height="1050px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </main>
         </>
     )
