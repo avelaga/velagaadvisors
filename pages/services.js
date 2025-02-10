@@ -38,7 +38,7 @@ export default function Services() {
           <div className={styles.whoWeServe}>
             <div className={styles.whoWeServeItem}>
               <div className={styles.whoWeServeHeader}>High Net Worth Individuals</div>
-              <div className={styles.whoWeServeBody}>Preservation of wealth, Diversification, Risk mitigation, Wealth transfer, and Tax optimization strategies
+              <div className={styles.whoWeServeBody}>Preservation of wealth, Risk mitigation, Wealth transfer, and Tax optimization strategies
               </div>
             </div>
             <div className={styles.whoWeServeItem}>
@@ -68,7 +68,7 @@ export default function Services() {
             Our holistic approach to financial planning involves a thorough evaluation of the client's current financial situation, earning & saving potential, goals & aspirations, and creating a robust plan - helping the client navigate through the life stages, achieve those goals, and have a financially secure retirement.
             <br />
           </div>
-          <div className={styles.cardHeader}>Typical topics included in a financial plan include:</div>
+          <div className={styles.cardHeader}>Typical topics included in a Financial Plan include:</div>
           <div className={styles.cardList}>
             <div className={styles.card}>Financial Goals</div>
             <div className={styles.card}>Personal Net worth</div>
@@ -86,11 +86,10 @@ export default function Services() {
             Consultation Services
           </div>
           <div className={styles.body}>
-            This service is appropriate for clients who need assistance with individual topics
-            within the scope of the financial plan, or any other topics as may be deemed appropriate.
+            We also offer consultation services on individual topics within the Financial Plan above or additional topics as desired.
           </div>
           <div className={styles.disclaimer}>
-            As a registered investment advisor, Velaga Advisors and its associates have a fiduciary duty to our clients to act in their best interests. We neither sell any insurance products nor do we receive any commissions or compensation other than the fee that our clients pay for our services.
+            As a Registered Investment Advisor, Velaga Advisors and its associates have a fiduciary duty to our clients to act in their best interests. We neither sell any insurance products nor do we receive any commissions or compensation other than the fee that our clients pay for our services.
           </div>
         </div>
       </main>
