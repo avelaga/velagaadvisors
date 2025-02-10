@@ -35,10 +35,22 @@ export default function Services() {
           <div className={styles.header}>
             Who Do We Serve?
           </div>
-          <div className={styles.whoWeServeBody}>
-          <div><b>High Net Worth Individuals</b> - Preservation of wealth, Diversification, Risk mitigation, Wealth transfer, and Tax optimization strategies<br/></div>
-          <div><b>High Income Earners</b> – Wealth accumulation, Tax optimization, and College savings strategies<br/></div>
-          <div><b>Early Career Professionals</b> – Getting on the right path for long term financial success<br/></div>
+          <div className={styles.whoWeServe}>
+            <div className={styles.whoWeServeItem}>
+              <div className={styles.whoWeServeHeader}>High Net Worth Individuals</div>
+              <div className={styles.whoWeServeBody}>Preservation of wealth, Diversification, Risk mitigation, Wealth transfer, and Tax optimization strategies
+              </div>
+            </div>
+            <div className={styles.whoWeServeItem}>
+              <div className={styles.whoWeServeHeader}>High Income Earners</div>
+              <div className={styles.whoWeServeBody}>Wealth accumulation, Tax optimization, and College savings strategies
+              </div>
+            </div>
+            <div className={styles.whoWeServeItem}>
+              <div className={styles.whoWeServeHeader}>Early Career Professionals</div>
+              <div className={styles.whoWeServeBody}>Getting on the right path for long term financial success
+              </div>
+            </div>
           </div>
           <div className={styles.header}>
             Services We Offer
@@ -79,7 +91,7 @@ export default function Services() {
           </div>
 
           <div className={styles.disclaimer}>
-          As a registered investment advisor, Velaga Advisors and its associates have a fiduciary duty to our clients to act in their best interests. We neither sell any insurance products nor do we receive any commissions or compensation other than the fee that our clients pay for our services.
+            As a registered investment advisor, Velaga Advisors and its associates have a fiduciary duty to our clients to act in their best interests. We neither sell any insurance products nor do we receive any commissions or compensation other than the fee that our clients pay for our services.
           </div>
         </div>
       </main>
