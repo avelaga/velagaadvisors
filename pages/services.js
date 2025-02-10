@@ -54,25 +54,20 @@ export default function Services() {
           </div>
           <div className={`${styles.body} ${styles.finPlan}`} >
             Our holistic approach to financial planning involves a thorough evaluation of the client's current financial situation, earning & saving potential, goals & aspirations, and creating a robust plan - helping the client navigate through the life stages, achieve those goals, and have a financially secure retirement.
-            <br /><br />
-            Typical topics included in a financial plan include:
+            <br />
           </div>
-          <div className={styles.bodyGraphic}>
-            <div className={styles.graphicText}>
-              Financial Goals <br />
-              Personal Net worth<br />
-              Cash Flow Analysis<br />
-              Employee Benefits<br />
-              Education Planning<br />
-            </div>
-            <div className={styles.graphicText}>
-              Risk Management<br />
-              Retirement Planning<br />
-              Investment Planning<br />
-              Tax Planning<br />
-              Estate Preservation
-            </div>
-            <Image src="/services.png" width={1000} height={0} style={{ width: '1000px', height: 'auto' }} className={styles.bodyImage} />
+          <div className={styles.cardHeader}>Typical topics included in a financial plan include:</div>
+          <div className={styles.cardList}>
+            <div className={styles.card}>Financial Goals</div>
+            <div className={styles.card}>Personal Net worth</div>
+            <div className={styles.card}>Cash Flow Analysis</div>
+            <div className={styles.card}>Employee Benefits</div>
+            <div className={styles.card}>Education Planning</div>
+            <div className={styles.card}>Risk Management</div>
+            <div className={styles.card}>Retirement Planning</div>
+            <div className={styles.card}>Investment Planning</div>
+            <div className={styles.card}>Tax Planning</div>
+            <div className={styles.card}>Estate Preservation</div>
           </div>
 
           <div className={styles.subheader}>

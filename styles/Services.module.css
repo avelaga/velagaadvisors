@@ -29,6 +29,7 @@
 .body {
     padding-bottom: 2rem;
     font-size: 1.2rem;
+    width: 100%;
 }
 
 .whoWeServeBody{
@@ -49,42 +50,44 @@
     padding-bottom: 0 !important;
 }
 
-.graphicText {
-    width: 14%;
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-    font-weight: 400;
-}
-
-.bodyGraphic {
+.cardList {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
-.bodyImage {
-    margin-left: 22%;
-    width: 600px !important;
+.card {
+    width: 16rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 400; 
+    border-radius: var(--border-radius);
+    text-align: center;
+    background-color: var(--green);
+    margin: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.cardHeader {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    font-weight: 400; 
 }
 
 @media only screen and (max-width: 950px) {
     .subheader {
         line-height: 2.2rem;
     }
-    .graphicText {
-        width: 100%;
+    .card {
         text-align: center;
+        padding: 0;
+        margin: .25rem
     }
-
     .bodyGraphic {
         margin-top: 1rem;
-    }
-
-    .bodyImage {
-        margin-left: 0;
-        width: 100% !important;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
     }
 }
