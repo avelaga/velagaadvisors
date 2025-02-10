@@ -59,7 +59,7 @@ export default function About() {
                             <Image src="/kalyan.jpg" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.profilePic} />
                             <div className={styles.education}>
                                 <bold>MS</bold>, Electrical Engineering, Clemson University<br /><br />
-                                <bold>Certified Financial Planning</bold>, Texas A&M University<br />
+                                <bold>Certified Financial Planning</bold>, Texas A&M University 
                                 (Planned completion – May 2025)
                             </div>
                         </div>

@@ -34,8 +34,10 @@
 
 .disclaimer {
     font-size: 1.2rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     font-style: italic;
+    text-align: center;
 }
 
 .finPlan {

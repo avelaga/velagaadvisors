@@ -89,7 +89,6 @@ export default function Services() {
             This service is appropriate for clients who need assistance with individual topics
             within the scope of the financial plan, or any other topics as may be deemed appropriate.
           </div>
-
           <div className={styles.disclaimer}>
             As a registered investment advisor, Velaga Advisors and its associates have a fiduciary duty to our clients to act in their best interests. We neither sell any insurance products nor do we receive any commissions or compensation other than the fee that our clients pay for our services.
           </div>
