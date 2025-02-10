@@ -59,7 +59,7 @@ export default function Services() {
             Investment Management
           </div>
           <div className={styles.body}>
-            We offer clients ongoing asset management services through determining individual investment goals, time horizons, objectives, and risk tolerance. Investment strategies, investment selection, asset allocation, portfolio monitoring, and the overall investment program will be based on the above factors to ensure a healthy and resilient portfolio.
+            We offer clients ongoing asset management services through determining individual investment goals, time horizons, objectives, and risk tolerance. Investment strategies, investment selection, asset allocation, portfolio monitoring, and the overall investment program will be customized based on the above factors to ensure a healthy and resilient portfolio.
           </div>
           <div className={styles.subheader}>
             Financial Planning
