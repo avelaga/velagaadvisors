@@ -36,9 +36,9 @@ export default function Services() {
             Who Do We Serve?
           </div>
           <div className={styles.whoWeServeBody}>
-          ●	<b>High Net Worth Individuals</b> - Preservation of wealth, Diversification, Risk mitigation, Wealth transfer and Tax optimization strategies<br/>
-          ●	<b>High Earners in the Wealth Accumulation Phase</b> – Aggressive growth, Tax optimization and College savings strategies<br/>
-          ●	<b>Early Career Professionals</b> – Getting on the right path for long term financial success<br/>
+          <div><b>High Net Worth Individuals</b> - Preservation of wealth, Diversification, Risk mitigation, Wealth transfer, and Tax optimization strategies<br/></div>
+          <div><b>High Income Earners</b> – Wealth accumulation, Tax optimization, and College savings strategies<br/></div>
+          <div><b>Early Career Professionals</b> – Getting on the right path for long term financial success<br/></div>
           </div>
           <div className={styles.header}>
             Services We Offer
@@ -55,7 +55,7 @@ export default function Services() {
           <div className={`${styles.body} ${styles.finPlan}`} >
             Our holistic approach to financial planning involves a thorough evaluation of the client's current financial situation, earning & saving potential, goals & aspirations, and creating a robust plan - helping the client navigate through the life stages, achieve those goals, and have a financially secure retirement.
             <br /><br />
-            Typical topics reviewed in a financial plan include:
+            Typical topics included in a financial plan include:
           </div>
           <div className={styles.bodyGraphic}>
             <div className={styles.graphicText}>
@@ -81,8 +81,6 @@ export default function Services() {
           <div className={styles.body}>
             This service is appropriate for clients who need assistance with individual topics
             within the scope of the financial plan, or any other topics as may be deemed appropriate.
-            The details of the topics included in this service will be outlined and agreed upon on the
-            consulting agreement.
           </div>
 
           <div className={styles.disclaimer}>

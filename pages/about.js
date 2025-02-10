@@ -47,7 +47,7 @@ export default function About() {
                             <div className={styles.header}>Krishna Velaga</div>
                             <div className={styles.subheader}>Founder / Chief Investment Officer</div>
                             <div className={styles.body}>
-                                I have deep passion for Investment Research, Tax Strategies, College Savings, Retirement Planning and other areas of personal finance. My journey into the world of investing began in the late 1990s with equities and derivatives. In pursuit of higher risk-adjusted returns and generating quality passive income, I have later expanded my focus to include alternative investments such as Commercial Real Estate, Private Equity, Private Credit, Hedge Funds, Structured Notes etc.
+                                I have deep passion for Investment Research, Tax Strategies, College Savings, Retirement Planning and other areas of personal finance. My journey into the world of investing began in the late 1990s with equities and derivatives. In pursuit of higher risk-adjusted returns and generating quality passive income, I have later expanded my focus to include alternative investments such as Commercial Real Estate, Private Equity, Private Credit, Hedge Funds, and Structured Notes.
                                 <br /><br />
                                 I realized that many high net worth individuals busy in their professional careers could benefit from a trusted financial advisor who brings together knowledge of personal finance and taxes along with analytical and communication skills. I left a successful career in Information Technology in 2023 to pursue my passion and make a difference to others in these areas, thus leading to the founding of Velaga Advisors.
                             </div>
@@ -59,8 +59,8 @@ export default function About() {
                             <Image src="/kalyan.jpg" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.profilePic} />
                             <div className={styles.education}>
                                 <bold>MS</bold>, Electrical Engineering, Clemson University<br /><br />
-                                <bold>Certified Financial Planning</bold>, Texas A&M University<br /><br />
-                                (Est. Completion – May 2025)
+                                <bold>Certified Financial Planning</bold>, Texas A&M University<br />
+                                (Planned completion – May 2025)
                             </div>
                         </div>
                         <div className={styles.right}>
@@ -70,7 +70,6 @@ export default function About() {
                                 My passion for helping individuals, businesses, and non-profits make sound financial and investment decisions has led me to pursue the path of CERTIFIED FINANCIAL PLANNER™.  After 29 years working in the Electronics Industry analyzing various types of data to make profitable decisions with resounding success, I am looking forward to using the same data analytic skills as a Financial Advisor.  I believe that the best investment is one that positively impacts the future of others.
                                 <br /><br />
                                 As Chief Financial Planner at Velaga Advisors, my goal is to work with each of our valued clients in achieving the financial future they envision.
-
                             </div>
                         </div>
                     </div>

@@ -15,13 +15,13 @@
 }
 
 .header {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     width: 100%;
     font-weight: 500;
 }
 
 .subheader {
-    font-size: 2rem;
+    font-size: 1.75rem;
     width: 100%;
     font-weight: 500;
 }
@@ -35,6 +35,8 @@
     padding-bottom: 2rem;
     font-size: 1.2rem;
     width: 100%;
+    display: flex;
+    
 }
 
 .disclaimer {
