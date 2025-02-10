@@ -10,7 +10,7 @@ export default function Contact() {
                 <meta name="og:description" content="Velaga Advisors" />
                 <meta property="og:title" content="Velaga Advisors" />
                 <meta property="og:site_name" content="Velaga Advisorsr" />
-                <meta property="og:image" content="./krishna.jpg" />
+                <meta property="og:image" content="./logoPreview.jpg" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
                 {/* google tag */}
