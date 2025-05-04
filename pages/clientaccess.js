@@ -29,9 +29,6 @@ export default function ClientAccess() {
             </Head>
             <main>
             <div className={styles.page} >
-                <div className={styles.header}>
-                    Client Access
-                </div>
                 <div className={styles.body}>
 
                     <div className={styles.container}>
@@ -62,10 +59,10 @@ export default function ClientAccess() {
                     </div>
 
                     <div className={styles.container}>
-                        <div className={styles.left}>
+                        <div className={styles.leftSchwab}>
                             <Image src="schwab1.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
                         </div>
-                        <div className={styles.right}>
+                        <div className={styles.rightSchwab}>
                             <div className={styles.containerHeader}>Schwab Alliance</div>
                             Charles Schwab, one of the largest investment platforms,  is an independent custodian where clients’ accounts are maintained and serviced. You can view your accounts, set up money transfers, maintain beneficiaries etc. here. All the account specific data including statements and tax forms are automatically pushed to the client portal for your convenience.
                         </div>
