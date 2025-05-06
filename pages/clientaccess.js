@@ -60,7 +60,7 @@ export default function ClientAccess() {
                             <div className={styles.containerHeader}>Financial Planning Portal</div>
                             We'll gather all your important pieces – your investments (set it up once, and it stays updated!), income, savings, and dreams for the future. Then, working closely with you, we'll craft a personalized financial plan designed to help you achieve those goals.
                             <br/><br/>
-                            You're always in control! You can easily update your personal information whenever things change. Plus, you can securely share any important documents with us using the secure vault. And the best part? This seamlessly connects with your client portal, giving you a complete and clear view of your investments and a snapshot of the retirement analysis in one place.
+                            You're always in control! You can easily update your personal information whenever things change. And the best part? This seamlessly connects with your client portal, giving you a complete and clear view of your investments and a snapshot of the retirement analysis in one place.
                         </div>
                         <a href="https://app.rightcapital.com/account/login?type=client" target="blank" className={styles.linkButton}>Login to Financial Planning Portal</a>
                     </div>

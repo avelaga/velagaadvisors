@@ -102,6 +102,10 @@
     font-size: calc(var(--header-size) * 0.39);
   }
 
+  .servicesTitleSpace {
+    margin-bottom: .75rem;
+  }
+
 @media only screen and (max-width: 950px) {
     .header {
         margin-top: 0rem;

@@ -60,7 +60,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className={styles.header}>
+          <div className={`${styles.header} ${styles.servicesTitleSpace}`}>
             Services We Offer
           </div>
           <div className={styles.subheader}>
@@ -87,10 +87,7 @@ export default function Services() {
             Consultation Services
           </div>
           <div className={styles.body}>
-            We also offer consultation services on additional topics as desired.
-          </div>
-          <div className={styles.disclaimer}>
-            As a Registered Investment Advisor, Velaga Advisors and its associates have a fiduciary duty to our clients to act in their best interests. We neither sell any insurance products nor do we receive any commissions or compensation other than the fee that our clients pay for our services.
+            We also offer consultation services on custom projects as desired.
           </div>
         </div>
       </main>
