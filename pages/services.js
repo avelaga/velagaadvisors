@@ -83,12 +83,6 @@ export default function Services() {
             through the life stages and achieve their
             financial aspirations.
           </div>
-          <div className={styles.subheader}>
-            Consultation Services
-          </div>
-          <div className={styles.body}>
-            We also offer consultation services on additional topics as desired.
-          </div>
           <div className={styles.disclaimer}>
             As a Registered Investment Advisor, Velaga Advisors and its associates have a fiduciary duty to our clients to act in their best interests. We neither sell any insurance products nor do we receive any commissions or compensation other than the fee that our clients pay for our services.
           </div>
