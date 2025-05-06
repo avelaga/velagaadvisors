@@ -40,8 +40,8 @@ export default function Navbar() {
                 </div>
                 <div className={isCollapsed ? `${styles.none} ${styles.dropDown}` : styles.dropDown}>
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>
-                    <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
                     <Link href="/clientaccess" className={usePathname() === '/clientaccess' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT ACCESS</Link>
+                    <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
                     <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT US</Link>
                 </div>
             </MediaQuery>
@@ -51,8 +51,8 @@ export default function Navbar() {
                 <Link href="/"><Image src="/logo.png" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.logo} /></Link>
                 <div className={styles.right}>
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>
-                    <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
                     <Link href="/clientaccess" className={usePathname() === '/clientaccess' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT ACCESS</Link>
+                    <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
                     <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT US</Link>
                 </div>
             </MediaQuery>

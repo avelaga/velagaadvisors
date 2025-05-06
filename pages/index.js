@@ -42,23 +42,40 @@ export default function Home() {
           <div className={styles.whyChooseUsHeader}>Why Choose Us</div>
           <div className={styles.whyChooseUs}>
             <div className={styles.reason}>
-              <div className={styles.reasonHeader}>Simplified Approach</div>
-              <div className={styles.reasonBody}>We break down complex financial concepts into easy-to-understand financial strategies tailored to your needs and risk tolerance.
+              <div className={styles.reasonHeader}>Independent Advisor</div>
+              <div className={styles.reasonBody}>We are fiduciaries,
+                committed to acting exclusively in our clients’
+                best interests. Our fee-only structure ensures
+                unbiased advice, free from insurance sales or
+                commissions.
               </div>
             </div>
             <div className={styles.reason}>
-              <div className={styles.reasonHeader}>Your Values Matter</div>
-              <div className={styles.reasonBody}>We collaborate with you, ensuring your financial strategies and plans reflect the values that matter the most to you.
+              <div className={styles.reasonHeader}>Strategic Asset Allocation</div>
+              <div className={styles.reasonBody}>We construct
+                customized portfolios, blending public and
+                private investments, that we manage to a
+                particular risk, return and liquidity target that is
+                appropriate for each client.
               </div>
             </div>
             <div className={styles.reason}>
-              <div className={styles.reasonHeader}>Communication</div>
-              <div className={styles.reasonBody}>We believe in open and honest communication. Stay informed and empowered throughout our journey.
+              <div className={styles.reasonHeader}>Holistic Wealth Management</div>
+              <div className={styles.reasonBody}>By
+                integrating investment management with
+                financial planning and tax strategies, we plan to
+                deliver better outcomes to achieve clients’
+                individual financial goals, offering a very
+                compelling value proposition.
               </div>
             </div>
             <div className={styles.reason}>
-              <div className={styles.reasonHeader}>Partnership</div>
-              <div className={styles.reasonBody}>We are committed to fostering a relationship built on trust & reliability and being your partner on the journey to financial success.
+              <div className={styles.reasonHeader}>Client Experience</div>
+              <div className={styles.reasonBody}>Clients benefit from easy
+                advisor access, technology-enabled seamless
+                digital onboarding, and a client portal for on-
+                demand performance reports and secure
+                document exchange.
               </div>
             </div>
           </div>

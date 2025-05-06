@@ -46,9 +46,17 @@ export default function Services() {
               <div className={styles.whoWeServeBody}>Wealth accumulation, Tax optimization, and College savings strategies
               </div>
             </div>
+
+            <div className={styles.whoWeServeItem}>
+              <div className={styles.whoWeServeHeader}>Small Business Owners</div>
+              <div className={styles.whoWeServeBody}>Tax optimization,
+              Retirement and Pension Plans
+              </div>
+            </div>
             <div className={styles.whoWeServeItem}>
               <div className={styles.whoWeServeHeader}>Early Career Professionals</div>
-              <div className={styles.whoWeServeBody}>Getting on the right path for long term financial success
+              <div className={styles.whoWeServeBody}>Position for
+              long term financial success
               </div>
             </div>
           </div>
@@ -59,29 +67,22 @@ export default function Services() {
             Investment Management
           </div>
           <div className={styles.body}>
-            We offer clients ongoing asset management services through determining individual investment goals, time horizons, objectives, and risk tolerance. Investment strategies, investment selection, asset allocation, portfolio monitoring, and the overall investment program will be customized based on the above factors to ensure a healthy and resilient portfolio.
+            Our personalized
+            asset management services are carefully aligned
+            with each client’s unique risk tolerance,
+            objectives, goals and time horizons.
           </div>
           <div className={styles.subheader}>
-            Financial Planning
+          Financial Planning & Tax Strategies
           </div>
-          <div className={`${styles.body} ${styles.finPlan}`} >
-            Our holistic approach to financial planning involves a thorough evaluation of the client's current financial situation, earning & saving potential, goals & aspirations, and creating a robust plan - helping the client navigate through the life stages, achieve those goals, and have a financially secure retirement.
-            <br />
+          <div className={styles.body} >
+            After
+            conducting a comprehensive analysis of each
+            client’s financial and tax situation, we develop a
+            robust financial plan to help them navigate
+            through the life stages and achieve their
+            financial aspirations.
           </div>
-          <div className={styles.cardHeader}>Typical topics included in a Financial Plan include:</div>
-          <div className={styles.cardList}>
-            <div className={styles.card}>Financial Goals</div>
-            <div className={styles.card}>Personal Net worth</div>
-            <div className={styles.card}>Cash Flow Analysis</div>
-            <div className={styles.card}>Employee Benefits</div>
-            <div className={styles.card}>Education Planning</div>
-            <div className={styles.card}>Risk Management</div>
-            <div className={styles.card}>Retirement Planning</div>
-            <div className={styles.card}>Investment Planning</div>
-            <div className={styles.card}>Tax Planning</div>
-            <div className={styles.card}>Estate Preservation</div>
-          </div>
-
           <div className={styles.subheader}>
             Consultation Services
           </div>

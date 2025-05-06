@@ -41,10 +41,6 @@
     text-align: center;
 }
 
-.finPlan {
-    padding-bottom: 0 !important;
-}
-
 .cardList {
     display: flex;
     flex-wrap: wrap;
