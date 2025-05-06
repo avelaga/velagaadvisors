@@ -34,15 +34,20 @@ export default function ClientAccess() {
                     <div className={styles.container}>
                         <div className={styles.left}>
                             <Image src="clientportal1.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
-                            <Image src="clientportal2.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
                         </div>
                         <div className={styles.right}>
                             <div className={styles.containerHeader}>Client Portal</div>
-                            You can access portfolio composition, various performance reports that you can slice and dice, cashflow actuals & estimates, snapshot of unrealized and realized gains, account statements, annual tax documents, billing invoices, financial plans, our tax analysis reports and more. For your convenience, we also gather and place the tax documents for the private investments if they are not already included in Schwab tax documents. You can also use this portal to securely upload and share documents with the advisors.  
-                            <br/>
-                            <br/>
-                            You can access this from a web or mobile app around the clock. Data is updated on a daily basis. Do you like to see anything else? Just let us know!
-                        </div>
+                                Access your investment portfolio right at your fingertips through this easy-to-use online hub, you can effortlessly explore:<br/><br/><b>
+                                - Your portfolio's Makeup<br/>
+                                - Performance Insights <br/>
+                                - Income Estimation<br/>
+                                - Account & Tax Documents<br/>
+                                - Your Financial and Tax Plans<br/></b>
+                                <br/>
+                                Plus, we go the extra mile by gathering and uploading tax documents for your private investments, whenever possible, so you have everything in one place. Need to share something with us securely? You can easily upload documents through this portal too!
+                                <br/><br/>
+                                You can access this from a web or mobile app around the clock. Data is updated on a daily basis. Do you like to see anything else? Just let us know!
+                            </div>
                         <a href="https://main.yhlsoft.com/auth/users/sign_in?prod=CWP" target="blank" className={styles.linkButton}>Login to Client Portal</a>
                     </div>
 
@@ -53,7 +58,9 @@ export default function ClientAccess() {
                         </div>
                         <div className={styles.right}>
                             <div className={styles.containerHeader}>Financial Planning Portal</div>
-                            This is where we collect all your assets (one time setup and auto refresh), income, savings, goals etc. and work with you to create a financial plan that meets your objectives. You can modify your personal data anytime and securely share any relevant documents using the secure vault. For your convenience, this is integrated with the client portal as well so you can see a more holistic picture of your investments and financial plan probabilities.
+                            We'll gather all your important pieces – your investments (set it up once, and it stays updated!), income, savings, and dreams for the future. Then, working closely with you, we'll craft a personalized financial plan designed to help you achieve those goals.
+                            <br/><br/>
+                            You're always in control! You can easily update your personal information whenever things change. Plus, you can securely share any important documents with us using the secure vault. And the best part? This seamlessly connects with your client portal, giving you a complete and clear view of your investments and a snapshot of the retirement analysis in one place.
                         </div>
                         <a href="https://app.rightcapital.com/account/login?type=client" target="blank" className={styles.linkButton}>Login to Financial Planning Portal</a>
                     </div>
@@ -64,7 +71,7 @@ export default function ClientAccess() {
                         </div>
                         <div className={styles.rightSchwab}>
                             <div className={styles.containerHeader}>Schwab Alliance</div>
-                            Charles Schwab, one of the largest investment platforms,  is an independent custodian where clients’ accounts are maintained and serviced. You can view your accounts, set up money transfers, maintain beneficiaries etc. here. All the account specific data including statements and tax forms are automatically pushed to the client portal for your convenience.
+                            Charles Schwab, one of the largest investment platforms, is an independent custodian where clients’ accounts are maintained and serviced. You can view your accounts, set up money transfers, maintain beneficiaries etc. here. All the account specific data including statements and tax forms are automatically pushed to the client portal for your convenience.
                         </div>
                         <a href="https://client.schwab.com/Areas/Access/Login?&kc=y&sim=y" target="blank" className={styles.linkButton}>Login to Schwab Alliance</a>
                     </div>
@@ -72,7 +79,6 @@ export default function ClientAccess() {
                     <div className={styles.container}>
                         <div className={styles.left}>
                             <Image src="taxplanning1.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
-                            <Image src="taxplanning2.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
                         </div>
                         <div className={styles.right}>
                             <div className={styles.containerHeader}>Tax Planning</div>
