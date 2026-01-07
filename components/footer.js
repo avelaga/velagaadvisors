@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <div>
             <div className={styles.footer}>
-                <div className={styles.item}>© 2025 Velaga Advisors LLC</div>
+                <div className={styles.item}>© 2026 Velaga Advisors LLC</div>
                 <a href={'/privacyPolicy.pdf'} className={styles.item} rel="noopener noreferrer" target='_blank' >Privacy Policy</a>
                 {/* <div className={styles.link}>Privacy Policy</div> */}
                 <Link href="/disclaimer" className={`${styles.link} ${styles.item}`}>Disclaimer</Link>
