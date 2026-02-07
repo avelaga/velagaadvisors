@@ -86,19 +86,19 @@ export default function Services() {
             We offer three ways to engage with our firm, allowing you to choose the level of integration that fits your financial complexity.
           </div>
           <div className={styles.subheader}>
-            1. Private Wealth Management (The Unified Package)
+            Private Wealth Management (The Unified Package)
           </div>
           <div className={styles.body}>
             Our core offering for families seeking a comprehensive "Family CIO" experience. This is our most integrated engagement, designed for those who require a Strategic Anchor for their entire financial life. We combine Institutional Portfolio Design, Strategic Planning, and Tax-Optimized Engineering into a single, synchronized service. This model ensures that your investment architecture and life goals are managed with absolute alignment.
           </div>
           <div className={styles.subheader}>
-            2. Strategic Financial Planning
+            Strategic Financial Planning
           </div>
           <div className={styles.body} >
             A data-driven blueprint for clarity and direction. For clients who require a high-precision roadmap but wish to maintain their current investment holdings, we offer stand-alone financial planning. Applying a disciplined, analytical framework, we develop a comprehensive plan that addresses cash flow, retirement modeling, tax efficiency, and estate coordination.
           </div>
           <div className={styles.subheader}>
-            3. Strategic Consultation
+            Strategic Consultation
           </div>
           <div className={styles.body}>
             Bespoke advisory for complex, project-based financial needs. We provide expert consultation services for specific financial projects that fall outside of traditional wealth management.

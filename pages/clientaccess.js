@@ -76,7 +76,7 @@ export default function ClientAccess() {
                         <a href="https://client.schwab.com/Areas/Access/Login?&kc=y&sim=y" target="blank" className={styles.linkButton}>Login to Schwab Alliance</a>
                     </div>
 
-                    <div className={styles.container}>
+                    {/* <div className={styles.container}>
                         <div className={styles.left}>
                             <Image src="taxplanning1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }}/>
                         </div>
@@ -84,7 +84,7 @@ export default function ClientAccess() {
                             <div className={styles.containerHeader}>Tax Planning</div>
                             We use a powerful tax planning software to analyze your tax returns and provide insights and opportunities. You will receive a secure link to upload your tax return each year.
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             </main>
