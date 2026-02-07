@@ -24,13 +24,23 @@
     width: 100%;
     height: fit-content;
     font-weight: 500;
-    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.midheader {
+    font-size: 2rem;
+    width: 100%;
+    height: fit-content;
+    font-weight: 500;
 }
 
 .subheader {
     font-size: 1.5rem;
     width: 100%;
     height: fit-content;
+}
+
+.subheader b {
     font-weight: 500;
 }
 
@@ -97,8 +107,17 @@
     }
 
     .header {
-        margin-top: 1rem;
         font-size: 2rem;
+    }
+
+    .midheader {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+       font-size: 1.5rem; 
+    }
+
+    .subheader {
+       font-size: 1.25rem;  
     }
 
     .profilePic {

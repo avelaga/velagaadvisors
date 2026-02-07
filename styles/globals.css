@@ -141,7 +141,8 @@ bold {
   font-weight: 500;
 }
 
-.finra {
+/* TODO  POSITION TO RIGHT OF SCREEN AS IT WAS BEFORE */
+.finra { 
   border: none;
   width: 150px;
   position: fixed;

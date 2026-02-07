@@ -32,6 +32,7 @@ export default function About() {
             </Head>
             <main className={styles.about}>
                 <div className={styles.content}>
+                    <h1 className={styles.header}>About Our Firm</h1>
                     <div className={styles.row}>
                         <div className={styles.left}>
                             <Image src="/krishna.jpg" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.profilePic} />
@@ -44,12 +45,15 @@ export default function About() {
                             </div>
                         </div>
                         <div className={styles.right}>
-                            <div className={styles.header}>Krishna Velaga</div>
-                            <div className={styles.subheader}>Founder / Chief Investment Officer</div>
+                            <h1 className={styles.midheader}>The Vision Behind Velaga Advisors </h1>
+                            <div className={styles.subheader}><b>Krishna Velaga</b> | <i>Founder & Chief Investment Officer</i></div>
                             <div className={styles.body}>
-                                I have deep passion for Investment Research, Tax Strategies, College Savings, Retirement Planning and other areas of personal finance. My journey into the world of investing began in the late 1990s with equities and derivatives. In pursuit of higher risk-adjusted returns and generating quality passive income, I have later expanded my focus to include alternative investments such as Commercial Real Estate, Private Equity, Private Credit, Hedge Funds, and Structured Notes.
-                                <br /><br />
-                                I realized that many high net worth individuals busy in their professional careers could benefit from a trusted financial advisor who brings together knowledge of personal finance and taxes along with analytical and communication skills. I left a successful career in Information Technology in 2023 to pursue my passion and make a difference to others in these areas, thus leading to the founding of Velaga Advisors.
+                                Krishna Velaga founded Velaga Advisors on the principle that family wealth deserves the same analytical rigor as a complex technical system. Having navigated the markets since the late 1990s—with expertise spanning equities, derivatives, and real estate, alongside institutional alternatives such as Private Equity, Hedge Funds, and Private Credit—Krishna brings an engineering mindset to portfolio design.
+                                <br/><br/>
+                                This systems-engineering background, combined with formal financial education, allows Krishna to bridge the gap between complex market theory and disciplined investment execution. By applying a process-driven framework to modern portfolio theory, he focuses on creating a structural balance between risk mitigation and long-term capital growth.
+                                <br/><br/>
+                                In 2023, Krishna transitioned from a successful career in Information Technology to apply this methodology to the architecture of family wealth. Recognizing that high-net-worth professionals require a Strategic Anchor who can synthesize sophisticated investment research with advanced tax-optimization, he provides the dedicated oversight and precision necessary to navigate a complex financial landscape with confidence.
+
                             </div>
                         </div>
                     </div>
@@ -63,8 +67,8 @@ export default function About() {
                             </div>
                         </div>
                         <div className={styles.right}>
-                            <div className={styles.header}>Kalyan Cherukuri</div>
-                            <div className={styles.subheader}>Chief Financial Planner</div>
+                            <h1 className={styles.midheader}>Strategic Planning & Roadmaps </h1>
+                            <div className={styles.subheader}><b>Kalyan Cherukuri</b> | <i>Chief Financial Planner</i></div>
                             <div className={styles.body}>
                                 My passion for helping individuals, businesses, and non-profits make sound financial and investment decisions has led me to pursue the path of CERTIFIED FINANCIAL PLANNER™.  After 29 years working in the Electronics Industry analyzing various types of data to make profitable decisions with resounding success, I am looking forward to using the same data analytic skills as a Financial Advisor.  I believe that the best investment is one that positively impacts the future of others.
                                 <br /><br />
