@@ -6,6 +6,26 @@ import styles from "@/styles/Home.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+  const whyChooseUs = [
+    {
+      title: "Unbiased Fiduciary Roots",
+      body: "Fee-only and independent. No products or commissions are accepted, ensuring advice is aligned exclusively with client objectives."
+    },
+    {
+      title: "Institutional Portfolio Design",
+      body: "We construct portfolios utilizing a Liquidity Waterfall to prioritize immediate cash flow needs while protecting long-term capital compounding."
+    },
+    {
+      title: "Tax-Optimized Strategies",
+      body: "We drive structural alpha through advanced portfolio design. For qualifying portfolios, we integrate Option Overlays, Equity Hedging, and Direct Indexing to optimize tax outcomes."
+    },
+    {
+      title: "Boutique Service",
+      body: "We combine institutional rigor with personal accessibility. Client is never a number; but a family we are proud to serve."
+    }
+  ]
+
   return (
     <>
       <Head>
@@ -41,26 +61,13 @@ export default function Home() {
           </div>
           <div className={styles.whyChooseUsHeader}>Why Choose Us</div>
           <div className={styles.whyChooseUs}>
-            <div className={styles.reason}>
-              <div className={styles.reasonHeader}>Unbiased Fiduciary Roots</div>
-              <div className={styles.reasonBody}>Fee-only and independent. No products or commissions are accepted, ensuring advice is aligned exclusively with client objectives.
+            {whyChooseUs.map(reason => (
+               <div className={styles.reason}>
+              <div className={styles.reasonHeader}>{reason.title}</div>
+              <div className={styles.reasonBody}>{reason.body}
               </div>
             </div>
-            <div className={styles.reason}>
-              <div className={styles.reasonHeader}>Institutional Portfolio Design</div>
-              <div className={styles.reasonBody}>We construct portfolios utilizing a Liquidity Waterfall to prioritize immediate cash flow needs while protecting long-term capital compounding.
-              </div>
-            </div>
-            <div className={styles.reason}>
-              <div className={styles.reasonHeader}>Tax-Optimized Strategies</div>
-              <div className={styles.reasonBody}>We drive structural alpha through advanced portfolio design. For qualifying portfolios, we integrate Option Overlays, Equity Hedging, and Direct Indexing to optimize tax outcomes.
-              </div>
-            </div>
-            <div className={styles.reason}>
-              <div className={styles.reasonHeader}>Boutique Service</div>
-              <div className={styles.reasonBody}>We combine institutional rigor with personal accessibility. Client is never a number; but a family we are proud to serve.
-              </div>
-            </div>
+            ))}
           </div>
           {/* <a href="https://docs.google.com/forms/d/18oA11rmQZ94HzUDiNUoW-95oIC-rVxt0POIYccwZRT8/edit" target="blank" className={styles.button} >Get Started Today</a> */}
         </div>
