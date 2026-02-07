@@ -108,7 +108,7 @@
 .whoWeServeTop {
     display: flex;
     flex-wrap: wrap;
-    min-height: 150px;
+    /* min-height: 140px; */
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -120,12 +120,13 @@
 }
 
 .whoWeServeBody {
-    min-height: 220px;
+    /* min-height: 150px; */
     font-weight: 100;
     font-size: calc(var(--header-size) * 0.39);
 }
 
 .whoWeServeFocus {
+    width: 100%;
     font-weight: 100;
     font-size: calc(var(--header-size) * 0.39);
 }
