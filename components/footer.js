@@ -9,9 +9,10 @@ export default function Footer() {
             <div className={styles.footer}>
                 <div className={styles.item}>© 2026 Velaga Advisors LLC</div>
                 <a href={'/privacyPolicy.pdf'} className={styles.item} rel="noopener noreferrer" target='_blank' >Privacy Policy</a>
-                {/* <div className={styles.link}>Privacy Policy</div> */}
                 <Link href="/disclaimer" className={`${styles.link} ${styles.item}`}>Disclaimer</Link>
+
             </div>
+            <a href="https://brokercheck.finra.org" target="_blank"><img src='/finraBackground.png' className='finra' /></a>
             <a href="https://abhi.work" target="_blank" className={styles.abhi} >Designed and Developed by Abhi Velaga</a>
         </div>
     )

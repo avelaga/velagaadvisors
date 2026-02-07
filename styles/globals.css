@@ -30,7 +30,7 @@
   --tile-border: conic-gradient(#00000080,
       #00000040,
       #00000030,
-      #00000020,
+      #13090920,
       #00000010,
       #00000010,
       #00000080);
@@ -141,14 +141,11 @@ bold {
   font-weight: 500;
 }
 
-/* TODO  POSITION TO RIGHT OF SCREEN AS IT WAS BEFORE */
 .finra { 
   border: none;
   width: 150px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 950px) {
