@@ -16,13 +16,19 @@
 
 .header {
     margin-top: 1.5rem;
-    font-size: 2.25rem;
+    font-size: 3rem;
+    width: 100%;
+    font-weight: 500;
+}
+
+.midheader {
+    font-size: 2rem;
     width: 100%;
     font-weight: 500;
 }
 
 .subheader {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     width: 100%;
     font-weight: 500;
 }
@@ -32,6 +38,14 @@
     font-size: 1.2rem;
     width: 100%;
 }
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background: var(--white);
+    margin: 20px 0;
+}
+
 
 .disclaimer {
     font-size: 1.2rem;
@@ -54,7 +68,7 @@
     width: 16rem;
     font-size: 1.2rem;
     line-height: 2.5rem;
-    font-weight: 400; 
+    font-weight: 400;
     border-radius: var(--border-radius);
     text-align: center;
     background-color: var(--green);
@@ -66,7 +80,7 @@
 .cardHeader {
     font-size: 1.2rem;
     margin-top: 2rem;
-    font-weight: 400; 
+    font-weight: 400;
     text-align: center;
 }
 
@@ -78,9 +92,9 @@
     width: 100%;
     font-weight: 500;
     margin-bottom: 2rem;
-  }
-  
-  .whoWeServeItem {
+}
+
+.whoWeServeItem {
     flex: 1;
     align-content: center;
     background-color: var(--green);
@@ -89,35 +103,58 @@
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-  
-  .whoWeServeHeader {
+}
+
+.whoWeServeTop {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 150px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.whoWeServeHeader {
     font-size: 1.5rem;
     font-weight: 500;
     width: 100%;
-  }
-  
-  .whoWeServeBody {
+}
+
+.whoWeServeBody {
+    min-height: 220px;
     font-weight: 100;
     font-size: calc(var(--header-size) * 0.39);
-  }
+}
 
-  .servicesTitleSpace {
+.whoWeServeFocus {
+    font-weight: 100;
+    font-size: calc(var(--header-size) * 0.39);
+}
+
+.servicesTitleSpace {
     margin-bottom: .75rem;
-  }
+}
 
 @media only screen and (max-width: 950px) {
     .header {
         margin-top: 0rem;
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
     }
+
     .subheader {
-        line-height: 2.2rem;
+        line-height: 2rem;
     }
+
+    .midheader {
+        font-size: 1.75rem;
+    }
+
     .card {
         text-align: center;
         padding: 0;
         margin: .25rem
     }
+
     .bodyGraphic {
         margin-top: 1rem;
     }
@@ -128,12 +165,12 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-      }
-    
-      .whoWeServeItem {
+    }
+
+    .whoWeServeItem {
         flex: none;
         margin: 0;
         width: 100%;
         margin-bottom: 1rem;
-      }
+    }
 }
