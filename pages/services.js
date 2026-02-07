@@ -14,7 +14,7 @@ export default function Services() {
       body: "Comprehensive oversight for Physicians and Executives in their peak wealth phase, with an emphasis on risk mitigation and tax-efficient structures."
     },
     {
-      header: "Specialized Medical & Technical Pros",
+      header: "Specialized Medical & Technical Professionals",
       focus: "Acceleration & Optimization",
       body: "Data-driven accumulation strategies for Physicians and Tech Leaders focused on tax efficiency and aggressive wealth building."
     },
