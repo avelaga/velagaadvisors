@@ -52,7 +52,7 @@ export default function Home() {
       </Head>
       <main className={styles.home}>
         <div className={styles.content}>
-          <div className={styles.header}>Private Wealth management</div>
+          <div className={styles.header}>Private Wealth Management</div>
           <div className={styles.subheader}>Strategic Architecture. Personal Stewardship.</div>
           <div className={styles.body}>
             <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a Strategic Anchor for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacies.
