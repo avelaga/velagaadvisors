@@ -33,7 +33,7 @@ export default function ClientAccess() {
 
                     <div className={styles.container}>
                         <div className={styles.left}>
-                            <Image src="clientportal1.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
+                            <Image src="clientportal1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }}/>
                         </div>
                         <div className={styles.right}>
                             <div className={styles.containerHeader}>Client Portal</div>
@@ -54,7 +54,7 @@ export default function ClientAccess() {
 
                     <div className={styles.container}>
                         <div className={styles.left}>
-                            <Image src="/financialplanning1.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
+                            <Image src="/financialplanning1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }}/>
                         </div>
                         <div className={styles.right}>
                             <div className={styles.containerHeader}>Financial Planning Portal</div>
@@ -67,7 +67,7 @@ export default function ClientAccess() {
 
                     <div className={styles.container}>
                         <div className={styles.leftSchwab}>
-                            <Image src="schwab1.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
+                            <Image src="schwab1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }}/>
                         </div>
                         <div className={styles.rightSchwab}>
                             <div className={styles.containerHeader}>Schwab Alliance</div>
@@ -78,7 +78,7 @@ export default function ClientAccess() {
 
                     <div className={styles.container}>
                         <div className={styles.left}>
-                            <Image src="taxplanning1.png" width={200} height={200} style={{ width: '100%', height: 'auto' }}/>
+                            <Image src="taxplanning1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }}/>
                         </div>
                         <div className={styles.right}>
                             <div className={styles.containerHeader}>Tax Planning</div>
