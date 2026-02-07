@@ -28,6 +28,7 @@
     padding-top: .5rem;
     padding-bottom: .5rem;
     transition: background 0.3s, color 0.3s;
+        text-align: center;
 }
 
 .contact {
