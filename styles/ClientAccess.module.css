@@ -8,6 +8,12 @@
     min-height: var(--content-min-height)
 }
 
+
+.image {
+    width: 60%;
+    border-radius: 12px;
+}
+
 .header {
     font-size: 3rem;
     width: 100%;
@@ -17,7 +23,7 @@
 }
 
 .subheader {
-    font-size:1.5rem;
+    font-size: 1.5rem;
     width: 100%;
     height: fit-content;
     margin-bottom: 20px;
@@ -108,7 +114,12 @@
     .rightSchwab {
         width: 100%;
     }
+
     .subheader {
         font-size: 1.25rem;
+    }
+
+    .image {
+        width: 100%;
     }
 }

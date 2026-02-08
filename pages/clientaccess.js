@@ -1,12 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/ClientAccess.module.css";
 
 export default function ClientAccess() {
 
     const portals = [
         {
-            image: "clientportal1.png",
+            image: "advyzon.jpg",
             title: "Investment Reporting Portal",
             body1: "Powered by <b>Advyzon</b>, this portal provides a granular view of the investment portfolio. This secure platform is designed for transparency and features the following reporting capabilities:",
             bullets: [
@@ -32,7 +31,7 @@ export default function ClientAccess() {
             buttonUrl: "https://main.yhlsoft.com/auth/users/sign_in?prod=CWP"
         },
         {
-            image: "/financialplanning1.png",
+            image: "rightcapital.png",
             title: "Wealth Modeling & Planning",
             body1: "<b>Wealth Modeling & Planning</b> Powered by <b>RightCapital</b>, this platform serves as the interactive engine for the <b>Strategic Roadmap</b>. By aggregating the entire financial landscape—including accounts under our management, external holdings, and private business interests— the platform provides a live, high-precision model of total net worth. The portal enables the following capabilities:",
             bullets: [
@@ -117,7 +116,8 @@ export default function ClientAccess() {
                         </div>
                         {portals.map(portal => (
                             <div className={styles.container}>
-                                <Image src={portal.image} width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+                                <img src={portal.image} className={styles.image}
+                                />
                                 <div className={styles.bottom}>
                                     <div className={styles.containerHeader}>{portal.title}</div>
                                     <p dangerouslySetInnerHTML={{ __html: portal.body1 }} />
