@@ -10,7 +10,7 @@ export default function Home() {
   const whyChooseUs = [
     {
       title: "Unbiased Fiduciary Roots",
-      body: "Fee-only and independent. No products or commissions are accepted, ensuring advice is aligned exclusively with client objectives."
+      body: "Fee-only and independent. Fee-only and independent. We do not sell insurance or any other financial products, nor do we accept commissions, ensuring our advice is aligned exclusively with client objectives."
     },
     {
       title: "Institutional Portfolio Design",
