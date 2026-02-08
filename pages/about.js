@@ -70,9 +70,9 @@ export default function About() {
                             <h1 className={styles.midheader}>Strategic Planning & Roadmaps </h1>
                             <div className={styles.subheader}><b>Kalyan Cherukuri</b> | <i>Chief Financial Planner</i></div>
                             <div className={styles.body}>
-                                Kalyan Cherukuri brings nearly three decades of analytical expertise from the Electronics Industry to his role as Chief Financial Planner. Having spent 29 years leveraging complex data to drive profitable corporate decisions with resounding success, he applies that same high-precision framework to the financial planning process at Velaga Advisors.
+                                Kalyan Cherukuri brings nearly three decades of analytical expertise from the electronics industry to his role as Chief Financial Planner. Having spent his career leveraging complex data to drive profitable corporate decisions, he now applies that same high-precision framework to the financial planning process at Velaga Advisors.
                                 <br /><br />
-                                As a CERTIFIED FINANCIAL PLANNER™ candidate, Kalyan specializes in the Strategic Roadmap. He excels at synthesizing intricate data into actionable strategies, ensuring that every variable—from cash flow to long-term retirement targets—is structurally sound. By applying his deep background in electronics and data analytics, he bridges the gap between complex financial modeling and the clear, intentional decisions required to secure a client's future.
+                                As a CERTIFIED FINANCIAL PLANNER™ candidate, Kalyan specializes in the Strategic Roadmap. He excels at synthesizing intricate data into actionable strategies, ensuring that every variable—from cash flow to long-term retirement targets—is structurally sound. By bridging the gap between sophisticated financial modeling and intentional decision-making, Kalyan provides the clarity and rigor required to secure a client's future.
                             </div>
                         </div>
                     </div>

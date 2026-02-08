@@ -14,15 +14,15 @@ export default function Home() {
     },
     {
       title: "Institutional Portfolio Design",
-      body: "We construct portfolios utilizing a Liquidity Waterfall to prioritize immediate cash flow needs while protecting long-term capital compounding."
+      body: "We move beyond traditional stock and bond models to access a broader investment universe, including private markets and real estate. By architecting portfolios with this institutional breadth, we provide the structural stability required to protect and grow a family legacy."
     },
     {
       title: "Tax-Optimized Strategies",
-      body: "We drive structural alpha through advanced portfolio design. For qualifying portfolios, we integrate Option Overlays, Equity Hedging, and Direct Indexing to optimize tax outcomes."
+      body: "We drive structural alpha by viewing every investment decision through a tax lens. For complex portfolios, we integrate Direct Indexing, Equity Hedging, and Option Overlays to maximize after-tax retention and enhance long-term wealth."
     },
     {
       title: "Boutique Service",
-      body: "We combine institutional rigor with personal accessibility. Client is never a number; but a family we are proud to serve."
+      body: "We combine institutional rigor with personal accessibility. A client is never a number, but a family we are proud to serve."
     }
   ]
 
@@ -52,10 +52,10 @@ export default function Home() {
       </Head>
       <main className={styles.home}>
         <div className={styles.content}>
-          <div className={styles.header}>Private Wealth management</div>
-          <div className={styles.subheader}>Strategic Architecture. Personal Stewardship.</div>
+          <div className={styles.header}>Private Wealth Management</div>
+          <div className={styles.subheader}>Strategic Architecture | Personal Stewardship</div>
           <div className={styles.body}>
-            <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a Strategic Anchor for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacies.
+            <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a <b>Strategic Anchor</b> for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.
             </div>
             <Image src="/homegraphic.png" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} />
           </div>

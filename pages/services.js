@@ -9,24 +9,24 @@ export default function Services() {
 
   const whoWeServeContent = [
     {
-      header: "High Net Worth Families",
+      header: "High-Net-Worth Families",
       focus: "Preservation & Resilience",
-      body: "Comprehensive oversight for Physicians and Executives in their peak wealth phase, with an emphasis on risk mitigation and tax-efficient structures."
+      body: "Seeking sophisticated risk mitigation and capital growth through an institutional-grade framework."
     },
     {
-      header: "Specialized Medical & Technical Pros",
-      focus: "Acceleration & Optimization",
-      body: "Data-driven accumulation strategies for Physicians and Tech Leaders focused on tax efficiency and aggressive wealth building."
+      header: "High-Income Professionals",
+      focus: "Acceleration & Tax Efficiency",
+      body: "Focused on intentional wealth accumulation for physicians, tech leaders, and executives seeking tax efficiency."
     },
     {
       header: "Business Owners",
       focus: "Strategic Synchronization",
-      body: "Integrating corporate success with personal wealth through retirement plan optimization and tax-efficient business-to-personal synchronization."
+      body: "Navigating the complexities of tax-efficient retirement plans and business-to-personal synchronization."
     },
     {
-      header: "Emerging Professionals",
+      header: "Early Career Professionals",
       focus: "The Structural Roadmap",
-      body: "Future-proofing for Residents, Fellows, and High-Potential Associates through benefit optimization and early-stage structural planning."
+      body: "Establishing a disciplined, process-oriented framework to position for long-term financial independence."
     }
   ]
 
@@ -60,13 +60,12 @@ export default function Services() {
             Our Services & Engagement
           </h1>
           <div className={styles.midheader}>
-            Who Do We Serve?
+            Who We Serve
           </div>
           <div className={styles.body}>
-            We work with clients who value a data-driven approach to wealth. Our process is designed for those who recognize that their financial complexity - or their future earning potential - demands a professional architectural framework.
+            We partner with a limited number of households to ensure the depth of our expertise adds the maximum value to each family legacy.
           </div>
           <div className={styles.whoWeServe}>
-
             {whoWeServeContent.map(card => (
               <div className={styles.whoWeServeItem}>
                 <div className={styles.whoWeServeTop}>
@@ -83,25 +82,25 @@ export default function Services() {
             Engagement Models
           </div>
           <div className={styles.body}>
-            We offer three ways to engage with our firm, allowing you to choose the level of integration that fits your financial complexity.
+            We offer three ways to engage with the firm, allowing for a level of integration that fits the specific financial complexity of each family.
           </div>
           <div className={styles.subheader}>
             Private Wealth Management (The Unified Package)
           </div>
           <div className={styles.body}>
-            Our core offering for families seeking a comprehensive "Family CIO" experience. This is our most integrated engagement, designed for those who require a Strategic Anchor for their entire financial life. We combine Institutional Portfolio Design, Strategic Planning, and Tax-Optimized Engineering into a single, synchronized service. This model ensures that your investment architecture and life goals are managed with absolute alignment.
+            This is our most integrated engagement, designed for families seeking a comprehensive "family CIO" experience. We serve as a <b>strategic anchor</b> for your entire financial life, combining institutional portfolio design, strategic planning, and tax optimization into a single, synchronized service. This model ensures that your investment architecture and life goals are managed with absolute alignment.
           </div>
           <div className={styles.subheader}>
             Strategic Financial Planning
           </div>
           <div className={styles.body} >
-            A data-driven blueprint for clarity and direction. For clients who require a high-precision roadmap but wish to maintain their current investment holdings, we offer stand-alone financial planning. Applying a disciplined, analytical framework, we develop a comprehensive plan that addresses cash flow, retirement modeling, tax efficiency, and estate coordination.
+            This is a standalone service for clients who require a high-precision roadmap but wish to maintain their current investment holdings. We develop a comprehensive plan addressing cash flow, retirement modeling, tax efficiency, and estate coordination.
           </div>
           <div className={styles.subheader}>
             Strategic Consultation
           </div>
           <div className={styles.body}>
-            Bespoke advisory for complex, project-based financial needs. We provide expert consultation services for specific financial projects that fall outside of traditional wealth management.
+            This is a bespoke advisory service for complex, project-based financial needs that fall outside of traditional wealth management.
           </div>
         </div>
       </main>
