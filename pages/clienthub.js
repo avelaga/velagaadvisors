@@ -1,7 +1,7 @@
 import Head from "next/head";
-import styles from "@/styles/InvestorCenter.module.css";
+import styles from "@/styles/ClientHub.module.css";
 
-export default function InvestorCenter() {
+export default function ClientHub() {
 
     const portals = [
         {
@@ -63,7 +63,7 @@ export default function InvestorCenter() {
             bullets: [
                 {
                     title: "Direct Account Oversight:",
-                    body: "Access official custodial balances, transaction history, and trade confirmations."
+                    body: "Access account balances, transaction history, and trade confirmations."
                 },
                 {
                     title: "Administrative Management:",
@@ -87,7 +87,7 @@ export default function InvestorCenter() {
     return (
         <>
             <Head>
-                <title>Velaga Advisors - Investor Center</title>
+                <title>Velaga Advisors - Client Hub</title>
                 <meta property="title" content="Velaga Advisors" />
                 <meta name="description" content="Velaga Advisors" />
                 <meta name="og:description" content="Velaga Advisors" />
@@ -112,7 +112,7 @@ export default function InvestorCenter() {
                 <div className={styles.page} >
                     <div className={styles.body}>
                         <div className={styles.subheader}>
-                            The Investor Center provides a consolidated suite of specialized tools designed to offer total transparency across the financial landscape. These platforms work in concert to provide granular reporting, long-term strategic modeling, and secure custodial oversight.
+                            The Client Hub provides a consolidated suite of specialized tools designed to offer total transparency across the financial landscape. These platforms work in concert to provide granular reporting, long-term strategic modeling, and secure custodial oversight.
                         </div>
                         {portals.map(portal => (
                             <div className={styles.container}>
@@ -121,7 +121,6 @@ export default function InvestorCenter() {
                                     <img src={portal.image} className={styles.image} />
                                 </div>
                                 <div className={styles.bottom}>
-
                                     <p dangerouslySetInnerHTML={{ __html: portal.body1 }} />
                                     <div className={styles.bulletContainer}>
                                         {portal.bullets && portal.bullets.map(bullet => (
