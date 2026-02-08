@@ -1,7 +1,7 @@
 import Head from "next/head";
-import styles from "@/styles/ClientAccess.module.css";
+import styles from "@/styles/InvestorCenter.module.css";
 
-export default function ClientAccess() {
+export default function InvestorCenter() {
 
     const portals = [
         {
