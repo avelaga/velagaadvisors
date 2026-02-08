@@ -1,0 +1,125 @@
+.contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.contactField {
+    width: 500px;
+    margin: 20px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--white);
+}
+
+.contactDropdown {
+    width: 500px;
+    margin: 20px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--white);
+}
+
+.contactMessage {
+    width: 500px;
+    margin: 20px;
+    height: 250px;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--white);
+}
+
+.contactButton {
+    width: 500px;
+    margin: 20px;
+    height: 50px;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--end-green);
+    transition: background-color .3s;
+}
+
+.contactButton:hover {
+    background-color: white;
+}
+
+.header {
+    font-size: 3rem;
+    width: 100%;
+    height: fit-content;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.status {
+    width: 100vw;
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .contactForm {
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+
+    .contactField {
+        width: 100%;
+        font-size: 16px;
+        font-family: var(--font-sukhumvitSet);
+    }
+
+    .contactDropdown {
+        width: 100%;
+        font-size: 16px;
+        font-family: var(--font-sukhumvitSet);
+    }
+
+    .contactMessage {
+        width: 100%;
+        font-size: 16px;
+        font-family: var(--font-sukhumvitSet);
+    }
+
+    .contactButton {
+        width: 500px;
+        margin: 20px;
+        height: 50px;
+        border-radius: 12px;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        background-color: var(--end-green);
+        transition: background-color .3s;
+        font-family: var(--font-sukhumvitSet);
+    }
+
+    .contactButton:hover {
+        background-color: white;
+    }
+
+    .header {
+        font-size: 2.5rem;
+    }
+
+    .status {
+        font-size: 16px;
+        font-family: var(--font-sukhumvitSet);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
