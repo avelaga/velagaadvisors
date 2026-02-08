@@ -63,7 +63,7 @@ export default function Services() {
             Who We Serve
           </div>
           <div className={styles.body}>
-            We partner with a limited number of households to ensure the depth of our expertise adds the maximum value to each family legacy.
+            We partner with a limited number of households to ensure the depth of our expertise adds the maximum value to each family's total wealth structure.
           </div>
           <div className={styles.whoWeServe}>
             {whoWeServeContent.map(card => (
