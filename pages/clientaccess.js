@@ -116,8 +116,10 @@ export default function ClientAccess() {
                         </div>
                         {portals.map(portal => (
                             <div className={styles.container}>
-                                <div className={styles.containerHeader}>{portal.title}</div>
-                                <img src={portal.image} className={styles.image} />
+                                <div className={styles.topContainer}>
+                                    <div className={styles.containerHeader}>{portal.title}</div>
+                                    <img src={portal.image} className={styles.image} />
+                                </div>
                                 <div className={styles.bottom}>
 
                                     <p dangerouslySetInnerHTML={{ __html: portal.body1 }} />
