@@ -63,7 +63,7 @@ export default function InvestorCenter() {
             bullets: [
                 {
                     title: "Direct Account Oversight:",
-                    body: "ccess official custodial balances, transaction history, and trade confirmations."
+                    body: "Access official custodial balances, transaction history, and trade confirmations."
                 },
                 {
                     title: "Administrative Management:",
