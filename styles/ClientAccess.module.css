@@ -20,7 +20,6 @@
     font-size:1.5rem;
     width: 100%;
     height: fit-content;
-    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -40,7 +39,17 @@
     margin-bottom: 40px;
     background-color: #60887B;
     border-radius: 10px;
-    padding: 20px;
+    padding: 3rem;
+}
+
+.bulletContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bullet {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .containerHeader {
@@ -50,9 +59,9 @@
     font-weight: 500;
 }
 
-.left {
-    width: 40%;
-    padding-right: 10px;
+.top {
+    width: 80%;
+    padding-top: 10px;
 }
 
 .leftSchwab {
@@ -65,16 +74,15 @@
     padding-right: 10px;
 }
 
-.right {
-    width: 60%;
-    padding-left: 10px;
+.bottom {
+    margin-top: 1rem;
 }
 
 .linkButton {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 10px;
+    margin-top: 2rem;
     background-color: var(--green);
     border-radius: 20px;
     transition: background-color .3s;
@@ -89,12 +97,8 @@
         width: 90%;
     }
 
-    .left {
-        width: 100%;
-    }
-
-    .right {
-        width: 100%;
+    .container {
+        padding: 1rem;
     }
 
     .leftSchwab {

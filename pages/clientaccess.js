@@ -3,6 +3,88 @@ import Image from "next/image";
 import styles from "@/styles/ClientAccess.module.css";
 
 export default function ClientAccess() {
+
+    const portals = [
+        {
+            image: "clientportal1.png",
+            title: "Investment Reporting Portal",
+            body1: "Powered by <b>Advyzon</b>, this portal provides a granular view of the investment portfolio. This secure platform is designed for transparency and features the following reporting capabilities:",
+            bullets: [
+                {
+                    title: "Portfolio Composition:",
+                    body: "A detailed breakdown of asset allocation and holdings across all accounts under our management."
+                },
+                {
+                    title: "Performance Analytics:",
+                    body: "Precise reporting on total return and time-weighted returns compared against relevant market benchmarks."
+                },
+                {
+                    title: "Income Estimation:",
+                    body: "Projections of dividends and interest yield to assist with cash-flow planning."
+                },
+                {
+                    title: "Administrative Vault:",
+                    body: "A secure, two-way exchange for quarterly billing invoices, account statements, and sharing of sensitive tax and financial documents between the client and our firm."
+                }
+            ],
+            body2: "Accessible via web or mobile application, data is refreshed nightly to ensure the most current information is available for review and analysis.",
+            buttonTitle: "Access Investment Reporting & Vault",
+            buttonUrl: "https://main.yhlsoft.com/auth/users/sign_in?prod=CWP"
+        },
+        {
+            image: "/financialplanning1.png",
+            title: "Wealth Modeling & Planning",
+            body1: "<b>Wealth Modeling & Planning</b> Powered by <b>RightCapital</b>, this platform serves as the interactive engine for the <b>Strategic Roadmap</b>. By aggregating the entire financial landscape—including accounts under our management, external holdings, and private business interests— the platform provides a live, high-precision model of total net worth. The portal enables the following capabilities:",
+            bullets: [
+                {
+                    title: "Holistic Asset Aggregation:",
+                    body: "Real-time synchronization of all accounts, including those held outside our firm, to provide a single source of truth."
+                },
+                {
+                    title: "Private & Global Interest Tracking:",
+                    body: "The ability to include non-traditional assets such as private placements, business partnership interests, foreign holdings and directly owned real estate."
+                },
+                {
+                    title: "Cash Flow & Net Worth Integration:",
+                    body: "Oversight of mortgages and debt obligations alongside detailed analysis of inflows and outlays to ensure the wealth architecture remains resilient."
+                },
+                {
+                    title: "Probability of Success:",
+                    body: "Data-driven projections that model the likelihood of achieving long-term objectives across various market cycles."
+                }
+            ],
+            body2: "This dedicated planning environment ensures that every piece of the financial life is accounted for, providing the clarity and constant oversight necessary to navigate the family's mission with confidence.",
+            buttonTitle: "Access Wealth Modeling",
+            buttonUrl: "https://app.rightcapital.com/account/login?type=client"
+        },
+        {
+            image: "schwab1.jpg",
+            title: "Custodial Access",
+            body1: "<b>Charles Schwab</b> serves as the independent custodian for assets, providing a secure environment where client accounts are maintained and protected. While we provide specialized reporting and strategy, clients maintain direct access to the underlying institutional platform through <b>Schwab Alliance</b>. The Schwab Alliance provides the following functionality:",
+            bullets: [
+                {
+                    title: "Direct Account Oversight:",
+                    body: "ccess official custodial balances, transaction history, and trade confirmations."
+                },
+                {
+                    title: "Administrative Management:",
+                    body: "Securely manage beneficiaries, move funds, and update account-level permissions."
+                },
+                {
+                    title: "Redundant Reporting:",
+                    body: "View official custodial statements and tax forms. For your convenience, these documents are also integrated directly into the Investment Reporting Portal."
+                },
+            ],
+            body2: "This dual-access structure provides an extra layer of transparency, ensuring constant, independent verification of your assets at the custodial level.",
+            buttonTitle: "Access Schwab Alliance",
+            buttonUrl: "https://client.schwab.com/Areas/Access/Login?&kc=y&sim=y"
+        },
+        // {
+        //     image: "taxplanning1.png",
+        //     title: "Tax Planning",
+        //     body1: "We use a powerful tax planning software to analyze your tax returns and provide insights and opportunities. You will receive a secure link to upload your tax return each year."
+        // }
+    ]
     return (
         <>
             <Head>
@@ -31,70 +113,26 @@ export default function ClientAccess() {
                 <div className={styles.page} >
                     <div className={styles.body}>
                         <div className={styles.subheader}>
-                        The Investor Center provides a consolidated suite of specialized tools designed to offer total transparency across the financial landscape. These platforms work in concert to provide granular reporting, long-term strategic modeling, and secure custodial oversight.
-</div>
-                        <div className={styles.container}>
-                            <div className={styles.left}>
-                                <Image src="clientportal1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
-                            </div>
-                            <div className={styles.right}>
-                                <div className={styles.containerHeader}>Investment Reporting Portal</div>
-                                Powered by Advyzon, this portal provides a granular view of the investment portfolio. This secure platform is designed for transparency, allowing for the monitoring of the technical health and performance of assets:<br /><br />
-                                •	<b>Portfolio Composition:</b> A detailed breakdown of asset allocation and holdings across all accounts under our management.<br />
-                                •	<b>Performance Analytics:</b> Precise reporting on total return and time-weighted returns compared against relevant market benchmarks.<br />
-                                •	<b>Income Estimation:</b> Projections of dividends and interest yield to assist with cash-flow planning.<br />
-                                •	<b>Administrative Vault:</b> A secure, two-way exchange for quarterly billing invoices, account statements, and sharing of sensitive tax and financial documents between the client and our firm.<br />
-                                <br />
-                                Accessible via web or mobile application, data is refreshed nightly to ensure the most current information is available for review and analysis.
-                                <br /><br />
-                            </div>
-                            <a href="https://main.yhlsoft.com/auth/users/sign_in?prod=CWP" target="blank" className={styles.linkButton}>Access Investment Reporting & Vault</a>
+                            The Investor Center provides a consolidated suite of specialized tools designed to offer total transparency across the financial landscape. These platforms work in concert to provide granular reporting, long-term strategic modeling, and secure custodial oversight.
                         </div>
-
-
-                        <div className={styles.container}>
-                            <div className={styles.left}>
-                                <Image src="/financialplanning1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+                        {portals.map(portal => (
+                            <div className={styles.container}>
+                                <Image src={portal.image} width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
+                                <div className={styles.bottom}>
+                                    <div className={styles.containerHeader}>{portal.title}</div>
+                                    <p dangerouslySetInnerHTML={{ __html: portal.body1 }} />
+                                    <div className={styles.bulletContainer}>
+                                        {portal.bullets && portal.bullets.map(bullet => (
+                                            <div className={styles.bullet}>
+                                                <b>{bullet.title}</b> {bullet.body}
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <p dangerouslySetInnerHTML={{ __html: portal.body2 }} />
+                                </div>
+                                {portal.buttonTitle && <a href={portal.buttonUrl} target="blank" className={styles.linkButton}>{portal.buttonTitle}</a>}
                             </div>
-                            <div className={styles.right}>
-                                <div className={styles.containerHeader}>Wealth Modeling & Planning</div>
-                                <b>Wealth Modeling & Planning</b> Powered by RightCapital, this platform serves as the interactive engine for the <b>Strategic Roadmap</b>. By aggregating the entire financial landscape—including accounts under our management, external holdings, and private business interests— the platform provides a live, high-precision model of total net worth.
-                                The portal enables the following capabilities:<br /><br />
-                                •	<b>Holistic Asset Aggregation:</b> Real-time synchronization of all accounts, including those held outside our firm, to provide a single source of truth.<br />
-                                •	<b>Private & Global Interest Tracking:</b> The ability to include non-traditional assets such as private placements, business partnership interests, foreign holdings and directly owned real estate.<br />
-                                •	<b>Cash Flow & Net Worth Integration:</b> Oversight of mortgages and debt obligations alongside detailed analysis of inflows and outlays to ensure the wealth architecture remains resilient.<br />
-                                •	<b>Probability of Success:</b> Data-driven projections that model the likelihood of achieving long-term objectives across various market cycles.<br /><br />
-                                This dedicated planning environment ensures that every piece of the financial life is accounted for, providing the clarity and constant oversight necessary to navigate the family's mission with confidence.<br /><br />
-                            </div>
-                            <a href="https://app.rightcapital.com/account/login?type=client" target="blank" className={styles.linkButton}>Access Wealth Modeling</a>
-                        </div>
-
-                        <div className={styles.container}>
-                            <div className={styles.leftSchwab}>
-                                <Image src="schwab1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }} />
-                            </div>
-                            <div className={styles.rightSchwab}>
-                                <div className={styles.containerHeader}>Custodial Access</div>
-                               <b> Charles Schwab & Co., Inc.</b> serves as the independent custodian for for assets, providing a secure environment where client accounts are maintained and protected. While we provide specialized reporting and strategy, clients maintain direct access to the underlying institutional platform through <b>Schwab Alliance</b>.
-                                The Schwab Alliance provides the following functionality:<br /><br />
-                                •	<b>Direct Account Oversight:</b> Access official custodial balances, transaction history, and trade confirmations.<br />
-                                •	<b>Administrative Management:</b> Securely manage beneficiaries, move funds, and update account-level permissions.<br />
-                                •	<b>Redundant Reporting:</b> View official custodial statements and tax forms. For your convenience, these documents are also integrated directly into the Investment Reporting Portal.<br /><br />
-                                This dual-access structure provides an extra layer of transparency, ensuring constant, independent verification of your assets at the custodial level.<br /><br />
-
-                            </div>
-                            <a href="https://client.schwab.com/Areas/Access/Login?&kc=y&sim=y" target="blank" className={styles.linkButton}>Access Schwab Alliance</a>
-                        </div>
-
-                        {/* <div className={styles.container}>
-                        <div className={styles.left}>
-                            <Image src="taxplanning1.png" width={200} height={200} style={{ width: '100%', height: 'auto', borderRadius: '12px' }}/>
-                        </div>
-                        <div className={styles.right}>
-                            <div className={styles.containerHeader}>Tax Planning</div>
-                            We use a powerful tax planning software to analyze your tax returns and provide insights and opportunities. You will receive a secure link to upload your tax return each year.
-                        </div>
-                    </div> */}
+                        ))}
                     </div>
                 </div>
             </main>
