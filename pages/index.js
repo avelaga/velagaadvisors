@@ -14,7 +14,7 @@ export default function Home() {
     },
     {
       title: "Institutional Portfolio Design",
-      body: "We move beyond traditional stock and bond models to access a broader investment universe, including private markets and real estate. By architecting portfolios with this institutional breadth, we provide the structural stability required to protect and grow a family legacy."
+      body: "We move beyond traditional stock and bond models to access a broader investment universe, including private markets and real estate. This institutional breadth provides the structural stability required for enduring financial resilience."
     },
     {
       title: "Tax-Optimized Strategies",
