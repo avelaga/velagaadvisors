@@ -97,7 +97,7 @@ export default function Services() {
             This is a standalone service for clients who require a high-precision roadmap but wish to maintain their current investment holdings. We develop a comprehensive plan addressing cash flow, retirement modeling, tax efficiency, and estate coordination.
           </div>
           <div className={styles.subheader}>
-            Strategic Consultation
+            Tactical Financial Consulting
           </div>
           <div className={styles.body}>
             This is a bespoke advisory service for complex, project-based financial needs that fall outside of traditional wealth management.
