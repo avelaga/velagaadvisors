@@ -8,6 +8,12 @@
     min-height: var(--content-min-height)
 }
 
+
+.image {
+    width: 20%;
+    border-radius: 12px;
+}
+
 .header {
     font-size: 3rem;
     width: 100%;
@@ -20,7 +26,7 @@
     font-size: 1.5rem;
     width: 100%;
     height: fit-content;
-    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .body {
@@ -39,19 +45,34 @@
     margin-bottom: 40px;
     background-color: #60887B;
     border-radius: 10px;
-    padding: 20px;
+    padding: 3rem;
+}
+
+.topContainer {
+    display: flex;
+    align-items: center;
+}
+
+.bulletContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bullet {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .containerHeader {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     width: 100%;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
-.left {
-    width: 40%;
-    padding-right: 10px;
+.top {
+    width: 80%;
+    padding-top: 10px;
 }
 
 .leftSchwab {
@@ -64,16 +85,15 @@
     padding-right: 10px;
 }
 
-.right {
-    width: 60%;
-    padding-left: 10px;
+.bottom {
+    margin-top: 1rem;
 }
 
 .linkButton {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 10px;
+    margin-top: 2rem;
     background-color: var(--green);
     border-radius: 20px;
     transition: background-color .3s;
@@ -88,12 +108,13 @@
         width: 90%;
     }
 
-    .left {
-        width: 100%;
+    .container {
+        padding: 1rem;
     }
 
-    .right {
-        width: 100%;
+    .containerHeader {
+        font-size: 1.75rem;
+        text-align: center;
     }
 
     .leftSchwab {
@@ -102,5 +123,18 @@
 
     .rightSchwab {
         width: 100%;
+    }
+
+    .subheader {
+        font-size: 1.25rem;
+    }
+
+    .image {
+        width: 60%;
+        margin: auto;
+    }
+
+    .topContainer {
+        flex-wrap: wrap;
     }
 }

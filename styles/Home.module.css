@@ -69,6 +69,9 @@
 
 .reason {
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: var(--green);
   border-radius: 10px;
   padding: 1rem;

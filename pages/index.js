@@ -10,11 +10,11 @@ export default function Home() {
   const whyChooseUs = [
     {
       title: "Unbiased Fiduciary Roots",
-      body: "Fee-only and independent. No products or commissions are accepted, ensuring advice is aligned exclusively with client objectives."
+      body: "Fee-only and independent. We do not sell insurance or any other financial products, nor do we accept commissions, ensuring our advice is aligned exclusively with client objectives."
     },
     {
       title: "Institutional Portfolio Design",
-      body: "We move beyond traditional stock and bond models to access a broader investment universe, including private markets and real estate. By architecting portfolios with this institutional breadth, we provide the structural stability required to protect and grow a family legacy."
+      body: "We move beyond traditional stock and bond models to access a broader investment universe, including private markets and real estate. This institutional breadth provides the structural stability required for enduring financial resilience."
     },
     {
       title: "Tax-Optimized Strategies",
