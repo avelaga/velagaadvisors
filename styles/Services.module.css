@@ -132,6 +132,7 @@
 }
 
 .servicesTitleSpace {
+    margin-top: .75rem;
     margin-bottom: .75rem;
 }
 
@@ -177,4 +178,8 @@
         width: 100%;
         margin-bottom: 1rem;
     }
+
+    .servicesTitleSpace {
+    margin-top: 1.5rem;
+}
 }
