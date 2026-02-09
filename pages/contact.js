@@ -11,7 +11,7 @@ export default function Contact() {
         phone: "",
         primaryAreaOfInterest: "",
         message: "",
-        dev: "yepp"
+        // dev: "yepp"
     });
 
     const [loading, setLoading] = useState(false);
@@ -57,7 +57,7 @@ export default function Contact() {
                 phone: "",
                 primaryAreaOfInterest: "",
                 message: "",
-                dev: "yepp"
+                // dev: "yepp"
             });
         } catch (err) {
             setStatus("Failed to send message.");
