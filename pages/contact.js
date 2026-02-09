@@ -120,9 +120,10 @@ export default function Contact() {
 
                         <input
                             name="phone"
-                            placeholder="Phone (optional)"
+                            placeholder="Phone"
                             value={form.phone}
                             onChange={handleChange}
+                            required
                             className={styles.contactField}
                         />
 
