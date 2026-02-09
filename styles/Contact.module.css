@@ -36,6 +36,7 @@
     border: none;
     background-color: var(--white);
     font-family: var(--font-sukhumvitSet);
+    font-weight: 100;
 }
 
 .contactDropdown {
@@ -82,6 +83,7 @@
     border: none;
     background-color: var(--white);
     font-family: var(--font-sukhumvitSet);
+        font-weight: 100;
 }
 
 .contactButton {
