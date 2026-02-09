@@ -95,8 +95,7 @@ export default function Contact() {
                     <h1 className={styles.header}>Start a Conversation</h1>
                     <div className={styles.body}>
                         Meaningful wealth management is built on a foundation of trust, discretion, and a shared long-term perspective. While the firm grows primarily through personal introductions and professional referrals, inquiries to explore a potential advisory engagement are welcome.<br /><br />
-                        The firm's process begins with a mutual evaluation to ensure a fit between a family's complex requirements and our disciplined, long-term approach to wealth stewardship.<br /><br />
-                        Please utilize the form below to initiate a confidential dialogue.
+                        Our process begins with a mutual evaluation of fit between a family’s requirements and our disciplined approach to wealth stewardship. Please utilize the form below to initiate a confidential dialogue.
 
                     </div>
                     <form onSubmit={handleSubmit} className={styles.contactForm}>
@@ -128,9 +127,9 @@ export default function Contact() {
                         />
 
                         <div className={styles.contactDropdown}>
-                            <p className="font-medium">Areas of Interest (Select all that apply):</p>
+                            <div className={styles.messageLabel}>Areas of interest (Select all that apply) </div>
 
-                            {["Comprehensive Wealth Planning", "Investment Portfolio Review", "Private Placement / Real Estate Strategy", "International Asset Coordination", "Other"].map((option) => (
+                            {["Investment Management", "Financial & Retirement Planning", "Tax & Estate Coordination", "Business or Real Estate Interests", "Project-Based Consultation", "Other"].map((option) => (
                                 <label key={option} className={styles.dropdownCheckbox}>
                                     <input
                                         type="checkbox"

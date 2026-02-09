@@ -9,17 +9,21 @@
 
 .contact {
     margin-bottom: 100px;
+    padding-top: 2rem;
 }
 
 .body {
     width: 550px;
     margin: auto;
     text-align: center;
+    font-size: 1.2rem;
+    text-align: left;
 }
 
 .messageLabel {
     font-size: 1.5rem;
     width: 550px;
+    font-family: var(--font-sukhumvitSet);
 }
 
 .contactField {
@@ -31,6 +35,7 @@
     font-size: 20px;
     border: none;
     background-color: var(--white);
+    font-family: var(--font-sukhumvitSet);
 }
 
 .contactDropdown {
@@ -38,14 +43,16 @@
     flex-wrap: wrap;
     width: 550px;
     margin: 20px;
+    margin-top: 0;
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
     border: none;
+
 }
 
 .dropdownCheckbox {
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
     justify-content: center;
 
@@ -68,12 +75,13 @@
 .contactMessage {
     width: 550px;
     margin: 20px;
-    height: 250px;
+    height: 150px;
     border-radius: 12px;
     padding: 10px;
     font-size: 20px;
     border: none;
     background-color: var(--white);
+    font-family: var(--font-sukhumvitSet);
 }
 
 .contactButton {
@@ -86,6 +94,7 @@
     border: none;
     background-color: var(--end-green);
     transition: background-color .3s;
+    font-family: var(--font-sukhumvitSet);
 }
 
 .contactButton:hover {
@@ -95,9 +104,10 @@
 .header {
     font-size: 3rem;
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
     height: fit-content;
     font-weight: 500;
-    margin-top: 20px;
     text-align: center;
 }
 
@@ -123,19 +133,19 @@
     .contactField {
         width: 100%;
         font-size: 16px;
-        font-family: var(--font-sukhumvitSet);
+
     }
 
     .contactDropdown {
         width: 100%;
         font-size: 16px;
-        font-family: var(--font-sukhumvitSet);
+
     }
 
     .contactMessage {
         width: 100%;
         font-size: 16px;
-        font-family: var(--font-sukhumvitSet);
+
     }
 
     .contactButton {
@@ -148,7 +158,7 @@
         border: none;
         background-color: var(--end-green);
         transition: background-color .3s;
-        font-family: var(--font-sukhumvitSet);
+
     }
 
     .contactButton:hover {
@@ -161,7 +171,7 @@
 
     .status {
         font-size: 16px;
-        font-family: var(--font-sukhumvitSet);
+
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -186,5 +196,7 @@
 
     .dropdownCheckbox {
         margin-bottom: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
