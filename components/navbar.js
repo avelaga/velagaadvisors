@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className={styles.navbar} >
 
             {/* mobile  */}
-            < MediaQuery maxDeviceWidth={950} >
+            < MediaQuery maxWidth={950} >
 
                 <div className={styles.mobileHeader} >
                     <Link href="/"><Image src="/logoWhite.png" width={100} height={0} style={{ width: '100px', height: 'auto' }} className={styles.logo} /></Link>
@@ -40,6 +40,7 @@ export default function Navbar() {
                     />
                 </div>
                 <div className={isCollapsed ? `${styles.none} ${styles.dropDown}` : styles.dropDown}>
+                    <Link href="/" className={usePathname() === '/' ? `${styles.link} ${styles.active}` : styles.link}>HOME</Link>
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
                     <Link href="/clienthub" className={usePathname() === '/clienthub' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT HUB</Link>
@@ -48,9 +49,10 @@ export default function Navbar() {
             </MediaQuery>
 
             {/* desktop */}
-            < MediaQuery minDeviceWidth={950} >
+            < MediaQuery minWidth={951} >
                 <Link href="/"><Image src="/logo.png" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.logo} /></Link>
                 <div className={styles.right}>
+                    <Link href="/" className={usePathname() === '/' ? `${styles.link} ${styles.active}` : styles.link}>HOME</Link>
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
                     <Link href="/clienthub" className={usePathname() === '/clienthub' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT HUB</Link>
