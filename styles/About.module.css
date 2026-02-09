@@ -91,6 +91,7 @@
 @media only screen and (max-width: 950px) {
     .content {
         padding: 1.5rem;
+        padding-top: 0;
     }
 
     .left {
