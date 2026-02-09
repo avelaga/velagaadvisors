@@ -42,7 +42,7 @@ export default function Navbar() {
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
                     <Link href="/clienthub" className={usePathname() === '/clienthub' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT HUB</Link>
-                    <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT US</Link>
+                    <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT</Link>
                 </div>
             </MediaQuery>
 
@@ -53,7 +53,7 @@ export default function Navbar() {
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
                     <Link href="/clienthub" className={usePathname() === '/clienthub' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT HUB</Link>
-                    <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT US</Link>
+                    <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT</Link>
                 </div>
             </MediaQuery>
         </div>

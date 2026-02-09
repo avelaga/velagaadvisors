@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "@/styles/Contact.module.css";
 
 import { useState } from "react";
@@ -10,15 +11,28 @@ export default function Contact() {
         phone: "",
         primaryAreaOfInterest: "",
         message: "",
-        // dev: "yepp"
+        dev: "yepp"
     });
 
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState(null);
 
     const handleChange = (e) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
+        const { name, value, type, checked } = e.target;
+
+        if (type === "checkbox") {
+            const current = form[name] || [];
+
+            const updated = checked
+                ? [...current, value]
+                : current.filter(v => v !== value);
+
+            setForm({ ...form, [name]: updated });
+        } else {
+            setForm({ ...form, [name]: value });
+        }
     };
+
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -43,6 +57,7 @@ export default function Contact() {
                 phone: "",
                 primaryAreaOfInterest: "",
                 message: "",
+                dev: "yepp"
             });
         } catch (err) {
             setStatus("Failed to send message.");
@@ -54,7 +69,7 @@ export default function Contact() {
     return (
         <>
             <Head>
-                <title>Velaga Advisors - Contact Us</title>
+                <title>Velaga Advisors - Contact</title>
                 <meta property="title" content="Velaga Advisors" />
                 <meta name="description" content="Velaga Advisors" />
                 <meta name="og:description" content="Velaga Advisors" />
@@ -76,70 +91,86 @@ export default function Contact() {
                 </script>
             </Head>
             <main>
-                <h1 className={styles.header}>Contact</h1>
-                <form onSubmit={handleSubmit} className={styles.contactForm}>
-                    <input
-                        name="name"
-                        placeholder="Name"
-                        value={form.name}
-                        onChange={handleChange}
-                        required
-                        className={styles.contactField}
-                    />
+                <div className={styles.contact}>
+                    <h1 className={styles.header}>Start a Conversation</h1>
+                    <div className={styles.body}>
+                        Meaningful wealth management is built on a foundation of trust, discretion, and a shared long-term perspective. While the firm grows primarily through personal introductions and professional referrals, inquiries to explore a potential advisory engagement are welcome.<br /><br />
+                        The firm's process begins with a mutual evaluation to ensure a fit between a family's complex requirements and our disciplined, long-term approach to wealth stewardship.<br /><br />
+                        Please utilize the form below to initiate a confidential dialogue.
 
-                    <input
-                        name="email"
-                        type="email"
-                        placeholder="Email"
-                        value={form.email}
-                        onChange={handleChange}
-                        required
-                        className={styles.contactField}
-                    />
+                    </div>
+                    <form onSubmit={handleSubmit} className={styles.contactForm}>
+                        <input
+                            name="name"
+                            placeholder="Name"
+                            value={form.name}
+                            onChange={handleChange}
+                            required
+                            className={styles.contactField}
+                        />
 
-                    <input
-                        name="phone"
-                        placeholder="Phone"
-                        value={form.phone}
-                        onChange={handleChange}
-                        required
-                        className={styles.contactField}
-                    />
+                        <input
+                            name="email"
+                            type="email"
+                            placeholder="Email"
+                            value={form.email}
+                            onChange={handleChange}
+                            required
+                            className={styles.contactField}
+                        />
 
-                    <select
-                        name="primaryAreaOfInterest"
-                        value={form.primaryAreaOfInterest}
-                        onChange={handleChange}
-                        className={styles.contactDropdown}
-                    >
-                        <option value="">-- Primary Area of Interest --</option>
-                        <option value="Comprehensive Wealth Planning">Comprehensive Wealth Planning</option>
-                        <option value="Investment Portfolio Review">Investment Portfolio Review</option>
-                        <option value="Private Placement / Real Estate Strategy">Private Placement / Real Estate Strategy</option>
-                        <option value="International Asset Coordination">International Asset Coordination</option>
-                        <option value="Other">Other</option>
-                    </select>
+                        <input
+                            name="phone"
+                            placeholder="Phone (optional)"
+                            value={form.phone}
+                            onChange={handleChange}
+                            className={styles.contactField}
+                        />
 
-                    <textarea
-                        name="message"
-                        placeholder="Message"
-                        value={form.message}
-                        onChange={handleChange}
-                        required
-                        rows={5}
-                        className={styles.contactMessage}
-                    />
+                        <div className={styles.contactDropdown}>
+                            <p className="font-medium">Areas of Interest (Select all that apply):</p>
 
-                    <button
-                        type="submit"
-                        disabled={loading}
-                        className={styles.contactButton}
-                    >
-                        {loading ? "Sending..." : "Send Message"}
-                    </button>
+                            {["Comprehensive Wealth Planning", "Investment Portfolio Review", "Private Placement / Real Estate Strategy", "International Asset Coordination", "Other"].map((option) => (
+                                <label key={option} className={styles.dropdownCheckbox}>
+                                    <input
+                                        type="checkbox"
+                                        name="primaryAreaOfInterest"
+                                        value={option}
+                                        checked={form.primaryAreaOfInterest?.includes(option) || false}
+                                        onChange={handleChange}
+                                        className={styles.actualCheckbox}
+                                    />
+                                    {option}
+                                </label>
+                            ))}
+                        </div>
 
-                    {status && <p className={styles.status}>{status}</p>}
-                </form>
+                        <div className={styles.messageLabel}>How can the firm best assist you? </div>
+                        <textarea
+                            name="message"
+                            placeholder="Message"
+                            value={form.message}
+                            onChange={handleChange}
+                            required
+                            rows={5}
+                            className={styles.contactMessage}
+                        />
+
+                        <button
+                            type="submit"
+                            disabled={loading}
+                            className={styles.contactButton}
+                        >
+                            {loading ? "Sending..." : "Request Consultation"}
+                        </button>
+
+                        {status && <p className={styles.status}>{status}</p>}
+                    </form>
+                    <div className={styles.subheader}>Discretion & Security</div>
+                    <div className={styles.body}>
+                        All inquiries are held in strict confidence. To maintain security, please do not use this form for trade instructions or time-sensitive account requests. Existing clients should utilize the <Link href="/clienthub" style={{ display: 'inline', textDecoration: 'underline' }}>Client Hub</Link> for all sensitive data and document exchange.
+                    </div>
+                </div>
             </main>
         </>
     );
