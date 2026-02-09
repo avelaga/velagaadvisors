@@ -9,6 +9,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 export default function Navbar() {
 
     const [isCollapsed, setIsCollapsed] = useState(true);
+    const pathname = usePathname();
 
     function handleClick() {
         setIsCollapsed(!isCollapsed)
@@ -16,7 +17,7 @@ export default function Navbar() {
 
     useEffect(() => {
         setIsCollapsed(true)
-    }, [window.location.href])
+    }, [pathname])
 
     return (
         <div className={styles.navbar} >
