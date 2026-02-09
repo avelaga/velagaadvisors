@@ -62,7 +62,7 @@
     height: 25px;
     margin-right: 20px;
     flex-shrink: 0;
-    accent-color: var(--white)
+    accent-color: var(--green)
 }
 
 .contactMessage {
@@ -182,5 +182,9 @@
     .subheader {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .dropdownCheckbox {
+        margin-bottom: 5px;
     }
 }
