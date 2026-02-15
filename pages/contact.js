@@ -9,13 +9,14 @@ export default function Contact() {
         name: "",
         email: "",
         phone: "",
-        primaryAreaOfInterest: "",
+        primaryAreaOfInterest: [],
         message: "",
         // dev: "yepp"
     });
 
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState(null);
+    const [checkboxError, setCheckboxError] = useState(null);
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -39,30 +40,36 @@ export default function Contact() {
         setLoading(true);
         setStatus(null);
 
-        try {
-            const res = await fetch("https://sisiy23yxakcn4lkkg2hujuqoi0pfykx.lambda-url.us-east-1.on.aws", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(form),
-            });
-
-            if (!res.ok) throw new Error("Request failed");
-
-            setStatus("Thank you. Your inquiry has been received. A member of the firm will reach out to you shortly to schedule a brief introductory call.");
-            setForm({
-                name: "",
-                email: "",
-                phone: "",
-                primaryAreaOfInterest: "",
-                message: "",
-                // dev: "yepp"
-            });
-        } catch (err) {
-            setStatus("Failed to send message.");
-        } finally {
+        if (form.primaryAreaOfInterest.length === 0) {
+            setCheckboxError("Please select atleast one area of interest so that I can better assist you");
             setLoading(false);
+        } else {
+            setCheckboxError(null);
+            try {
+                const res = await fetch("https://sisiy23yxakcn4lkkg2hujuqoi0pfykx.lambda-url.us-east-1.on.aws", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(form),
+                });
+
+                if (!res.ok) throw new Error("Request failed");
+
+                setStatus("Thank you. Your inquiry has been received. A member of the firm will reach out to you shortly to schedule a brief introductory call.");
+                setForm({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    primaryAreaOfInterest: [],
+                    message: "",
+                    // dev: "yepp"
+                });
+            } catch (err) {
+                setStatus("Failed to send message.");
+            } finally {
+                setLoading(false);
+            }
         }
     };
 
@@ -155,7 +162,7 @@ export default function Contact() {
                             rows={5}
                             className={styles.contactMessage}
                         />
-
+                            {checkboxError && <div className={styles.checkboxError}>{checkboxError}</div> }
                         <button
                             type="submit"
                             disabled={loading}
@@ -163,7 +170,6 @@ export default function Contact() {
                         >
                             {loading ? "Sending..." : "Request Consultation"}
                         </button>
-
                         {status && <p className={styles.status}>{status}</p>}
                     </form>
                     <div className={styles.subheader}>Discretion & Security</div>
