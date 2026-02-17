@@ -26,7 +26,7 @@ export default function Navbar() {
             < MediaQuery maxWidth={950} >
 
                 <div className={styles.mobileHeader} >
-                    <Link href="/"><Image src="/logoWhite.png" width={100} height={0} style={{ width: '100px', height: 'auto' }} className={styles.logo} /></Link>
+                    <Link href="/"><Image src="/logoWhite.webp" width={100} height={0} style={{ width: '100px', height: 'auto' }} className={styles.logo} alt="logo" aria-label="go to home page"/></Link>
                     <HamburgerMenu
                         isOpen={!isCollapsed}
                         menuClicked={handleClick}
@@ -50,7 +50,7 @@ export default function Navbar() {
 
             {/* desktop */}
             < MediaQuery minWidth={951} >
-                <Link href="/"><Image src="/logo.png" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.logo} /></Link>
+                <Link href="/"><Image src="/logo.webp" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.logo} alt="logo" aria-label="go to home page"/></Link>
                 <div className={styles.right}>
                     <Link href="/" className={usePathname() === '/' ? `${styles.link} ${styles.active}` : styles.link}>HOME</Link>
                     <Link href="/services" className={usePathname() === '/services' ? `${styles.link} ${styles.active}` : styles.link}>SERVICES</Link>

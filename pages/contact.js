@@ -75,9 +75,9 @@ export default function Contact() {
                 <meta name="og:description" content="Velaga Advisors" />
                 <meta property="og:title" content="Velaga Advisors" />
                 <meta property="og:site_name" content="Velaga Advisorsr" />
-                <meta property="og:image" content="./logoPreview.jpg" />
+                <meta property="og:image" content="./logoPreview.webp" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="/favicon.webp" />
                 {/* google tag */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0GC6KBE56"></script>
                 <script>

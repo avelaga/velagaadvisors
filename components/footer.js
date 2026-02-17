@@ -12,7 +12,7 @@ export default function Footer() {
                 <Link href="/disclaimer" className={`${styles.link} ${styles.item}`}>Disclaimer</Link>
 
             </div>
-            <a href="https://brokercheck.finra.org" target="_blank"><img src='/finraBackground.png' className='finra' /></a>
+            <a href="https://brokercheck.finra.org" target="_blank"><img src='/finraBackground.webp' className='finra' loading="lazy" alt="finra logo"/></a>
             <a href="https://abhi.work" target="_blank" className={styles.abhi} >Designed and Developed by Abhi Velaga</a>
         </div>
     )

@@ -15,9 +15,9 @@ export default function About() {
                 <meta name="og:description" content="Velaga Advisors" />
                 <meta property="og:title" content="Velaga Advisors" />
                 <meta property="og:site_name" content="Velaga Advisors" />
-                <meta property="og:image" content="./logoPreview.jpg" />
+                <meta property="og:image" content="./logoPreview.webp" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="/favicon.webp" />
                 {/* google tag */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0GC6KBE56"></script>
                 <script>
@@ -35,7 +35,7 @@ export default function About() {
                     <h1 className={styles.header}>About Our Firm</h1>
                     <div className={styles.row}>
                         <div className={styles.left}>
-                            <Image src="/krishna.jpg" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.profilePic} />
+                            <Image src="/krishna.webp" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.profilePic} alt="Krishna Velaga"/>
                             <div className={styles.photoCredit}>Photo by Abhi Velaga</div>
                             <div className={styles.education}>
                                 <bold>MS</bold>, Computer Science, Kansas State University<br /><br />
@@ -60,7 +60,7 @@ export default function About() {
 
                     <div className={styles.row}>
                         <div className={styles.left}>
-                            <Image src="/kalyan.jpg" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.profilePic} />
+                            <Image src="/kalyan.webp" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.profilePic} alt="Kalyan Cherukuri"/>
                             <div className={styles.education}>
                                 <bold>MS</bold>, Electrical Engineering, Clemson University<br /><br />
                                 <bold>Certified Financial Planning Candidate</bold>, Texas A&M University
