@@ -35,9 +35,9 @@ export default function Home() {
         <meta name="og:description" content="Velaga Advisors" />
         <meta property="og:title" content="Velaga Advisors" />
         <meta property="og:site_name" content="Velaga Advisors" />
-        <meta property="og:image" content="./logoPreview.jpg" />
+        <meta property="og:image" content="./logoPreview.webp" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.webp" />
         {/* google tag */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0GC6KBE56"></script>
         <script>
@@ -57,7 +57,7 @@ export default function Home() {
           <div className={styles.body}>
             <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a <b>Strategic Anchor</b> for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.
             </div>
-            <Image src="/homegraphic.png" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} />
+            <Image src="/homegraphic.webp" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} alt="graphic showing holistic services"/>
           </div>
           <div className={styles.whyChooseUsHeader}>Why Choose Us</div>
           <div className={styles.whyChooseUs}>

@@ -5,7 +5,8 @@ export default function ClientHub() {
 
     const portals = [
         {
-            image: "advyzon.jpg",
+            image: "advyzon.webp",
+            alt: "advyzon logo",
             title: "Investment Reporting Portal",
             body1: "Powered by <b>Advyzon</b>, this portal provides a granular view of the investment portfolio. This secure platform is designed for transparency and features the following reporting capabilities:",
             bullets: [
@@ -31,7 +32,8 @@ export default function ClientHub() {
             buttonUrl: "https://main.yhlsoft.com/auth/users/sign_in?prod=CWP"
         },
         {
-            image: "rightcapital.png",
+            image: "rightcapital.webp",
+            alt: "rightcapital logo",
             title: "Wealth Modeling & Planning",
             body1: "<b>Wealth Modeling & Planning</b> Powered by <b>RightCapital</b>, this platform serves as the interactive engine for the <b>Strategic Roadmap</b>. By aggregating the entire financial landscape—including accounts under our management, external holdings, and private business interests— the platform provides a live, high-precision model of total net worth. The portal enables the following capabilities:",
             bullets: [
@@ -57,7 +59,8 @@ export default function ClientHub() {
             buttonUrl: "https://app.rightcapital.com/account/login?type=client"
         },
         {
-            image: "schwab1.jpg",
+            image: "schwab1.webp",
+            alt: "schwab logo",
             title: "Custodial Access",
             body1: "<b>Charles Schwab</b> serves as the independent custodian for assets, providing a secure environment where client accounts are maintained and protected. While we provide specialized reporting and strategy, clients maintain direct access to the underlying institutional platform through <b>Schwab Alliance</b>. The Schwab Alliance provides the following functionality:",
             bullets: [
@@ -79,7 +82,7 @@ export default function ClientHub() {
             buttonUrl: "https://client.schwab.com/Areas/Access/Login?&kc=y&sim=y"
         },
         // {
-        //     image: "taxplanning1.png",
+        //     image: "taxplanning1.webp",
         //     title: "Tax Planning",
         //     body1: "We use a powerful tax planning software to analyze your tax returns and provide insights and opportunities. You will receive a secure link to upload your tax return each year."
         // }
@@ -93,9 +96,9 @@ export default function ClientHub() {
                 <meta name="og:description" content="Velaga Advisors" />
                 <meta property="og:title" content="Velaga Advisors" />
                 <meta property="og:site_name" content="Velaga Advisorsr" />
-                <meta property="og:image" content="./logoPreview.jpg" />
+                <meta property="og:image" content="./logoPreview.webp" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="/favicon.webp" />
                 {/* google tag */}
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0GC6KBE56"></script>
                 <script>
@@ -118,7 +121,7 @@ export default function ClientHub() {
                             <div className={styles.container}>
                                 <div className={styles.topContainer}>
                                     <div className={styles.containerHeader}>{portal.title}</div>
-                                    <img src={portal.image} className={styles.image} />
+                                    <img src={portal.image} className={styles.image} alt={portal.alt}/>
                                 </div>
                                 <div className={styles.bottom}>
                                     <p dangerouslySetInnerHTML={{ __html: portal.body1 }} />
