@@ -41,7 +41,7 @@ export default function About() {
                                 <bold>MS</bold>, Computer Science, Kansas State University<br /><br />
                                 <bold>MBA</bold>, Cox School of Business,
                                 SMU<br /><br />
-                                Passed CFA Level I and Level II Examinations
+                                Passed CFA® Level I and Level II Examinations
                             </div>
                         </div>
                         <div className={styles.right}>

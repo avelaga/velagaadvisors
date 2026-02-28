@@ -88,7 +88,7 @@ export default function Services() {
             Private Wealth Management (The Unified Package)
           </div>
           <div className={styles.body}>
-            This is our most integrated engagement, designed for families seeking a comprehensive "family CIO" experience. We serve as a <b>strategic anchor</b> for your entire financial life, combining institutional portfolio design, strategic planning, and tax optimization into a single, synchronized service. This model ensures that your investment architecture and life goals are managed with absolute alignment.
+            This is our most integrated engagement, designed for families seeking a comprehensive "family CIO" experience. We serve as a strategic anchor for your entire financial life, combining institutional portfolio design, strategic planning, and tax optimization into a single, synchronized service. This model ensures that your investment architecture and life goals are managed with absolute alignment.
           </div>
           <div className={styles.subheader}>
             Strategic Financial Planning
