@@ -40,7 +40,7 @@ export default function Contact() {
         setStatus(null);
 
         try {
-            const res = await fetch("https://sisiy23yxakcn4lkkg2hujuqoi0pfykx.lambda-url.us-east-1.on.aws", {
+            const res = await fetch("https://contact-form-proxy.abvelaga.workers.dev", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
