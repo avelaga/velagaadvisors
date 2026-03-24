@@ -1,7 +1,17 @@
 import Head from "next/head";
 import styles from "@/styles/ClientHub.module.css";
+import { useState, useEffect } from "react";
 
 export default function ClientHub() {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const check = () => setIsMobile(window.innerWidth < 768);
+        check();
+        window.addEventListener("resize", check);
+        return () => window.removeEventListener("resize", check);
+    }, []);
 
     const portals = [
         {
@@ -29,7 +39,8 @@ export default function ClientHub() {
             ],
             body2: "Accessible via web or mobile application, data is refreshed nightly to ensure the most current information is available for review and analysis.",
             buttonTitle: "Access Investment Reporting & Vault",
-            buttonUrl: "https://main.yhlsoft.com/auth/users/sign_in?prod=CWP"
+            buttonUrlDesktop: "https://client.myadvisorlink.com/auth/users/webportal/velagaadvisors",
+            buttonUrlMobile: "https://client.myadvisorlink.com/webportal/webportal/index_m?is_mobile=1&initial=true&key=velagaadvisors"
         },
         {
             image: "rightcapital.webp",
@@ -134,7 +145,7 @@ export default function ClientHub() {
                                     </div>
                                     <p dangerouslySetInnerHTML={{ __html: portal.body2 }} />
                                 </div>
-                                {portal.buttonTitle && <a href={portal.buttonUrl} target="blank" className={styles.linkButton}>{portal.buttonTitle}</a>}
+                                {portal.buttonTitle && <a href={portal.buttonUrlDesktop ? (isMobile ? portal.buttonUrlMobile : portal.buttonUrlDesktop) : portal.buttonUrl} target="blank" className={styles.linkButton}>{portal.buttonTitle}</a>}
                             </div>
                         ))}
                     </div>
