@@ -79,28 +79,12 @@ export default function Services() {
           </div>
           <div className={styles.divider} />
           <div className={`${styles.midheader} ${styles.servicesTitleSpace}`}>
-            Engagement Models
+            Our Approach
           </div>
           <div className={styles.body}>
-            We offer three ways to engage with the firm, allowing for a level of integration that fits the specific financial complexity of each family.
-          </div>
-          <div className={styles.subheader}>
-            Private Wealth Management (The Unified Package)
-          </div>
-          <div className={styles.body}>
-            This is our most integrated engagement, designed for families seeking a comprehensive "family CIO" experience. We serve as a strategic anchor for your entire financial life, combining institutional portfolio design, strategic planning, and tax optimization into a single, synchronized service. This model ensures that your investment architecture and life goals are managed with absolute alignment.
-          </div>
-          <div className={styles.subheader}>
-            Strategic Financial Planning
-          </div>
-          <div className={styles.body} >
-            This is a standalone service for clients who require a high-precision roadmap but wish to maintain their current investment holdings. We develop a comprehensive plan addressing cash flow, retirement modeling, tax efficiency, and estate coordination.
-          </div>
-          <div className={styles.subheader}>
-            Tactical Financial Consulting
-          </div>
-          <div className={styles.body}>
-            This is a bespoke advisory service for complex, project-based financial needs that fall outside of traditional wealth management.
+            Velaga Advisors provides an integrated wealth management service designed for families seeking dedicated stewardship of their portfolios. We work to ensure every investment decision is perfectly aligned with your long-term objectives.
+            <br /><br/>
+            We believe that true wealth management goes beyond mere asset accumulation; it requires a unified framework where portfolio soundness, tax coordination, and financial planning operate together.
           </div>
         </div>
       </main>
