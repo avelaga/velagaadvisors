@@ -82,7 +82,7 @@ export default function Services() {
             Our Approach
           </div>
           <div className={styles.body}>
-            Velaga Advisors provides an integrated wealth management service designed for families seeking dedicated stewardship of their portfolios. We work to ensure every investment decision is perfectly aligned with your long-term objectives.
+            Velaga Advisors provides an integrated wealth management service designed for families seeking dedicated stewardship of their portfolios. We work to ensure every investment decision is well aligned with each family's long-term objectives.
             <br /><br/>
             We believe that true wealth management goes beyond mere asset accumulation; it requires a unified framework where portfolio soundness, tax coordination, and financial planning operate together.
           </div>
