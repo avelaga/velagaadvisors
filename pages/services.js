@@ -57,7 +57,7 @@ export default function Services() {
       <main className={styles.services}>
         <div className={styles.content}>
           <h1 className={styles.header}>
-            Our Services & Engagement
+            Private Wealth Management
           </h1>
           <div className={styles.midheader}>
             Who We Serve
