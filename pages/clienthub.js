@@ -38,7 +38,7 @@ export default function ClientHub() {
                 }
             ],
             body2: "Accessible via web or mobile application, data is refreshed nightly to ensure the most current information is available for review and analysis.",
-            buttonTitle: "Log In to Performance Reports & Client Portal",
+            buttonTitle: "Access Performance Reports & Client Portal",
             buttonUrlDesktop: "https://client.myadvisorlink.com/auth/users/webportal/velagaadvisors",
             buttonUrlMobile: "https://client.myadvisorlink.com/webportal/webportal/index_m?is_mobile=1&initial=true&key=velagaadvisors"
         },
@@ -66,7 +66,7 @@ export default function ClientHub() {
                 }
             ],
             body2: "This dedicated planning environment ensures that every piece of the financial life is accounted for, providing the clarity and constant oversight necessary to navigate the family's mission with confidence.",
-            buttonTitle: "Log In to Financial Planning System",
+            buttonTitle: "Access Financial Planning System",
             buttonUrl: "https://app.rightcapital.com/account/login?type=client"
         },
         {

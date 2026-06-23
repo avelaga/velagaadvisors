@@ -52,7 +52,7 @@ export default function About() {
                                 <br /><br />
                                 This systems-engineering background, combined with formal financial education, allows Krishna to bridge the gap between complex market theory and disciplined investment execution. By applying a process-driven framework to modern portfolio theory, he focuses on creating a structural balance between risk mitigation and long-term capital growth.
                                 <br /><br />
-                                In 2023, Krishna transitioned from a successful career in Information Technology to apply this methodology to comprehensive wealth management. Recognizing that high-net-worth professionals require a Strategic Anchor who can synthesize sophisticated investment research with advanced tax-optimization, he provides the dedicated oversight and precision necessary to navigate a complex financial landscape with confidence.
+                                In 2023, Krishna transitioned from a successful career in Information Technology to apply this methodology to comprehensive wealth management. Recognizing that high-net-worth professionals require a study partner who can synthesize sophisticated investment research with advanced tax-optimization, he provides the dedicated oversight and precision necessary to navigate a complex financial landscape with confidence.
 
                             </div>
                         </div>

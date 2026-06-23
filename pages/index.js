@@ -9,7 +9,7 @@ export default function Home() {
 
   const whyChooseUs = [
     {
-      title: "Unbiased Fiduciary Roots",
+      title: "Fiduciary Foundation",
       body: "Fee-only and independent. We do not sell insurance or any other financial products, nor do we accept commissions, ensuring our advice is aligned exclusively with client objectives."
     },
     {
@@ -55,7 +55,7 @@ export default function Home() {
           <div className={styles.header}>Private Wealth Management</div>
           <div className={styles.subheader}>Portfolio Architecture | Personal Stewardship</div>
           <div className={styles.body}>
-            <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a <b>Steady Partner</b> for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.
+            <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a steady partner for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.
             </div>
             <Image src="/homegraphic.webp" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} alt="graphic showing holistic services"/>
           </div>
