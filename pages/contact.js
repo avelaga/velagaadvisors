@@ -9,7 +9,6 @@ export default function Contact() {
         name: "",
         email: "",
         phone: "",
-        primaryAreaOfInterest: "",
         message: "",
         // dev: "yepp"
     });
@@ -127,25 +126,7 @@ export default function Contact() {
                             className={styles.contactField}
                         />
 
-                        <div className={styles.contactDropdown}>
-                            <div className={styles.messageLabel}>Areas of interest (Select all that apply) </div>
-
-                            {["Investment Management", "Financial & Retirement Planning", "Tax & Estate Coordination", "Business or Real Estate Interests", "Project-Based Consultation", "Other"].map((option) => (
-                                <label key={option} className={styles.dropdownCheckbox}>
-                                    <input
-                                        type="checkbox"
-                                        name="primaryAreaOfInterest"
-                                        value={option}
-                                        checked={form.primaryAreaOfInterest?.includes(option) || false}
-                                        onChange={handleChange}
-                                        className={styles.actualCheckbox}
-                                    />
-                                    {option}
-                                </label>
-                            ))}
-                        </div>
-
-                        <div className={styles.messageLabel}>How can the firm best assist you? </div>
+                        <div className={styles.messageLabel}>Please let us know what you would like to discuss </div>
                         <textarea
                             name="message"
                             placeholder="Message"
