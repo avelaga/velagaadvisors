@@ -32,7 +32,7 @@ export default function About() {
             </Head>
             <main className={styles.about}>
                 <div className={styles.content}>
-                    <h1 className={styles.header}>About Our Firm</h1>
+                    <h1 className={styles.header}>Our Team</h1>
                     <div className={styles.row}>
                         <div className={styles.left}>
                             <Image src="/krishna.webp" width={200} height={200} style={{ width: '100%', height: 'auto' }} className={styles.profilePic} alt="Krishna Velaga"/>
@@ -52,7 +52,7 @@ export default function About() {
                                 <br /><br />
                                 This systems-engineering background, combined with formal financial education, allows Krishna to bridge the gap between complex market theory and disciplined investment execution. By applying a process-driven framework to modern portfolio theory, he focuses on creating a structural balance between risk mitigation and long-term capital growth.
                                 <br /><br />
-                                In 2023, Krishna transitioned from a successful career in Information Technology to apply this methodology to the architecture of family wealth. Recognizing that high-net-worth professionals require a Strategic Anchor who can synthesize sophisticated investment research with advanced tax-optimization, he provides the dedicated oversight and precision necessary to navigate a complex financial landscape with confidence.
+                                In 2023, Krishna transitioned from a successful career in Information Technology to apply this methodology to comprehensive wealth management. Recognizing that high-net-worth professionals require a Strategic Anchor who can synthesize sophisticated investment research with advanced tax-optimization, he provides the dedicated oversight and precision necessary to navigate a complex financial landscape with confidence.
 
                             </div>
                         </div>
@@ -67,12 +67,12 @@ export default function About() {
                             </div>
                         </div>
                         <div className={styles.right}>
-                            <h1 className={styles.midheader}>Strategic Planning & Roadmaps </h1>
+                            <h1 className={styles.midheader}>Comprehensive Financial Planning</h1>
                             <div className={styles.subheader}><b>Kalyan Cherukuri</b> | <i>Chief Financial Planner</i></div>
                             <div className={styles.body}>
-                                Kalyan Cherukuri brings nearly three decades of analytical expertise from the electronics industry to his role as Chief Financial Planner. Having spent his career leveraging complex data to drive profitable corporate decisions, he now applies that same high-precision framework to the financial planning process at Velaga Advisors.
+                                Kalyan Cherukuri brings nearly three decades of analytical expertise from the electronics industry to his role as Chief Financial Planner. Having spent his career leveraging complex data to drive profitable corporate decisions, he now applies that same structured approach to the financial planning process at Velaga Advisors.
                                 <br /><br />
-                                As a CERTIFIED FINANCIAL PLANNER™ candidate, Kalyan specializes in the Strategic Roadmap. He excels at synthesizing intricate data into actionable strategies, ensuring that every variable—from cash flow to long-term retirement targets—is structurally sound. By bridging the gap between sophisticated financial modeling and intentional decision-making, Kalyan provides the clarity and rigor required to secure a client's future.
+                                As a CERTIFIED FINANCIAL PLANNER™ candidate, Kalyan focuses on building long-term financial plans. He excels at synthesizing intricate data into actionable strategies, ensuring that every variable—from cash flow to long-term retirement targets—is structurally sound. By bridging the gap between sophisticated financial modeling and intentional decision-making, Kalyan provides the clarity and rigor required to secure a client's future.
                             </div>
                         </div>
                     </div>

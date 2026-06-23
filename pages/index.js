@@ -53,9 +53,9 @@ export default function Home() {
       <main className={styles.home}>
         <div className={styles.content}>
           <div className={styles.header}>Private Wealth Management</div>
-          <div className={styles.subheader}>Strategic Architecture | Personal Stewardship</div>
+          <div className={styles.subheader}>Portfolio Architecture | Personal Stewardship</div>
           <div className={styles.body}>
-            <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a <b>Strategic Anchor</b> for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.
+            <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a <b>Steady Partner</b> for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.
             </div>
             <Image src="/homegraphic.webp" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} alt="graphic showing holistic services"/>
           </div>

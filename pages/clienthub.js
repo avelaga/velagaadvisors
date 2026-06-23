@@ -38,7 +38,7 @@ export default function ClientHub() {
                 }
             ],
             body2: "Accessible via web or mobile application, data is refreshed nightly to ensure the most current information is available for review and analysis.",
-            buttonTitle: "Access Investment Reporting & Vault",
+            buttonTitle: "Log In to Performance Reports & Client Portal",
             buttonUrlDesktop: "https://client.myadvisorlink.com/auth/users/webportal/velagaadvisors",
             buttonUrlMobile: "https://client.myadvisorlink.com/webportal/webportal/index_m?is_mobile=1&initial=true&key=velagaadvisors"
         },
@@ -46,7 +46,7 @@ export default function ClientHub() {
             image: "rightcapital.webp",
             alt: "rightcapital logo",
             title: "Wealth Modeling & Planning",
-            body1: "<b>Wealth Modeling & Planning</b> Powered by <b>RightCapital</b>, this platform serves as the interactive engine for the <b>Strategic Roadmap</b>. By aggregating the entire financial landscape—including accounts under our management, external holdings, and private business interests— the platform provides a live, high-precision model of total net worth. The portal enables the following capabilities:",
+            body1: "<b>Wealth Modeling & Planning</b> Powered by <b>RightCapital</b>, this platform serves as the interactive engine for your financial plan. By aggregating the entire financial landscape—including accounts under our management, external holdings, and private business interests— the platform provides a live, high-precision model of total net worth. The portal enables the following capabilities:",
             bullets: [
                 {
                     title: "Holistic Asset Aggregation:",
@@ -58,7 +58,7 @@ export default function ClientHub() {
                 },
                 {
                     title: "Cash Flow & Net Worth Integration:",
-                    body: "Oversight of mortgages and debt obligations alongside detailed analysis of inflows and outlays to ensure the wealth architecture remains resilient."
+                    body: "Oversight of mortgages and debt obligations alongside detailed analysis of inflows and outlays to ensure your financial strategy remains stable and aligned."
                 },
                 {
                     title: "Probability of Success:",
@@ -66,7 +66,7 @@ export default function ClientHub() {
                 }
             ],
             body2: "This dedicated planning environment ensures that every piece of the financial life is accounted for, providing the clarity and constant oversight necessary to navigate the family's mission with confidence.",
-            buttonTitle: "Access Wealth Modeling",
+            buttonTitle: "Log In to Financial Planning System",
             buttonUrl: "https://app.rightcapital.com/account/login?type=client"
         },
         {
