@@ -57,7 +57,7 @@ export default function Home() {
           <div className={styles.body}>
             <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a steady partner for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.
             </div>
-            <Image src="/homegraphic.webp" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} alt="graphic showing holistic services"/>
+            <Image src="/homegraphic.png" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} alt="graphic showing holistic services"/>
           </div>
           <div className={styles.whyChooseUsHeader}>Why Choose Us</div>
           <div className={styles.whyChooseUs}>

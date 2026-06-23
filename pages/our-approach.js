@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Services.module.css";
+import styles from "@/styles/OurApproach.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +25,7 @@ export default function Services() {
     },
     {
       header: "Early Career Professionals",
-      focus: "The Structural Roadmap",
+      focus: "The Structural Foundation",
       body: "Establishing a disciplined, process-oriented framework to position for long-term financial independence."
     }
   ]
@@ -33,7 +33,7 @@ export default function Services() {
   return (
     <>
       <Head>
-        <title>Velaga Advisors - Services</title>
+        <title>Velaga Advisors - Our Approach</title>
         <meta property="title" content="Velaga Advisors" />
         <meta name="description" content="Velaga Advisorss" />
         <meta name="og:description" content="Velaga Advisors" />
@@ -57,8 +57,17 @@ export default function Services() {
       <main className={styles.services}>
         <div className={styles.content}>
           <h1 className={styles.header}>
-            Private Wealth Management
+            Our Approach
           </h1>
+          {/* <div className={`${styles.midheader} ${styles.servicesTitleSpace}`}>
+            Our Approach
+          </div> */}
+          <div className={styles.body}>
+            Velaga Advisors provides an integrated wealth management service designed for families seeking dedicated stewardship of their portfolios. We work to ensure every investment decision is well aligned with each family's long-term objectives.
+            <br /><br />
+            We believe that true wealth management goes beyond mere asset accumulation; it requires a unified framework where portfolio soundness, tax-optimized strategies, and financial planning work in perfect tandem.
+          </div>
+                    <div className={styles.divider} />
           <div className={styles.midheader}>
             Who We Serve
           </div>
@@ -76,15 +85,6 @@ export default function Services() {
                 <div className={styles.whoWeServeBody}>{card.body}</div>
               </div>
             ))}
-          </div>
-          <div className={styles.divider} />
-          <div className={`${styles.midheader} ${styles.servicesTitleSpace}`}>
-            Our Approach
-          </div>
-          <div className={styles.body}>
-            Velaga Advisors provides an integrated wealth management service designed for families seeking dedicated stewardship of their portfolios. We work to ensure every investment decision is well aligned with each family's long-term objectives.
-            <br /><br/>
-            We believe that true wealth management goes beyond mere asset accumulation; it requires a unified framework where portfolio soundness, tax coordination, and financial planning operate together.
           </div>
         </div>
       </main>

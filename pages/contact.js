@@ -149,7 +149,7 @@ export default function Contact() {
                     </form>
                     <div className={styles.subheader}>Discretion & Security</div>
                     <div className={styles.body}>
-                        All inquiries are held in strict confidence. To ensure the security of your information, please do not include account numbers or sensitive financial data in this form. Existing clients should utilize the <Link href="/clienthub" style={{ display: 'inline', textDecoration: 'underline' }}>Client Hub</Link> for all secure communications and account access.
+                        All inquiries are held in strict confidence. To ensure the security of your information, please do not include account numbers or sensitive financial data in this form. Existing clients should utilize the <Link href="/client-hub" style={{ display: 'inline', textDecoration: 'underline' }}>Client Hub</Link> for all secure communications and account access.
                     </div>
                 </div>
             </main>
