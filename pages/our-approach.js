@@ -2,33 +2,40 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/OurApproach.module.css";
+import { client } from "@/tina/__generated__/client";
+import { useTina, tinaField } from "tinacms/dist/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Services() {
+export async function getStaticProps() {
+  const res = await client.queries.ourApproach({ relativePath: "our-approach.json" });
+  return {
+    props: {
+      data: res.data,
+      query: res.query,
+      variables: res.variables,
+    },
+  };
+}
 
-  const whoWeServeContent = [
-    {
-      header: "High-Net-Worth Families",
-      focus: "Preservation & Resilience",
-      body: "Seeking sophisticated risk mitigation and capital growth through an institutional-grade framework."
-    },
-    {
-      header: "High-Income Professionals",
-      focus: "Acceleration & Tax Efficiency",
-      body: "Focused on intentional wealth accumulation for physicians, tech leaders, and executives seeking tax efficiency."
-    },
-    {
-      header: "Business Owners",
-      focus: "Strategic Synchronization",
-      body: "Navigating the complexities of tax-efficient retirement plans and business-to-personal synchronization."
-    },
-    {
-      header: "Early Career Professionals",
-      focus: "The Structural Foundation",
-      body: "Establishing a disciplined, process-oriented framework to position for long-term financial independence."
-    }
-  ]
+// Renders blank-line-separated paragraphs into <br/><br/> breaks.
+function MultilineText({ value }) {
+  const parts = (value || "").split(/\n\n+/);
+  return parts.map((part, i) => (
+    <span key={i}>
+      {part}
+      {i < parts.length - 1 && <><br /><br /></>}
+    </span>
+  ));
+}
+
+export default function Services(props) {
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  });
+  const page = data.ourApproach;
 
   return (
     <>
@@ -56,33 +63,28 @@ export default function Services() {
       </Head>
       <main className={styles.services}>
         <div className={styles.content}>
-          <h1 className={styles.header}>
-            Our Approach
+          <h1 className={styles.header} data-tina-field={tinaField(page, "header")}>
+            {page.header}
           </h1>
-          {/* <div className={`${styles.midheader} ${styles.servicesTitleSpace}`}>
-            Our Approach
-          </div> */}
-          <div className={styles.body}>
-            Velaga Advisors provides an integrated wealth management service designed for families seeking dedicated stewardship of their portfolios. We work to ensure every investment decision is well aligned with each family's long-term objectives.
-            <br /><br />
-            We believe that true wealth management goes beyond mere asset accumulation; it requires a unified framework where portfolio soundness, tax-optimized strategies, and financial planning work in perfect tandem.
+          <div className={styles.body} data-tina-field={tinaField(page, "intro")}>
+            <MultilineText value={page.intro} />
           </div>
-                    <div className={styles.divider} />
-          <div className={styles.midheader}>
-            Who We Serve
+          <div className={styles.divider} />
+          <div className={styles.midheader} data-tina-field={tinaField(page, "whoWeServeHeader")}>
+            {page.whoWeServeHeader}
           </div>
-          <div className={styles.body}>
-            We partner with a limited number of households to ensure the depth of our expertise adds the maximum value to each family's total wealth structure.
+          <div className={styles.body} data-tina-field={tinaField(page, "whoWeServeIntro")}>
+            {page.whoWeServeIntro}
           </div>
           <div className={styles.whoWeServe}>
-            {whoWeServeContent.map(card => (
-              <div className={styles.whoWeServeItem}>
+            {page.cards?.map((card, i) => (
+              <div className={styles.whoWeServeItem} key={i}>
                 <div className={styles.whoWeServeTop}>
-                  <div className={styles.whoWeServeHeader}>{card.header}</div>
-                  <div className={styles.whoWeServeFocus}><b>Focus: </b>{card.focus}</div>
+                  <div className={styles.whoWeServeHeader} data-tina-field={tinaField(card, "header")}>{card.header}</div>
+                  <div className={styles.whoWeServeFocus}><b>Focus: </b><span data-tina-field={tinaField(card, "focus")}>{card.focus}</span></div>
                 </div>
                 <div className={styles.divider} />
-                <div className={styles.whoWeServeBody}>{card.body}</div>
+                <div className={styles.whoWeServeBody} data-tina-field={tinaField(card, "body")}>{card.body}</div>
               </div>
             ))}
           </div>

@@ -3,8 +3,39 @@ import Link from "next/link";
 import styles from "@/styles/Contact.module.css";
 
 import { useState } from "react";
+import { client } from "@/tina/__generated__/client";
+import { useTina, tinaField } from "tinacms/dist/react";
 
-export default function Contact() {
+export async function getStaticProps() {
+    const res = await client.queries.contact({ relativePath: "contact.json" });
+    return {
+        props: {
+            data: res.data,
+            query: res.query,
+            variables: res.variables,
+        },
+    };
+}
+
+// Renders blank-line-separated paragraphs into <br/><br/> breaks.
+function MultilineText({ value }) {
+    const parts = (value || "").split(/\n\n+/);
+    return parts.map((part, i) => (
+        <span key={i}>
+            {part}
+            {i < parts.length - 1 && <><br /><br /></>}
+        </span>
+    ));
+}
+
+export default function Contact(props) {
+    const { data } = useTina({
+        query: props.query,
+        variables: props.variables,
+        data: props.data,
+    });
+    const page = data.contact;
+
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -54,7 +85,6 @@ export default function Contact() {
                 name: "",
                 email: "",
                 phone: "",
-                primaryAreaOfInterest: "",
                 message: "",
                 // dev: "yepp"
             });
@@ -91,11 +121,9 @@ export default function Contact() {
             </Head>
             <main>
                 <div className={styles.contact}>
-                    <h1 className={styles.header}>Start a Conversation</h1>
-                    <div className={styles.body}>
-                        Meaningful wealth management is built on a foundation of trust, discretion, and a shared long-term perspective. While the firm grows primarily through personal introductions and professional referrals, inquiries to explore a potential advisory engagement are welcome.<br /><br />
-                        Our process begins with a mutual evaluation of fit between a family’s requirements and our disciplined approach to wealth stewardship. Please utilize the form below to initiate a confidential dialogue.
-
+                    <h1 className={styles.header} data-tina-field={tinaField(page, "header")}>{page.header}</h1>
+                    <div className={styles.body} data-tina-field={tinaField(page, "intro")}>
+                        <MultilineText value={page.intro} />
                     </div>
                     <form onSubmit={handleSubmit} className={styles.contactForm}>
                         <input
@@ -126,7 +154,7 @@ export default function Contact() {
                             className={styles.contactField}
                         />
 
-                        <div className={styles.messageLabel}>Please let us know what you would like to discuss </div>
+                        <div className={styles.messageLabel} data-tina-field={tinaField(page, "messageLabel")}>{page.messageLabel} </div>
                         <textarea
                             name="message"
                             placeholder="Message"
@@ -141,15 +169,18 @@ export default function Contact() {
                             type="submit"
                             disabled={loading}
                             className={styles.contactButton}
+                            data-tina-field={tinaField(page, "submitLabel")}
                         >
-                            {loading ? "Sending..." : "Request Consultation"}
+                            {loading ? "Sending..." : page.submitLabel}
                         </button>
 
                         {status && <p className={styles.status}>{status}</p>}
                     </form>
-                    <div className={styles.subheader}>Discretion & Security</div>
+                    <div className={styles.subheader} data-tina-field={tinaField(page, "discretionHeader")}>{page.discretionHeader}</div>
                     <div className={styles.body}>
-                        All inquiries are held in strict confidence. To ensure the security of your information, please do not include account numbers or sensitive financial data in this form. Existing clients should utilize the <Link href="/client-hub" style={{ display: 'inline', textDecoration: 'underline' }}>Client Hub</Link> for all secure communications and account access.
+                        <span data-tina-field={tinaField(page, "discretionBody1")}>{page.discretionBody1}</span>
+                        <Link href="/client-hub" style={{ display: 'inline', textDecoration: 'underline' }} data-tina-field={tinaField(page, "clientHubLinkText")}>{page.clientHubLinkText}</Link>
+                        <span data-tina-field={tinaField(page, "discretionBody2")}>{page.discretionBody2}</span>
                     </div>
                 </div>
             </main>

@@ -2,29 +2,29 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { client } from "@/tina/__generated__/client";
+import { useTina, tinaField } from "tinacms/dist/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export async function getStaticProps() {
+  const res = await client.queries.home({ relativePath: "home.json" });
+  return {
+    props: {
+      data: res.data,
+      query: res.query,
+      variables: res.variables,
+    },
+  };
+}
 
-  const whyChooseUs = [
-    {
-      title: "Fiduciary Foundation",
-      body: "Fee-only and independent. We do not sell insurance or any other financial products, nor do we accept commissions, ensuring our advice is aligned exclusively with client objectives."
-    },
-    {
-      title: "Institutional Portfolio Design",
-      body: "We move beyond traditional stock and bond models to access a broader investment universe, including private markets and real estate. This institutional breadth provides the structural stability required for enduring financial resilience."
-    },
-    {
-      title: "Tax-Optimized Strategies",
-      body: "We drive structural alpha by viewing every investment decision through a tax lens. For complex portfolios, we integrate Direct Indexing, Equity Hedging, and Option Overlays to maximize after-tax retention and enhance long-term wealth."
-    },
-    {
-      title: "Boutique Service",
-      body: "We combine institutional rigor with personal accessibility. A client is never a number, but a family we are proud to serve."
-    }
-  ]
+export default function Home(props) {
+  const { data } = useTina({
+    query: props.query,
+    variables: props.variables,
+    data: props.data,
+  });
+  const home = data.home;
 
   return (
     <>
@@ -52,19 +52,19 @@ export default function Home() {
       </Head>
       <main className={styles.home}>
         <div className={styles.content}>
-          <div className={styles.header}>Private Wealth Management</div>
-          <div className={styles.subheader}>Portfolio Architecture | Personal Stewardship</div>
+          <div className={styles.header} data-tina-field={tinaField(home, "header")}>{home.header}</div>
+          <div className={styles.subheader} data-tina-field={tinaField(home, "subheader")}>{home.subheader}</div>
           <div className={styles.body}>
-            <div className={styles.bodyText}>We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a steady partner for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.
+            <div className={styles.bodyText} data-tina-field={tinaField(home, "bodyText")}>{home.bodyText}
             </div>
-            <Image src="/homegraphic.png" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} alt="graphic showing holistic services"/>
+            <Image src={home.bodyImage} width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.bodyImage} alt="graphic showing holistic services" data-tina-field={tinaField(home, "bodyImage")}/>
           </div>
-          <div className={styles.whyChooseUsHeader}>Why Choose Us</div>
+          <div className={styles.whyChooseUsHeader} data-tina-field={tinaField(home, "whyChooseUsHeader")}>{home.whyChooseUsHeader}</div>
           <div className={styles.whyChooseUs}>
-            {whyChooseUs.map(reason => (
-               <div className={styles.reason}>
-              <div className={styles.reasonHeader}>{reason.title}</div>
-              <div className={styles.reasonBody}>{reason.body}
+            {home.reasons?.map((reason, i) => (
+               <div className={styles.reason} key={i}>
+              <div className={styles.reasonHeader} data-tina-field={tinaField(reason, "title")}>{reason.title}</div>
+              <div className={styles.reasonBody} data-tina-field={tinaField(reason, "body")}>{reason.body}
               </div>
             </div>
             ))}
