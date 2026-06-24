@@ -1,0 +1,25 @@
+{
+  "header": "Private Wealth Management",
+  "subheader": "Portfolio Architecture | Personal Stewardship",
+  "bodyText": "We are a boutique investment office defined by analytical rigor and a passion for architecting resilient family portfolios. As a steady partner for our clients, we move beyond traditional management to provide the dedicated oversight required to grow and protect their family legacy.",
+  "bodyImage": "/homegraphic.png",
+  "whyChooseUsHeader": "Why Choose Us",
+  "reasons": [
+    {
+      "title": "Fiduciary Foundation",
+      "body": "Fee-only and independent. We do not sell insurance or any other financial products, nor do we accept commissions, ensuring our advice is aligned exclusively with client objectives."
+    },
+    {
+      "title": "Institutional Portfolio Design",
+      "body": "We move beyond traditional stock and bond models to access a broader investment universe, including private markets and real estate. This institutional breadth provides the structural stability required for enduring financial resilience."
+    },
+    {
+      "title": "Tax-Optimized Strategies",
+      "body": "We drive structural alpha by viewing every investment decision through a tax lens. For complex portfolios, we integrate Direct Indexing, Equity Hedging, and Option Overlays to maximize after-tax retention and enhance long-term wealth."
+    },
+    {
+      "title": "Boutique Service",
+      "body": "We combine institutional rigor with personal accessibility. A client is never a number, but a family we are proud to serve."
+    }
+  ]
+}
