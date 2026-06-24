@@ -37,5 +37,5 @@ next-env.d.ts
 
 # TinaCMS (regenerated on every build)
 /tina/__generated__
-/public/admin
+/public/edit
 .env

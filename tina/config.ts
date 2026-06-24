@@ -14,7 +14,7 @@ export default defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
   token: process.env.TINA_TOKEN || "",
   build: {
-    outputFolder: "admin", // admin SPA served at /admin
+    outputFolder: "edit", // editor SPA served at /edit
     publicFolder: "public",
   },
   media: {
