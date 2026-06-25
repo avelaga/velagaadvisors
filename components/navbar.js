@@ -43,6 +43,7 @@ export default function Navbar() {
                     <Link href="/" className={usePathname() === '/' ? `${styles.link} ${styles.active}` : styles.link}>HOME</Link>
                     <Link href="/our-approach" className={usePathname() === '/our-approach' ? `${styles.link} ${styles.active}` : styles.link}>OUR APPROACH</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
+                    <Link href="/insights" className={usePathname()?.startsWith('/insights') ? `${styles.link} ${styles.active}` : styles.link}>INSIGHTS</Link>
                     <Link href="/client-hub" className={usePathname() === '/client-hub' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT HUB</Link>
                     <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT</Link>
                 </div>
@@ -55,6 +56,7 @@ export default function Navbar() {
                     <Link href="/" className={usePathname() === '/' ? `${styles.link} ${styles.active}` : styles.link}>HOME</Link>
                     <Link href="/our-approach" className={usePathname() === '/our-approach' ? `${styles.link} ${styles.active}` : styles.link}>OUR APPROACH</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
+                    <Link href="/insights" className={usePathname()?.startsWith('/insights') ? `${styles.link} ${styles.active}` : styles.link}>INSIGHTS</Link>
                     <Link href="/client-hub" className={usePathname() === '/client-hub' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT HUB</Link>
                     <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT</Link>
                 </div>
