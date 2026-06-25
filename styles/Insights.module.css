@@ -230,29 +230,31 @@
   margin-top: 2.75rem;
 }
 
-.lead {
-  font-size: 1.5rem;
-  font-weight: 100;
-  line-height: 1.5;
-  margin: 0 0 1.7rem;
-  color: var(--white);
-}
-
-.paragraph {
+/* ---- raw HTML content from the CMS (Tiptap rich text) ---- */
+.postBody p {
   font-size: 1.2rem;
   font-weight: 100;
   line-height: 1.72;
   margin: 0 0 1.4rem;
 }
 
-.subhead {
+/* first paragraph reads as a lead-in, matching the design */
+.postBody > p:first-of-type {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1.7rem;
+  color: var(--white);
+}
+
+.postBody h2,
+.postBody h3 {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.3;
   margin: 2.2rem 0 0.8rem;
 }
 
-.quote {
+.postBody blockquote {
   border-left: 2px solid var(--end-green);
   padding-left: 1.5rem;
   margin: 2rem 0;
@@ -263,33 +265,46 @@
   color: var(--white);
 }
 
-.bullets {
+.postBody blockquote p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.postBody ul,
+.postBody ol {
   margin: 0 0 1.5rem;
   padding-left: 1.3rem;
 }
 
-.bullets li {
+.postBody li {
   font-size: 1.2rem;
   font-weight: 100;
   line-height: 1.7;
   margin-bottom: 0.6rem;
 }
 
-.postRule {
-  height: 1px;
-  background: rgba(242, 235, 227, 0.35);
-  margin: 2.5rem 0 1.5rem;
+.postBody strong {
+  font-weight: 500;
 }
 
-.byline {
-  font-size: 1rem;
-  color: var(--end-green);
-  font-weight: 100;
+.postBody em {
+  font-style: italic;
 }
 
-.byline b {
+.postBody a {
+  display: inline; /* override global a{display:flex} for inline links */
   color: var(--white);
-  font-weight: 400;
+  text-decoration: underline;
+}
+
+.postBody img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin: 1.5rem 0;
+  display: block;
 }
 
 /* ---- responsive ---- */
@@ -331,7 +346,7 @@
     height: 240px;
   }
 
-  .lead {
+  .postBody > p:first-of-type {
     font-size: 1.3rem;
   }
 }

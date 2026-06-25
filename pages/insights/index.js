@@ -1,18 +1,18 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Insights.module.css";
-import { getAllPosts, postMeta, FEATURED_FIRST } from "@/data/insights";
+import { getAllPosts, postMeta, postExcerpt } from "@/data/insights";
 
 export async function getStaticProps() {
-  return { props: { posts: getAllPosts() } };
+  return { props: { posts: await getAllPosts() } };
 }
 
-// Hero image when present, otherwise a styled placeholder (backend supplies images later).
+// Hero from og_image when present, otherwise a styled placeholder.
 function Hero({ post, className }) {
   return (
     <div className={className}>
-      {post.image ? (
-        <img src={post.image} alt={post.title} className={styles.heroImg} />
+      {post.og_image ? (
+        <img src={post.og_image} alt={post.title} className={styles.heroImg} />
       ) : (
         <div className={styles.heroPlaceholder} />
       )}
@@ -21,9 +21,6 @@ function Hero({ post, className }) {
 }
 
 export default function Insights({ posts }) {
-  const featured = FEATURED_FIRST && posts.length ? posts[0] : null;
-  const rows = featured ? posts.slice(1) : posts;
-
   return (
     <>
       <Head>
@@ -60,27 +57,15 @@ export default function Insights({ posts }) {
 
         <div className={styles.rule} />
 
-        {featured && (
-          <Link href={`/insights/${featured.id}`} className={styles.featured}>
-            <Hero post={featured} className={styles.featuredHero} />
-            <div className={styles.featuredText}>
-              <h2 className={styles.featuredTitle}>{featured.title}</h2>
-              <div className={styles.meta}>{postMeta(featured)}</div>
-              <p className={styles.featuredExcerpt}>{featured.excerpt}</p>
-              <div className={styles.readMore}>READ MORE →</div>
-            </div>
-          </Link>
-        )}
-
-        {rows.length > 0 ? (
+        {posts.length > 0 ? (
           <div>
-            {rows.map((post) => (
-              <Link key={post.id} href={`/insights/${post.id}`} className={styles.row}>
+            {posts.map((post) => (
+              <Link key={post.id} href={`/insights/${post.slug}`} className={styles.row}>
                 <Hero post={post} className={styles.rowHero} />
                 <div>
                   <h2 className={styles.rowTitle}>{post.title}</h2>
                   <div className={styles.rowMeta}>{postMeta(post)}</div>
-                  <p className={styles.rowExcerpt}>{post.excerpt}</p>
+                  <p className={styles.rowExcerpt}>{postExcerpt(post)}</p>
                   <div className={styles.readMoreRow}>READ MORE →</div>
                 </div>
               </Link>
