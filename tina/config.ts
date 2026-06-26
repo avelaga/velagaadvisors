@@ -112,6 +112,12 @@ export default defineConfig({
               },
             ],
           },
+          {
+            type: "string",
+            name: "whoWeServeFootnote",
+            label: "Who We Serve Footnote",
+            ui: { component: "textarea" },
+          },
         ],
       },
       {
@@ -229,6 +235,26 @@ export default defineConfig({
             type: "string",
             name: "discretionBody2",
             label: "Discretion Text (after the Client Hub link)",
+            ui: { component: "textarea" },
+          },
+        ],
+      },
+      {
+        name: "insightsPage",
+        label: "Insights Page",
+        path: "content/insights",
+        format: "json",
+        ui: {
+          allowedActions: { create: false, delete: false },
+          router: () => "/insights",
+        },
+        fields: [
+          { type: "string", name: "title", label: "Title" },
+          { type: "string", name: "tagline", label: "Tagline" },
+          {
+            type: "string",
+            name: "intro",
+            label: "Intro Paragraph",
             ui: { component: "textarea" },
           },
         ],

@@ -136,6 +136,16 @@
     margin-bottom: .75rem;
 }
 
+.footnote {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    font-weight: 100;
+    line-height: 1.5;
+    color: var(--end-green);
+    text-align: left;
+}
+
 @media only screen and (max-width: 950px) {
     .content {
         padding-top: 0;

@@ -2,9 +2,20 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Insights.module.css";
 import { getAllPosts, postMeta, postExcerpt } from "@/data/insights";
+import { client } from "@/tina/__generated__/client";
+import { useTina, tinaField } from "tinacms/dist/react";
 
 export async function getStaticProps() {
-  return { props: { posts: await getAllPosts() } };
+  const posts = await getAllPosts();
+  const res = await client.queries.insightsPage({ relativePath: "insights.json" });
+  return {
+    props: {
+      posts,
+      data: res.data,
+      query: res.query,
+      variables: res.variables,
+    },
+  };
 }
 
 // Hero from og_image when present, otherwise a styled placeholder.
@@ -20,7 +31,10 @@ function Hero({ post, className }) {
   );
 }
 
-export default function Insights({ posts }) {
+export default function Insights({ posts, query, variables, data: tinaData }) {
+  const { data } = useTina({ query, variables, data: tinaData });
+  const page = data.insightsPage;
+
   return (
     <>
       <Head>
@@ -48,10 +62,10 @@ export default function Insights({ posts }) {
 
       <div className={styles.list}>
         <div className={styles.intro}>
-          <h1 className={styles.title}>Insights</h1>
-          <div className={styles.tagline}>The Efficient Frontier of Wealth™</div>
-          <p className={styles.introText}>
-            An ongoing research repository dedicated to optimizing the financial architecture of high-net-worth families, corporate executives, and business owners. Each brief strips away industry jargon to analyze the critical boundaries where advanced tax strategies, institutional portfolio management, and flawless structural compliance intersect.
+          <h1 className={styles.title} data-tina-field={tinaField(page, "title")}>{page.title}</h1>
+          <div className={styles.tagline} data-tina-field={tinaField(page, "tagline")}>{page.tagline}</div>
+          <p className={styles.introText} data-tina-field={tinaField(page, "intro")}>
+            {page.intro}
           </p>
         </div>
 

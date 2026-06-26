@@ -88,6 +88,11 @@ export default function Services(props) {
               </div>
             ))}
           </div>
+          {page.whoWeServeFootnote && (
+            <div className={styles.footnote} data-tina-field={tinaField(page, "whoWeServeFootnote")}>
+              {page.whoWeServeFootnote}
+            </div>
+          )}
         </div>
       </main>
     </>
