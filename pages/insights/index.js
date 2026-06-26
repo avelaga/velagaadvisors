@@ -63,10 +63,15 @@ export default function Insights({ posts, query, variables, data: tinaData }) {
       <div className={styles.list}>
         <div className={styles.intro}>
           <h1 className={styles.title} data-tina-field={tinaField(page, "title")}>{page.title}</h1>
-          <div className={styles.tagline} data-tina-field={tinaField(page, "tagline")}>{page.tagline}</div>
-          <p className={styles.introText} data-tina-field={tinaField(page, "intro")}>
-            {page.intro}
-          </p>
+        </div>
+
+        <div className={styles.introBlock}>
+          <img src="/efficientFrontier.png" alt="The Efficient Frontier of Wealth" className={styles.introImage} />
+          <div className={styles.introBody} data-tina-field={tinaField(page, "intro")}>
+            {page.intro.split(/\n\n+/).map((para, i) => (
+              <p key={i} className={styles.introPara}>{para}</p>
+            ))}
+          </div>
         </div>
 
         <div className={styles.rule} />

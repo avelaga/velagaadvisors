@@ -35,6 +35,36 @@
   line-height: 1.6;
 }
 
+/* text-primary: small image floated top-right, text wraps around and below it */
+.introBlock {
+  overflow: hidden; /* contain the float */
+  margin-bottom: 1.5rem;
+}
+
+.introImage {
+  float: right;
+  width: 160px;
+  max-width: 28%;
+  height: auto;
+  margin: 0.25rem 0 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+}
+
+.introBody {
+  text-align: left;
+}
+
+.introPara {
+  font-size: 1.15rem;
+  font-weight: 100;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.introPara:last-child {
+  margin-bottom: 0;
+}
+
 .rule {
   height: 1px;
   background: rgba(242, 235, 227, 0.35);
@@ -319,6 +349,18 @@
 
   .tagline {
     font-size: 1.25rem;
+  }
+
+  .introImage {
+    float: none;
+    display: block;
+    width: 70%;
+    max-width: 280px;
+    margin: 0 auto 1.25rem;
+  }
+
+  .introBody {
+    text-align: center;
   }
 
   .featuredHero {

@@ -250,7 +250,6 @@ export default defineConfig({
         },
         fields: [
           { type: "string", name: "title", label: "Title" },
-          { type: "string", name: "tagline", label: "Tagline" },
           {
             type: "string",
             name: "intro",
