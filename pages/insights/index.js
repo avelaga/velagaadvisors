@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "@/styles/Insights.module.css";
-import { getAllPosts, postMeta, postExcerpt } from "@/data/insights";
+import { getAllPosts, postMeta, listExcerpt } from "@/data/insights";
 import { client } from "@/tina/__generated__/client";
 import { useTina, tinaField } from "tinacms/dist/react";
 
@@ -79,15 +79,21 @@ export default function Insights({ posts, query, variables, data: tinaData }) {
         {posts.length > 0 ? (
           <div>
             {posts.map((post) => (
-              <Link key={post.id} href={`/insights/${post.slug}`} className={styles.row}>
-                <Hero post={post} className={styles.rowHero} />
+              <Link
+                key={post.id}
+                href={`/insights/${post.slug}`}
+                className={`${styles.row} ${post.og_image ? "" : styles.rowNoHero}`}
+              >
+                {post.og_image && <Hero post={post} className={styles.rowHero} />}
                 <div>
                   <h2 className={styles.rowTitle}>{post.title}</h2>
                   {post.subtitle && (
                     <div className={styles.rowSubtitle}>{post.subtitle}</div>
                   )}
                   <div className={styles.rowMeta}>{postMeta(post)}</div>
-                  <p className={styles.rowExcerpt}>{postExcerpt(post)}</p>
+                  {listExcerpt(post) && (
+                    <p className={styles.rowExcerpt}>{listExcerpt(post)}</p>
+                  )}
                   <div className={styles.readMoreRow}>READ MORE →</div>
                 </div>
               </Link>

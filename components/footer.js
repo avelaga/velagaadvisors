@@ -5,7 +5,7 @@ import styles from "@/styles/Footer.module.css";
 import privacyPolicy from '../public/privacyPolicy.pdf'
 
 export default function Footer() {
-    // Insights pages use a cream background, so the footer needs dark text.
+    // Insights pages use a white background, so the footer needs dark text.
     const { pathname } = useRouter();
     const dark = pathname.startsWith('/insights');
 

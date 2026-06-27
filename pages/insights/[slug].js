@@ -12,6 +12,12 @@ function isFullDocument(html) {
   return /<!doctype\s+html|<html[\s>]/i.test(html || "");
 }
 
+// Neutralize the embedded document's own page background/margins so its sides
+// blend into the site instead of showing the document's body color as gray
+// boxes around a narrower centered container.
+const FRAME_RESET =
+  "<style>html,body{background:transparent !important;margin:0 !important;}</style>";
+
 function PostFrame({ html, title }) {
   const ref = useRef(null);
 
@@ -49,7 +55,7 @@ function PostFrame({ html, title }) {
     <iframe
       ref={ref}
       title={title}
-      srcDoc={html}
+      srcDoc={html + FRAME_RESET}
       className={styles.postFrame}
       sandbox="allow-same-origin allow-popups"
     />

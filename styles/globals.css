@@ -137,9 +137,9 @@ main {
   min-height: 100vh;
 }
 
-/* Insights list page: cream background with black text */
-.background.insights-cream {
-  background: var(--white);
+/* Insights pages: white background with black text */
+.background.insights-light {
+  background: #fff;
   color: #000;
 }
 

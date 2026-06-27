@@ -25,9 +25,14 @@ export function postMeta(p) {
   return [p.author, formatDate(p.created_at)].filter(Boolean).join(" · ");
 }
 
-// List excerpt: prefer the SEO description, fall back to the auto preview.
+// List excerpt: the editor-provided preview text only — no fallbacks.
+export function listExcerpt(p) {
+  return p.preview_text || "";
+}
+
+// SEO/meta description for a single post.
 export function postExcerpt(p) {
-  return p.meta_description || p.content_preview || "";
+  return p.preview_text || p.meta_description || p.content_preview || "";
 }
 
 export async function getAllPosts() {

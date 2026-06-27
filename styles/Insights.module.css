@@ -123,6 +123,15 @@
   transition: opacity 0.3s;
 }
 
+/* No header image: text spans the full width */
+.row.rowNoHero {
+  grid-template-columns: 1fr;
+}
+.row.rowNoHero .rowSubtitle,
+.row.rowNoHero .rowExcerpt {
+  max-width: none;
+}
+
 .row:hover {
   opacity: 0.94;
 }
@@ -217,7 +226,7 @@
 /* ---- post view ---- */
 .post {
   min-height: var(--content-min-height);
-  max-width: 820px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 2.5rem 2rem 4rem;
 }
