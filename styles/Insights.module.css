@@ -54,15 +54,24 @@
   text-align: left;
 }
 
-.introPara {
+/* paragraphs come from TinaMarkdown (rich-text intro) */
+.introBody p {
   font-size: 1.15rem;
   font-weight: 100;
   line-height: 1.6;
   margin: 0 0 1rem;
 }
 
-.introPara:last-child {
+.introBody p:last-child {
   margin-bottom: 0;
+}
+
+.introBody strong {
+  font-weight: 500;
+}
+
+.introBody em {
+  font-style: italic;
 }
 
 .rule {

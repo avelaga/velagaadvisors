@@ -251,10 +251,10 @@ export default defineConfig({
         fields: [
           { type: "string", name: "title", label: "Title" },
           {
-            type: "string",
+            type: "rich-text",
             name: "intro",
-            label: "Intro Paragraph",
-            ui: { component: "textarea" },
+            label: "Intro",
+            description: "Select text and use the toolbar to bold or italicize.",
           },
         ],
       },

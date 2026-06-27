@@ -4,6 +4,7 @@ import styles from "@/styles/Insights.module.css";
 import { getAllPosts, postMeta, listExcerpt } from "@/data/insights";
 import { client } from "@/tina/__generated__/client";
 import { useTina, tinaField } from "tinacms/dist/react";
+import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export async function getStaticProps() {
   const posts = await getAllPosts();
@@ -68,9 +69,7 @@ export default function Insights({ posts, query, variables, data: tinaData }) {
         <div className={styles.introBlock}>
           <img src="/efficientFrontier.png" alt="The Efficient Frontier of Wealth" className={styles.introImage} />
           <div className={styles.introBody} data-tina-field={tinaField(page, "intro")}>
-            {page.intro.split(/\n\n+/).map((para, i) => (
-              <p key={i} className={styles.introPara}>{para}</p>
-            ))}
+            <TinaMarkdown content={page.intro} />
           </div>
         </div>
 
