@@ -83,6 +83,9 @@ export default function Insights({ posts, query, variables, data: tinaData }) {
                 <Hero post={post} className={styles.rowHero} />
                 <div>
                   <h2 className={styles.rowTitle}>{post.title}</h2>
+                  {post.subtitle && (
+                    <div className={styles.rowSubtitle}>{post.subtitle}</div>
+                  )}
                   <div className={styles.rowMeta}>{postMeta(post)}</div>
                   <p className={styles.rowExcerpt}>{postExcerpt(post)}</p>
                   <div className={styles.readMoreRow}>READ MORE →</div>

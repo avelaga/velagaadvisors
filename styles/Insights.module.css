@@ -141,6 +141,14 @@
   margin: 0;
 }
 
+.rowSubtitle {
+  font-size: 1.15rem;
+  font-weight: 100;
+  line-height: 1.35;
+  margin: 0.4rem 0 0;
+  max-width: 62ch;
+}
+
 .rowExcerpt {
   font-size: 1.1rem;
   font-weight: 100;
@@ -158,7 +166,7 @@
 
 .rowMeta {
   font-size: 0.8rem;
-  color: var(--end-green);
+  color: var(--green);
   margin: 0.6rem 0 0;
 }
 
@@ -175,7 +183,7 @@
   font-family: var(--font-stereogothic);
   font-size: 0.74rem;
   letter-spacing: 0.08em;
-  color: var(--end-green);
+  color: var(--green);
 }
 
 /* ---- hero image / placeholder ---- */
@@ -197,7 +205,7 @@
 .empty {
   text-align: center;
   padding: 4rem 1rem;
-  color: var(--end-green);
+  color: var(--green);
 }
 
 .emptyTitle {
@@ -222,9 +230,9 @@
   font-family: var(--font-stereogothic);
   font-size: 0.78rem;
   letter-spacing: 0.08em;
-  color: var(--end-green);
+  color: var(--green);
   padding: 0.5rem 1rem;
-  border: 1px solid rgba(162, 186, 180, 0.5);
+  border: 1px solid rgba(42, 99, 84, 0.4);
   border-radius: 20px;
   transition: background 0.3s, color 0.3s;
   margin-bottom: 2.25rem;
@@ -243,10 +251,25 @@
   margin: 0;
 }
 
+.postSubtitle {
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.3;
+  margin: 0.8rem 0 0;
+}
+
 .postMeta {
   font-size: 0.85rem;
-  color: var(--end-green);
+  color: var(--green);
   margin: 1rem 0 1.9rem;
+}
+
+/* Self-contained HTML-document posts render in an isolated iframe */
+.postFrame {
+  width: 100%;
+  border: 0;
+  display: block;
+  margin-top: 2rem;
 }
 
 .postHero {
@@ -273,7 +296,6 @@
   font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 1.7rem;
-  color: var(--white);
 }
 
 .postBody h2,
@@ -285,14 +307,13 @@
 }
 
 .postBody blockquote {
-  border-left: 2px solid var(--end-green);
+  border-left: 2px solid var(--green);
   padding-left: 1.5rem;
   margin: 2rem 0;
   font-style: italic;
   font-size: 1.35rem;
   font-weight: 200;
   line-height: 1.5;
-  color: var(--white);
 }
 
 .postBody blockquote p {
@@ -325,7 +346,7 @@
 
 .postBody a {
   display: inline; /* override global a{display:flex} for inline links */
-  color: var(--white);
+  color: var(--green);
   text-decoration: underline;
 }
 

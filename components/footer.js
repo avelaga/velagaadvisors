@@ -1,11 +1,16 @@
 import Image from "next/image";
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from "@/styles/Footer.module.css";
 import privacyPolicy from '../public/privacyPolicy.pdf'
 
 export default function Footer() {
+    // Insights pages use a cream background, so the footer needs dark text.
+    const { pathname } = useRouter();
+    const dark = pathname.startsWith('/insights');
+
     return (
-        <div>
+        <div className={dark ? styles.dark : ''}>
             <div className={styles.footer}>
                 <div className={styles.item}>© 2026 Velaga Advisors LLC</div>
                 <a href={'/privacyPolicy.pdf'} className={`${styles.link} ${styles.item}`} rel="noopener noreferrer" target='_blank' >Privacy Policy</a>

@@ -38,6 +38,16 @@
   line-height: 1rem;
 }
 
+/* Dark footer text for the cream Insights page */
+.dark .footer,
+.dark .item,
+.dark .link {
+  color: #142e27;
+}
+.dark .abhi {
+  color: #4a5d57;
+}
+
 @media only screen and (max-width: 950px) {
   .footer {
     flex-wrap: wrap;

@@ -20,9 +20,9 @@ export function formatDate(s) {
   return `${MONTHS[m - 1]} ${d}, ${y}`;
 }
 
-// Meta line. The API has no author/read-time, so it's just the date.
+// Meta line: "Author · Date" when an author is set, otherwise just the date.
 export function postMeta(p) {
-  return formatDate(p.created_at);
+  return [p.author, formatDate(p.created_at)].filter(Boolean).join(" · ");
 }
 
 // List excerpt: prefer the SEO description, fall back to the auto preview.

@@ -2,6 +2,7 @@
 import Footer from './footer'
 import localFont from 'next/font/local';
 import dynamic from 'next/dynamic'
+import { useRouter } from 'next/router'
 
 
 const NavbarNoSSR = dynamic(() => import('./navbar'), { ssr: false })
@@ -38,8 +39,13 @@ const stereogothic = localFont({
 })
 
 export default function Layout({ children }) {
+  // The Insights pages (list + individual posts) use a cream background with
+  // black text instead of the site's default green gradient.
+  const { pathname } = useRouter()
+  const cream = pathname.startsWith('/insights')
+
   return (
-    <div className={`${sukhumvitSet.variable} ${stereogothic.variable} background`}>
+    <div className={`${sukhumvitSet.variable} ${stereogothic.variable} background${cream ? ' insights-cream' : ''}`}>
       <NavbarNoSSR />
       <main className='layout'>{children}</main>
       {/* <a target="_blank" href="http://www.adviserinfo.sec.gov/individual/summary/7833799" ><img className='finra' src="//www.finra.org/themes/custom/finra_bootstrap_sass/images/bc_badge_style_5.svg" /></a> */}
