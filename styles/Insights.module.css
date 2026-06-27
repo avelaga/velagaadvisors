@@ -279,7 +279,7 @@
 .postMeta {
   font-size: var(--fs-meta);
   color: var(--green);
-  margin: 1rem 0; /* bottom matches the subtitle→meta gap above */
+  margin-top: 1rem;
 }
 
 /* Self-contained HTML-document posts render in an isolated iframe */
