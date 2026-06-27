@@ -26,10 +26,10 @@
 }
 
 .abhi {
-  font-size: .75rem;
+  font-size: var(--fs-meta);
   padding-bottom: 1rem;
   font-family: var(--font-sukhumvitSet);
-  font-weight: 100;
+  font-weight: var(--fw-body);
   color: #a2bab4;
   text-align: center;
   width: 40%;
@@ -52,12 +52,19 @@
   .footer {
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: .5rem;
+    row-gap: .1rem;
+    margin-bottom: .4rem;
   }
   .item {
-    width: 100%;
     text-align: center;
     justify-content: center;
-    padding: 0;
+    padding: .05rem .5rem;
+  }
+  .abhi {
+    width: 100%;
+    padding-bottom: .5rem;
+    line-height: 1.1rem;
   }
 }

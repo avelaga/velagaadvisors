@@ -16,27 +16,27 @@
 
 .header {
     /* margin-top: 1.5rem; */
-    font-size: 3rem;
+    font-size: var(--fs-title);
     width: 100%;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     text-align: center;
 }
 
 .midheader {
-    font-size: 2rem;
+    font-size: var(--fs-heading);
     width: 100%;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
 }
 
 .subheader {
-    font-size: 1.5rem;
+    font-size: var(--fs-subtitle);
     width: 100%;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
 }
 
 .body {
     padding-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: var(--fs-body);
     width: 100%;
 }
 
@@ -49,7 +49,7 @@
 
 
 .disclaimer {
-    font-size: 1.2rem;
+    font-size: var(--fs-body);
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-style: italic;
@@ -67,9 +67,9 @@
 
 .card {
     width: 16rem;
-    font-size: 1.2rem;
+    font-size: var(--fs-body);
     line-height: 2.5rem;
-    font-weight: 400;
+    font-weight: var(--fw-semibold);
     border-radius: var(--border-radius);
     text-align: center;
     background-color: var(--green);
@@ -79,9 +79,9 @@
 }
 
 .cardHeader {
-    font-size: 1.2rem;
+    font-size: var(--fs-body);
     margin-top: 2rem;
-    font-weight: 400;
+    font-weight: var(--fw-semibold);
     text-align: center;
 }
 
@@ -91,7 +91,7 @@
     align-items: stretch;
     justify-content: space-evenly;
     width: 100%;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     margin-bottom: 2rem;
 }
 
@@ -101,7 +101,7 @@
     background-color: var(--green);
     border-radius: 10px;
     padding: 1rem;
-    text-align: center;
+    text-align: left;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -115,20 +115,20 @@
 }
 
 .whoWeServeHeader {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: var(--fs-card-title);
+    font-weight: var(--fw-bold);
     width: 100%;
 }
 
 .whoWeServeBody {
-    font-weight: 100;
-    font-size: calc(var(--header-size) * 0.39);
+    font-weight: var(--fw-body);
+    font-size: var(--fs-body);
 }
 
 .whoWeServeFocus {
     width: 100%;
-    font-weight: 100;
-    font-size: calc(var(--header-size) * 0.39);
+    font-weight: var(--fw-body);
+    font-size: var(--fs-card-subtitle);
 }
 
 .servicesTitleSpace {
@@ -139,10 +139,8 @@
 .footnote {
     width: 100%;
     margin-bottom: 2rem;
-    font-size: 1.05rem;
-    font-weight: 100;
-    line-height: 1.5;
-    color: var(--end-green);
+    font-size: var(--fs-body);
+    color: var(--white);
     text-align: left;
 }
 

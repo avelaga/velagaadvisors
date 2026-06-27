@@ -16,12 +16,12 @@
     width: 550px;
     margin: auto;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: var(--fs-body);
     text-align: left;
 }
 
 .messageLabel {
-    font-size: 1.2rem;
+    font-size: var(--fs-body);
     width: 550px;
     font-family: var(--font-sukhumvitSet);
 }
@@ -36,7 +36,7 @@
     border: none;
     background-color: var(--white);
     font-family: var(--font-sukhumvitSet);
-    font-weight: 100;
+    font-weight: var(--fw-body);
 }
 
 .contactDropdown {
@@ -83,7 +83,7 @@
     border: none;
     background-color: var(--white);
     font-family: var(--font-sukhumvitSet);
-        font-weight: 100;
+        font-weight: var(--fw-body);
 }
 
 .contactButton {
@@ -104,19 +104,19 @@
 }
 
 .header {
-    font-size: 3rem;
+    font-size: var(--fs-title);
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     height: fit-content;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     text-align: center;
 }
 
 .subheader {
-    font-size: 2rem;
+    font-size: var(--fs-heading);
     width: 100%;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     text-align: center;
     margin-top: 50px;
 }
@@ -189,7 +189,7 @@
     }
 
     .messageLabel {
-        font-size: 1.2rem;
+        font-size: var(--fs-body);
         width: 100vw;
         padding-left: 20px;
         padding-right: 20px;

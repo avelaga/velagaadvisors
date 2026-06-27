@@ -20,35 +20,35 @@
 }
 
 .header {
-    font-size: 3rem;
+    font-size: var(--fs-title);
     width: 100%;
     height: fit-content;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
     margin-bottom: 20px;
 }
 
 .midheader {
-    font-size: 2rem;
+    font-size: var(--fs-heading);
     width: 100%;
     height: fit-content;
-    font-weight: 500;
+    font-weight: var(--fw-bold);
 }
 
 .subheader {
-    font-size: 1.5rem;
+    font-size: var(--fs-subtitle);
     width: 100%;
     height: fit-content;
 }
 
 .subheader b {
-    font-weight: 500;
+    font-weight: var(--fw-bold);
 }
 
 .body {
     text-align: left;
     padding-top: 1rem;
     padding-bottom: 3rem;
-    font-size: 1.2rem;
+    font-size: var(--fs-body);
 }
 
 .left {
@@ -83,7 +83,7 @@
 
 .photoCredit{
     margin-top: .25rem;
-    font-size: .75rem;
+    font-size: var(--fs-meta);
     color: var(--end-green);
     width: 100%;
 }

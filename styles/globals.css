@@ -8,6 +8,23 @@
 
   --max-width: 1100px;
   --border-radius: 12px;
+
+  /* Typographic scale (single source of truth for font sizes) */
+  --fs-title: 4rem;        /* page & article titles (h1) */
+  --fs-heading: 2rem;      /* section headings */
+  /* the 1.5rem tier — same size, distinct roles so each can shift independently */
+  --fs-subtitle: 1.5rem;   /* taglines / secondary headings under a title */
+  --fs-card-title: 1.5rem; /* card & feature titles */
+  --fs-card-subtitle: 1.1rem;
+  --fs-lead: 1.5rem;       /* hero / intro lead prose */
+  --fs-body: 1.25rem;       /* body copy */
+  --fs-meta: 0.8rem;       /* meta, eyebrows, captions, fine print */
+
+  /* Font weights (map to the loaded SukhumvitSet faces) */
+  --fw-body: 100;          /* Thin — default body */
+  --fw-light: 200;         /* Light */
+  --fw-semibold: 400;      /* SemiBold */
+  --fw-bold: 500;          /* Bold — headings/emphasis */
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
@@ -110,7 +127,7 @@ a {
 
 main {
   font-family: var(--font-sukhumvitSet);
-  font-weight: 100;
+  font-weight: var(--fw-body);
 
   animation-name: appear;
   animation-duration: 1s;
@@ -144,7 +161,7 @@ main {
 }
 
 bold {
-  font-weight: 500;
+  font-weight: var(--fw-bold);
 }
 
 .finra { 
