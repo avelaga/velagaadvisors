@@ -10,6 +10,8 @@ export default function Navbar() {
 
     const [isCollapsed, setIsCollapsed] = useState(true);
     const pathname = usePathname();
+    // Insights pages have a white background, so the mobile nav needs dark contrast.
+    const isLight = pathname?.startsWith('/insights');
 
     function handleClick() {
         setIsCollapsed(!isCollapsed)
@@ -26,7 +28,7 @@ export default function Navbar() {
             < MediaQuery maxWidth={950} >
 
                 <div className={styles.mobileHeader} >
-                    <Link href="/"><Image src="/logoWhite.webp" width={100} height={0} style={{ width: '100px', height: 'auto' }} className={styles.logo} alt="logo" aria-label="go to home page"/></Link>
+                    <Link href="/"><Image src={isLight ? "/logo.webp" : "/logoWhite.webp"} width={100} height={0} style={{ width: '100px', height: 'auto' }} className={styles.logo} alt="logo" aria-label="go to home page"/></Link>
                     <HamburgerMenu
                         isOpen={!isCollapsed}
                         menuClicked={handleClick}
@@ -34,7 +36,7 @@ export default function Navbar() {
                         height={25}
                         strokeWidth={4}
                         rotate={0}
-                        color='#F2EBE3'
+                        color={isLight ? '#2A6354' : '#F2EBE3'}
                         borderRadius={2}
                         animationDuration={0.5}
                     />

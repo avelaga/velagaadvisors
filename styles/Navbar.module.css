@@ -99,7 +99,7 @@
         background: none;
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
-        background-color: #2a63545e;
+        background-color: rgba(42, 99, 84, 0.95);
         opacity: 1;
     }
 
