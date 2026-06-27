@@ -179,7 +179,7 @@
 .meta {
   font-size: var(--fs-meta);
   color: var(--end-green);
-  margin: 0.75rem 0 0;
+  margin: 0 0 0;
 }
 
 .rowMeta {
@@ -279,7 +279,7 @@
 .postMeta {
   font-size: var(--fs-meta);
   color: var(--green);
-  margin: 1rem 0 1.9rem;
+  margin: 1rem 0; /* bottom matches the subtitle→meta gap above */
 }
 
 /* Self-contained HTML-document posts render in an isolated iframe */
@@ -287,7 +287,7 @@
   width: 100%;
   border: 0;
   display: block;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .postHero {
@@ -298,7 +298,7 @@
 }
 
 .postBody {
-  margin-top: 2.75rem;
+  margin-top: 0;
 }
 
 /* ---- raw HTML content from the CMS (Tiptap rich text) ---- */
