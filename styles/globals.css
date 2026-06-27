@@ -10,7 +10,7 @@
   --border-radius: 12px;
 
   /* Typographic scale (single source of truth for font sizes) */
-  --fs-title: 4rem;        /* page & article titles (h1) */
+  --fs-title: 3rem;        /* page & article titles (h1) */
   --fs-heading: 2rem;      /* section headings */
   /* the 1.5rem tier — same size, distinct roles so each can shift independently */
   --fs-subtitle: 1.5rem;   /* taglines / secondary headings under a title */
