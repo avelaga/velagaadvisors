@@ -64,8 +64,8 @@
 }
 
 .rule {
-  height: 1px;
-  background: rgba(0, 0, 0, 0.12);
+  height: 2px;
+  background: rgba(42, 99, 84, 0.35);
   margin-bottom: 0.25rem;
 }
 
