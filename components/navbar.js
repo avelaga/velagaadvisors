@@ -28,7 +28,7 @@ export default function Navbar() {
             < MediaQuery maxWidth={950} >
 
                 <div className={styles.mobileHeader} >
-                    <Link href="/"><Image src={isLight ? "/logo.webp" : "/logoWhite.webp"} width={100} height={0} style={{ width: '100px', height: 'auto' }} className={styles.logo} alt="logo" aria-label="go to home page"/></Link>
+                    <Link href="/"><Image src={isLight ? "/logo.webp" : "/logoWhite.webp"} width={100} height={0} style={{ width: '100px', height: 'auto' }} className={styles.logo} alt="logo" aria-label="go to home page" /></Link>
                     <HamburgerMenu
                         isOpen={!isCollapsed}
                         menuClicked={handleClick}
@@ -44,9 +44,8 @@ export default function Navbar() {
                 <div className={isCollapsed ? `${styles.none} ${styles.dropDown}` : styles.dropDown}>
                     <Link href="/" className={usePathname() === '/' ? `${styles.link} ${styles.active}` : styles.link}>HOME</Link>
                     <Link href="/our-approach" className={usePathname() === '/our-approach' ? `${styles.link} ${styles.active}` : styles.link}>OUR APPROACH</Link>
+                    <Link href="/insights" className={usePathname()?.startsWith('/insights') ? `${styles.link} ${styles.active}` : styles.link}>INSIGHTS</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
-                    {/* TODO: re-enable once blog posts are ready */}
-                    {/* <Link href="/insights" className={usePathname()?.startsWith('/insights') ? `${styles.link} ${styles.active}` : styles.link}>INSIGHTS</Link> */}
                     <Link href="/client-hub" className={usePathname() === '/client-hub' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT HUB</Link>
                     <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT</Link>
                 </div>
@@ -54,13 +53,12 @@ export default function Navbar() {
 
             {/* desktop */}
             < MediaQuery minWidth={951} >
-                <Link href="/"><Image src="/logo.webp" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.logo} alt="logo" aria-label="go to home page"/></Link>
+                <Link href="/"><Image src="/logo.webp" width={200} height={0} style={{ width: '200px', height: 'auto' }} className={styles.logo} alt="logo" aria-label="go to home page" /></Link>
                 <div className={styles.right}>
                     <Link href="/" className={usePathname() === '/' ? `${styles.link} ${styles.active}` : styles.link}>HOME</Link>
                     <Link href="/our-approach" className={usePathname() === '/our-approach' ? `${styles.link} ${styles.active}` : styles.link}>OUR APPROACH</Link>
+                    <Link href="/insights" className={usePathname()?.startsWith('/insights') ? `${styles.link} ${styles.active}` : styles.link}>INSIGHTS</Link>
                     <Link href="/about" className={usePathname() === '/about' ? `${styles.link} ${styles.active}` : styles.link}>ABOUT</Link>
-                    {/* TODO: re-enable once blog posts are ready */}
-                    {/* <Link href="/insights" className={usePathname()?.startsWith('/insights') ? `${styles.link} ${styles.active}` : styles.link}>INSIGHTS</Link> */}
                     <Link href="/client-hub" className={usePathname() === '/client-hub' ? `${styles.link} ${styles.active}` : styles.link}>CLIENT HUB</Link>
                     <Link href="/contact" className={usePathname() === '/contact' ? `${styles.link} ${styles.active}` : styles.link}>CONTACT</Link>
                 </div>

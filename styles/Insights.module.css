@@ -5,6 +5,18 @@
   max-width: 1180px;
   margin: 0 auto;
   padding: 2rem 2rem 4rem;
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* ---- list header ---- */
@@ -125,6 +137,7 @@
 .row.rowNoHero {
   grid-template-columns: 1fr;
 }
+
 .row.rowNoHero .rowSubtitle,
 .row.rowNoHero .rowExcerpt {
   max-width: none;
@@ -236,6 +249,8 @@
   max-width: 1180px;
   margin: 0 auto;
   padding: 2.5rem 2rem 4rem;
+  animation-name: appear;
+  animation-duration: 1s;
 }
 
 .back {
@@ -306,6 +321,8 @@
 
 .postBody {
   margin-top: 0;
+  animation-name: appear;
+  animation-duration: 1s;
 }
 
 /* ---- raw HTML content from the CMS (Tiptap rich text) ---- */
@@ -317,7 +334,7 @@
 }
 
 /* first paragraph reads as a lead-in, matching the design */
-.postBody > p:first-of-type {
+.postBody>p:first-of-type {
   font-size: var(--fs-lead);
   line-height: 1.5;
   margin-bottom: 1.7rem;
@@ -370,7 +387,8 @@
 }
 
 .postBody a {
-  display: inline; /* override global a{display:flex} for inline links */
+  display: inline;
+  /* override global a{display:flex} for inline links */
   color: var(--green);
   text-decoration: underline;
 }
@@ -426,7 +444,7 @@
     height: 240px;
   }
 
-  .postBody > p:first-of-type {
+  .postBody>p:first-of-type {
     font-size: 1.3rem;
   }
 }
