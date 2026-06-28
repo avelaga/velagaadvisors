@@ -16,7 +16,7 @@
 
 .header {
   font-size: var(--fs-title);
-  line-height: 1.1;
+  line-height: var(--lh-title);
   width: 100vw;
   height: fit-content;
   font-weight: var(--fw-bold);
@@ -90,6 +90,7 @@
   width: 100%;
   font-weight: var(--fw-body);
   font-size: var(--fs-body);
+  line-height: var(--lh-body);
 }
 
 .button {

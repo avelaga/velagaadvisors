@@ -36,7 +36,7 @@ export default function Navbar() {
                         height={25}
                         strokeWidth={4}
                         rotate={0}
-                        color={isLight ? '#2A6354' : '#F2EBE3'}
+                        color={isLight ? '#1C1C1C' : '#F2EBE3'}
                         borderRadius={2}
                         animationDuration={0.5}
                     />

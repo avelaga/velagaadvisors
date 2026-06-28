@@ -2,9 +2,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    justify-content: flex-end;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     background-color: var(--white);
     color: black;
     padding-right: max((calc(100vw - 1500px))/2, 1rem);
@@ -19,14 +19,12 @@
 }
 
 .link {
-    margin-left: 2rem;
+    margin-left: 1rem;
     text-align: right;
     font-family: var(--font-stereogothic);
-    font-size: 1rem;
+    font-size: .75rem;
     border-radius: 10px;
-    padding: 1rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding: .5rem;
     transition: background 0.3s, color 0.3s;
     text-align: center;
 }

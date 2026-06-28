@@ -102,7 +102,7 @@ export default function InsightPost({ post }) {
       </Head>
 
       <div className={styles.post}>
-        <Link href="/insights" className={styles.back}>← BACK TO INSIGHTS</Link>
+        <Link href="/insights" className={styles.back}><svg className={styles.arrowIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12" /><polyline points="12 19 5 12 12 5" /></svg>BACK TO INSIGHTS</Link>
 
         <h1 className={styles.postTitle}>{post.title}</h1>
         {post.subtitle && (

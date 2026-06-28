@@ -10,7 +10,7 @@
   --border-radius: 12px;
 
   /* Typographic scale (single source of truth for font sizes) */
-  --fs-title: 3rem;        /* page & article titles (h1) */
+  --fs-title: 2.5rem;        /* page & article titles (h1) */
   --fs-heading: 2rem;      /* section headings */
   /* the 1.5rem tier — same size, distinct roles so each can shift independently */
   --fs-subtitle: 1.5rem;   /* taglines / secondary headings under a title */
@@ -19,6 +19,11 @@
   --fs-lead: 1.5rem;       /* hero / intro lead prose */
   --fs-body: 1.25rem;       /* body copy */
   --fs-meta: 0.8rem;       /* meta, eyebrows, captions, fine print */
+
+  /* Line height for all body copy — adjust here to change site-wide */
+  --lh-body: 1.4;
+  /* Line height for page titles — keeps the navbar→title gap consistent */
+  --lh-title: 1.1;
 
   /* Font weights (map to the loaded SukhumvitSet faces) */
   --fw-body: 100;          /* Thin — default body */

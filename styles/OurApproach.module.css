@@ -17,9 +17,11 @@
 .header {
     /* margin-top: 1.5rem; */
     font-size: var(--fs-title);
+    line-height: var(--lh-title);
     width: 100%;
     font-weight: var(--fw-bold);
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .midheader {
@@ -37,6 +39,7 @@
 .body {
     padding-bottom: 2rem;
     font-size: var(--fs-body);
+    line-height: var(--lh-body);
     width: 100%;
 }
 
@@ -123,6 +126,7 @@
 .whoWeServeBody {
     font-weight: var(--fw-body);
     font-size: var(--fs-body);
+    line-height: var(--lh-body);
 }
 
 .whoWeServeFocus {

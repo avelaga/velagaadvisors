@@ -13,6 +13,7 @@
     padding-top: 1rem;
     padding-bottom: 3rem;
     font-size: var(--fs-body);
+    line-height: var(--lh-body);
 }
 
 .header{
