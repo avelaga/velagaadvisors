@@ -57,7 +57,7 @@ function PostFrame({ html, title }) {
       title={title}
       srcDoc={html + FRAME_RESET}
       className={styles.postFrame}
-      sandbox="allow-same-origin allow-popups"
+      sandbox="allow-same-origin allow-scripts allow-popups"
     />
   );
 }
