@@ -69,30 +69,6 @@ export default function Services(props) {
           <div className={styles.body} data-tina-field={tinaField(page, "intro")}>
             <MultilineText value={page.intro} />
           </div>
-          <div className={styles.divider} />
-          <div className={styles.midheader} data-tina-field={tinaField(page, "whoWeServeHeader")}>
-            {page.whoWeServeHeader}
-          </div>
-          <div className={styles.body} data-tina-field={tinaField(page, "whoWeServeIntro")}>
-            {page.whoWeServeIntro}
-          </div>
-          <div className={styles.whoWeServe}>
-            {page.cards?.map((card, i) => (
-              <div className={styles.whoWeServeItem} key={i}>
-                <div className={styles.whoWeServeTop}>
-                  <div className={styles.whoWeServeHeader} data-tina-field={tinaField(card, "header")}>{card.header}</div>
-                  <div className={styles.whoWeServeFocus}><b>Focus: </b><span data-tina-field={tinaField(card, "focus")}>{card.focus}</span></div>
-                </div>
-                <div className={styles.divider} />
-                <div className={styles.whoWeServeBody} data-tina-field={tinaField(card, "body")}>{card.body}</div>
-              </div>
-            ))}
-          </div>
-          {page.whoWeServeFootnote && (
-            <div className={styles.footnote} data-tina-field={tinaField(page, "whoWeServeFootnote")}>
-              {page.whoWeServeFootnote}
-            </div>
-          )}
         </div>
       </main>
     </>

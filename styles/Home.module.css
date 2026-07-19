@@ -93,6 +93,73 @@
   line-height: var(--lh-body);
 }
 
+/* ---- Who We Serve (moved from Our Approach) ---- */
+.whoWeServeHeading {
+  font-size: var(--fs-heading);
+  width: 100vw;
+  height: fit-content;
+  font-weight: var(--fw-bold);
+  margin-top: 3rem;
+}
+
+.whoWeServeIntro {
+  width: 100%;
+  max-width: 820px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+.whoWeServeList {
+  width: 100%;
+  max-width: 820px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem 0 2.75rem;
+  text-align: left;
+  list-style: none;
+}
+
+.whoWeServeBullet {
+  position: relative;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: var(--fw-body);
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+.whoWeServeBullet:last-child {
+  margin-bottom: 0;
+}
+
+/* brand-green diamond marker */
+.whoWeServeBullet::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  transform: translateY(-50%) rotate(45deg);
+  background: var(--white);
+}
+
+.whoWeServeBullet b {
+  font-weight: var(--fw-bold);
+}
+
+.footnote {
+  width: 100%;
+  max-width: 820px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+  line-height: var(--lh-body);
+  text-align: left;
+}
+
 .button {
   font-weight: var(--fw-bold);
   color: var(--green);
@@ -170,5 +237,14 @@
     margin: 0;
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .whoWeServeHeading {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .whoWeServeList {
+    padding-left: 1.5rem;
   }
 }

@@ -70,6 +70,24 @@ export default function Home(props) {
             ))}
           </div>
           {/* <a href="https://docs.google.com/forms/d/18oA11rmQZ94HzUDiNUoW-95oIC-rVxt0POIYccwZRT8/edit" target="blank" className={styles.button} >Get Started Today</a> */}
+
+          <div className={styles.whoWeServeHeading} data-tina-field={tinaField(home, "whoWeServeHeader")}>{home.whoWeServeHeader}</div>
+          <div className={styles.whoWeServeIntro} data-tina-field={tinaField(home, "whoWeServeIntro")}>{home.whoWeServeIntro}</div>
+          <ul className={styles.whoWeServeList}>
+            {home.whoWeServeBullets?.map((bullet, i) => (
+              <li
+                key={i}
+                className={styles.whoWeServeBullet}
+                data-tina-field={tinaField(home, "whoWeServeBullets", i)}
+                dangerouslySetInnerHTML={{ __html: bullet }}
+              />
+            ))}
+          </ul>
+          {home.whoWeServeFootnote && (
+            <div className={styles.footnote} data-tina-field={tinaField(home, "whoWeServeFootnote")}>
+              {home.whoWeServeFootnote}
+            </div>
+          )}
         </div>
       </main>
     </>
