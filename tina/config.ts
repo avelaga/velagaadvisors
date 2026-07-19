@@ -78,9 +78,46 @@ export default defineConfig({
           },
           {
             type: "string",
-            name: "whoWeServeBullets",
-            label: "Who We Serve Bullets (supports <b> tags)",
-            list: true,
+            name: "whoWeServeBullet1Label",
+            label: "Who We Serve — Bullet 1 category (bold)",
+          },
+          {
+            type: "string",
+            name: "whoWeServeBullet1Text",
+            label: "Who We Serve — Bullet 1 description",
+            ui: { component: "textarea" },
+          },
+          {
+            type: "string",
+            name: "whoWeServeBullet2Label",
+            label: "Who We Serve — Bullet 2 category (bold)",
+          },
+          {
+            type: "string",
+            name: "whoWeServeBullet2Text",
+            label: "Who We Serve — Bullet 2 description",
+            ui: { component: "textarea" },
+          },
+          {
+            type: "string",
+            name: "whoWeServeBullet3Label",
+            label: "Who We Serve — Bullet 3 category (bold)",
+          },
+          {
+            type: "string",
+            name: "whoWeServeBullet3Text",
+            label: "Who We Serve — Bullet 3 description",
+            ui: { component: "textarea" },
+          },
+          {
+            type: "string",
+            name: "whoWeServeBullet4Label",
+            label: "Who We Serve — Bullet 4 category (bold)",
+          },
+          {
+            type: "string",
+            name: "whoWeServeBullet4Text",
+            label: "Who We Serve — Bullet 4 description",
             ui: { component: "textarea" },
           },
           {

@@ -74,13 +74,16 @@ export default function Home(props) {
           <div className={styles.whoWeServeHeading} data-tina-field={tinaField(home, "whoWeServeHeader")}>{home.whoWeServeHeader}</div>
           <div className={styles.whoWeServeIntro} data-tina-field={tinaField(home, "whoWeServeIntro")}>{home.whoWeServeIntro}</div>
           <ul className={styles.whoWeServeList}>
-            {home.whoWeServeBullets?.map((bullet, i) => (
-              <li
-                key={i}
-                className={styles.whoWeServeBullet}
-                data-tina-field={tinaField(home, "whoWeServeBullets", i)}
-                dangerouslySetInnerHTML={{ __html: bullet }}
-              />
+            {[
+              { labelField: "whoWeServeBullet1Label", sep: " ", textField: "whoWeServeBullet1Text" },
+              { labelField: "whoWeServeBullet2Label", sep: " ", textField: "whoWeServeBullet2Text" },
+              { labelField: "whoWeServeBullet3Label", sep: " ", textField: "whoWeServeBullet3Text" },
+              { labelField: "whoWeServeBullet4Label", sep: ", ", textField: "whoWeServeBullet4Text" },
+            ].map((b) => (
+              <li key={b.textField} className={styles.whoWeServeBullet}>
+                <b data-tina-field={tinaField(home, b.labelField)}>{home[b.labelField]}</b>{b.sep}
+                <span data-tina-field={tinaField(home, b.textField)}>{home[b.textField]}</span>
+              </li>
             ))}
           </ul>
           {home.whoWeServeFootnote && (
