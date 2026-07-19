@@ -183,6 +183,7 @@
 @media only screen and (max-width: 950px) {
   .content {
     padding: 1.25rem;
+    padding-bottom: 4rem;
   }
 
   .header {
