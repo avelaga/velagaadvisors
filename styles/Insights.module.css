@@ -81,6 +81,86 @@
   margin-bottom: 0.25rem;
 }
 
+/* ---- tag filter chips ---- */
+.tagFilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.chip {
+  font-family: var(--font-stereogothic);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 11px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  background: transparent;
+  color: var(--green);
+  border: 1px solid rgba(42, 99, 84, 0.4);
+  transition: background 0.3s, color 0.3s;
+}
+
+.chip:hover {
+  background: rgba(42, 99, 84, 0.1);
+  color: var(--green);
+}
+
+.chipActive {
+  background: var(--green);
+  color: var(--white);
+  border-color: var(--green);
+}
+
+.chipActive:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+/* ---- per-post tag labels ---- */
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-family: var(--font-stereogothic);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--end-green);
+  white-space: nowrap;
+}
+
+/* dot separator between tags */
+.tag:not(:first-child)::before {
+  content: "·";
+  color: var(--end-green);
+  opacity: 0.6;
+}
+
+.clearFilters {
+  display: inline-block;
+  margin-top: 0.75rem;
+  cursor: pointer;
+  font-family: var(--font-stereogothic);
+  font-size: var(--fs-meta);
+  letter-spacing: 0.08em;
+  color: var(--green);
+  border-bottom: 1px solid var(--green);
+  padding-bottom: 2px;
+}
+
 /* ---- featured post ---- */
 .featured {
   display: block;
@@ -185,9 +265,9 @@
 }
 
 .rowMeta {
-  font-size: var(--fs-meta);
-  font-weight: var(--fw-semibold);
-  color: var(--green);
+  font-size: 0.72rem;
+  font-weight: var(--fw-light);
+  color: var(--end-green);
   margin: 0.6rem 0 0;
 }
 
@@ -299,8 +379,8 @@
 
 .postMeta {
   font-size: var(--fs-meta);
-  font-weight: var(--fw-semibold);
-  color: var(--green);
+  font-weight: var(--fw-light);
+  color: var(--end-green);
   margin-top: 1rem;
 }
 
@@ -430,6 +510,16 @@
   .row {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .tagRow {
+    gap: 0.7rem;
+    row-gap: 0.35rem;
+  }
+
+  /* drop the dot separators on mobile — they strand awkwardly at line wraps */
+  .tag:not(:first-child)::before {
+    content: none;
   }
 
   .rowHero {

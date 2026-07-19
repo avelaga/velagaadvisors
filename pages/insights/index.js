@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useMemo, useState } from "react";
 import styles from "@/styles/Insights.module.css";
-import { getAllPosts, postMeta, listExcerpt } from "@/data/insights";
+import { getAllPosts, listMeta, listExcerpt } from "@/data/insights";
 import { client } from "@/tina/__generated__/client";
 import { useTina, tinaField } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
@@ -35,6 +36,26 @@ function Hero({ post, className }) {
 export default function Insights({ posts, query, variables, data: tinaData }) {
   const { data } = useTina({ query, variables, data: tinaData });
   const page = data.insightsPage;
+
+  const [activeTag, setActiveTag] = useState(null);
+
+  // Unique tags across all posts, in first-seen order.
+  const allTags = useMemo(() => {
+    const seen = [];
+    for (const post of posts) {
+      for (const tag of post.tags || []) {
+        if (!seen.includes(tag)) seen.push(tag);
+      }
+    }
+    return seen;
+  }, [posts]);
+
+  const filteredPosts = activeTag
+    ? posts.filter((post) => (post.tags || []).includes(activeTag))
+    : posts;
+
+  const setTag = (tag) =>
+    setActiveTag((current) => (current === tag ? null : tag));
 
   return (
     <>
@@ -72,11 +93,31 @@ export default function Insights({ posts, query, variables, data: tinaData }) {
           </div>
         </div>
 
+        {allTags.length > 0 && (
+          <div className={styles.tagFilter}>
+            <div
+              onClick={() => setActiveTag(null)}
+              className={`${styles.chip} ${activeTag ? "" : styles.chipActive}`}
+            >
+              ALL
+            </div>
+            {allTags.map((tag) => (
+              <div
+                key={tag}
+                onClick={() => setTag(tag)}
+                className={`${styles.chip} ${activeTag === tag ? styles.chipActive : ""}`}
+              >
+                {tag}
+              </div>
+            ))}
+          </div>
+        )}
+
         <div className={styles.rule} />
 
-        {posts.length > 0 ? (
+        {filteredPosts.length > 0 ? (
           <div>
-            {posts.map((post) => (
+            {filteredPosts.map((post) => (
               <Link
                 key={post.id}
                 href={`/insights/${post.slug}`}
@@ -88,7 +129,14 @@ export default function Insights({ posts, query, variables, data: tinaData }) {
                   {post.subtitle && (
                     <div className={styles.rowSubtitle}>{post.subtitle}</div>
                   )}
-                  <div className={styles.rowMeta}>{postMeta(post)}</div>
+                  <div className={styles.rowMeta}>{listMeta(post)}</div>
+                  {post.tags?.length > 0 && (
+                    <div className={styles.tagRow}>
+                      {post.tags.map((tag) => (
+                        <span key={tag} className={styles.tag}>{tag}</span>
+                      ))}
+                    </div>
+                  )}
                   {listExcerpt(post) && (
                     <p className={styles.rowExcerpt}>{listExcerpt(post)}</p>
                   )}
@@ -99,7 +147,14 @@ export default function Insights({ posts, query, variables, data: tinaData }) {
           </div>
         ) : (
           <div className={styles.empty}>
-            <div className={styles.emptyTitle}>No posts yet.</div>
+            <div className={styles.emptyTitle}>
+              {activeTag ? "No posts match this tag." : "No posts yet."}
+            </div>
+            {activeTag && (
+              <div className={styles.clearFilters} onClick={() => setActiveTag(null)}>
+                CLEAR FILTER
+              </div>
+            )}
           </div>
         )}
       </div>

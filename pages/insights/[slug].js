@@ -109,6 +109,13 @@ export default function InsightPost({ post }) {
           <p className={styles.postSubtitle}>{post.subtitle}</p>
         )}
         <div className={styles.postMeta}>{postMeta(post)}</div>
+        {post.tags?.length > 0 && (
+          <div className={styles.tagRow}>
+            {post.tags.map((tag) => (
+              <span key={tag} className={styles.tag}>{tag}</span>
+            ))}
+          </div>
+        )}
 
         {isFullDocument(post.content) ? (
           // Self-contained HTML document: render its body in an isolated iframe
