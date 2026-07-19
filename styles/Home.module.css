@@ -96,7 +96,7 @@
 /* ---- Who We Serve (moved from Our Approach) ---- */
 .whoWeServeHeading {
   font-size: var(--fs-heading);
-  width: 100vw;
+  width: 100%;
   height: fit-content;
   font-weight: var(--fw-bold);
   margin-top: 3rem;
@@ -105,15 +105,15 @@
 .whoWeServeIntro {
   width: 100%;
   margin: 1rem 0 0;
-  padding: 0 1rem;
   font-size: var(--fs-body);
   line-height: var(--lh-body);
+  text-align: left;
 }
 
 .whoWeServeList {
   width: 100%;
   margin: 1.5rem 0 0;
-  padding: 0 1rem 0 2.75rem;
+  padding: 0;
   text-align: left;
   list-style: none;
 }
@@ -150,7 +150,6 @@
 .footnote {
   width: 100%;
   margin: 2rem 0 0;
-  padding: 0 1rem;
   font-size: var(--fs-body);
   font-weight: var(--fw-body);
   line-height: var(--lh-body);
@@ -242,6 +241,6 @@
   }
 
   .whoWeServeList {
-    padding-left: 1.5rem;
+    padding-left: 0;
   }
 }
