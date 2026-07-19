@@ -104,8 +104,7 @@
 
 .whoWeServeIntro {
   width: 100%;
-  max-width: 820px;
-  margin: 1rem auto 0;
+  margin: 1rem 0 0;
   padding: 0 1rem;
   font-size: var(--fs-body);
   line-height: var(--lh-body);
@@ -113,8 +112,7 @@
 
 .whoWeServeList {
   width: 100%;
-  max-width: 820px;
-  margin: 1.5rem auto 0;
+  margin: 1.5rem 0 0;
   padding: 0 1rem 0 2.75rem;
   text-align: left;
   list-style: none;
@@ -151,8 +149,7 @@
 
 .footnote {
   width: 100%;
-  max-width: 820px;
-  margin: 2rem auto 0;
+  margin: 2rem 0 0;
   padding: 0 1rem;
   font-size: var(--fs-body);
   font-weight: var(--fw-body);
