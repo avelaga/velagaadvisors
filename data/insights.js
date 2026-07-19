@@ -20,17 +20,9 @@ export function formatDate(s) {
   return `${MONTHS[m - 1]} ${d}, ${y}`;
 }
 
-// Canonical byline. The CMS stores a longer string ("By Krishna Velaga |
-// Founder & Chief Investment Officer, Velaga Advisors"); normalize it to the
-// name plus the standardized title.
-export function authorLine(p) {
-  const name = (p.author || "").replace(/^By\s+/i, "").split("|")[0].trim();
-  return name ? `${name} | Founder & CEO` : "";
-}
-
 // Meta line: "Author · Date" when an author is set, otherwise just the date.
 export function postMeta(p) {
-  return [authorLine(p), formatDate(p.created_at)].filter(Boolean).join(" · ");
+  return [p.author, formatDate(p.created_at)].filter(Boolean).join(" · ");
 }
 
 // List cards use the same byline as the post page.
