@@ -265,9 +265,9 @@
 }
 
 .rowMeta {
-  font-size: 0.72rem;
+  font-size: 0.95rem;
   font-weight: var(--fw-light);
-  color: var(--end-green);
+  color: var(--green);
   margin: 0.6rem 0 0;
 }
 
@@ -378,9 +378,9 @@
 }
 
 .postMeta {
-  font-size: var(--fs-meta);
+  font-size: 1.05rem;
   font-weight: var(--fw-light);
-  color: var(--end-green);
+  color: var(--green);
   margin-top: 1rem;
 }
 
