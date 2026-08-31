@@ -384,14 +384,6 @@
   margin-top: 1rem;
 }
 
-/* Self-contained HTML-document posts render in an isolated iframe */
-.postFrame {
-  width: 100%;
-  border: 0;
-  display: block;
-  margin-top: 0;
-}
-
 .postHero {
   width: 100%;
   height: 420px;

@@ -2,12 +2,7 @@
   "redirects": [
     {
       "source": "/qbi",
-      "destination": "/insights/the-qbi-and-roth-conversion-phantom-tax",
-      "permanent": true
-    },
-    {
-      "source": "/insights/qbi",
-      "destination": "/insights/the-qbi-and-roth-conversion-phantom-tax",
+      "destination": "/insights/qbi",
       "permanent": true
     },
     {

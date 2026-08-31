@@ -39,3 +39,7 @@ next-env.d.ts
 /tina/__generated__
 /public/edit
 .env
+
+# Generated at build time by scripts/generate-seo.mjs
+/public/sitemap.xml
+/public/robots.txt

@@ -3,62 +3,58 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import styles from "@/styles/Insights.module.css";
 import { getPost, getAllSlugs, postMeta, postExcerpt } from "@/data/insights";
+import { isFullDocument, preparePostHtml, POST_SCOPE } from "@/data/postHtml";
+import { absoluteUrl } from "@/data/site";
 
-// A post written in the CMS's HTML mode can be a complete <!DOCTYPE html>
-// document with its own <style> block. Injecting that inline would leak its
-// global CSS onto the whole site, so render it in an isolated, auto-sized
-// iframe instead. Rich-text posts are partial HTML and render inline.
-function isFullDocument(html) {
-  return /<!doctype\s+html|<html[\s>]/i.test(html || "");
-}
-
-// Neutralize the embedded document's own page background/margins so its sides
-// blend into the site instead of showing the document's body color as gray
-// boxes around a narrower centered container.
-const FRAME_RESET =
-  "<style>html,body{background:transparent !important;margin:0 !important;}</style>";
-
-function PostFrame({ html, title }) {
-  const ref = useRef(null);
+// A post written in the CMS's HTML mode is a complete <!DOCTYPE html> document
+// with its own global <style> block. It is taken apart at build time so it can
+// be rendered as real page markup — its stylesheet rewritten to reach no further
+// than the post container. It used to render in an iframe, which contained the
+// CSS but also hid the entire article body from search engines.
+function PostDocument({ doc }) {
+  const scriptHost = useRef(null);
 
   useEffect(() => {
-    const iframe = ref.current;
-    if (!iframe) return;
+    const host = scriptHost.current;
+    if (!host || !doc.scripts.length) return;
 
-    function resize() {
-      try {
-        const doc = iframe.contentDocument;
-        if (doc?.documentElement) {
-          iframe.style.height = doc.documentElement.scrollHeight + "px";
+    // Markup injected as a string never runs its own <script> tags, so the
+    // article's charts and calculators are replayed here in source order,
+    // waiting on each external script before the inline code that uses it.
+    let cancelled = false;
+
+    (async () => {
+      for (const script of doc.scripts) {
+        if (cancelled) return;
+        const el = document.createElement("script");
+        if (script.src) {
+          await new Promise((done) => {
+            el.src = script.src;
+            el.async = false;
+            el.onload = done;
+            el.onerror = done;
+            host.appendChild(el);
+          });
+        } else {
+          el.textContent = script.code;
+          host.appendChild(el);
         }
-      } catch {
-        /* same-origin srcdoc, but guard anyway */
       }
-    }
-
-    resize();
-    iframe.addEventListener("load", resize);
-    window.addEventListener("resize", resize);
-    // Late layout shifts (web fonts, images) — recheck briefly after load.
-    const poll = setInterval(resize, 400);
-    const stop = setTimeout(() => clearInterval(poll), 4000);
+    })();
 
     return () => {
-      iframe.removeEventListener("load", resize);
-      window.removeEventListener("resize", resize);
-      clearInterval(poll);
-      clearTimeout(stop);
+      cancelled = true;
     };
-  }, [html]);
+  }, [doc]);
 
   return (
-    <iframe
-      ref={ref}
-      title={title}
-      srcDoc={html + FRAME_RESET}
-      className={styles.postFrame}
-      sandbox="allow-same-origin allow-scripts allow-popups"
-    />
+    <>
+      <Head>
+        <style key="post-css" dangerouslySetInnerHTML={{ __html: doc.css }} />
+      </Head>
+      <div className={POST_SCOPE} dangerouslySetInnerHTML={{ __html: doc.html }} />
+      <div ref={scriptHost} hidden />
+    </>
   );
 }
 
@@ -72,10 +68,20 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const post = await getPost(params.slug);
   if (!post) return { notFound: true };
-  return { props: { post } };
+
+  // Only the prepared parts are serialized for a full document — shipping the
+  // raw source as well would put the whole article in the page twice.
+  if (isFullDocument(post.content)) {
+    const { content, ...meta } = post;
+    return { props: { post: meta, doc: preparePostHtml(content) } };
+  }
+
+  return { props: { post, doc: null } };
 }
 
-export default function InsightPost({ post }) {
+export default function InsightPost({ post, doc }) {
+  const canonical = absoluteUrl(`/insights/${post.slug}`);
+
   return (
     <>
       <Head>
@@ -85,7 +91,9 @@ export default function InsightPost({ post }) {
         <meta name="og:description" content={postExcerpt(post)} />
         <meta property="og:title" content={post.title} />
         <meta property="og:site_name" content="Velaga Advisors" />
-        <meta property="og:image" content={post.og_image || "./logoPreview.webp"} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={absoluteUrl(post.og_image || "/logoPreview.webp")} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.webp" />
         {/* google tag */}
@@ -117,10 +125,8 @@ export default function InsightPost({ post }) {
           </div>
         )}
 
-        {isFullDocument(post.content) ? (
-          // Self-contained HTML document: render its body in an isolated iframe
-          // so its global CSS can't leak onto the site.
-          <PostFrame html={post.content} title={post.title} />
+        {doc ? (
+          <PostDocument doc={doc} />
         ) : (
           <>
             {post.og_image && (

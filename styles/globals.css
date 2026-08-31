@@ -159,6 +159,15 @@ main {
   min-height: 100vh;
 }
 
+/* Self-contained HTML-document posts from the CMS. The article ships its own
+   stylesheet, rewritten at build time so every selector is confined to this
+   container, so only the entrance animation belongs here. Global — the rewritten
+   selectors are raw strings that never pass through the CSS-module hasher. */
+.va-post {
+  animation-name: appear;
+  animation-duration: 1s;
+}
+
 /* Insights pages: white background with black text */
 .background.insights-light {
   background: #fff;

@@ -15,7 +15,7 @@ export default function Disclaimer() {
                 <meta name="og:description" content="Velaga Advisors" />
                 <meta property="og:title" content="Velaga Advisors" />
                 <meta property="og:site_name" content="Velaga Advisorsr" />
-                <meta property="og:image" content="./logoPreview.webp" />
+                <meta property="og:image" content="https://www.velagaadvisors.com/logoPreview.webp" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.webp" />
                 {/* google tag */}
