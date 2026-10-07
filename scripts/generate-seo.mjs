@@ -46,7 +46,7 @@ async function fetchPosts() {
   const res = await fetch(`${API_BASE}/api/posts?status=published&limit=100`);
   if (!res.ok) throw new Error(`Failed to fetch posts: ${res.status}`);
   const data = await res.json();
-  // Private posts are already left out by the API; never list one regardless.
+  // Private posts are unlisted, so they stay out of the sitemap.
   return (data.posts || []).filter((post) => !post.private);
 }
 
