@@ -250,10 +250,11 @@ const PRINT_HEADER_CLASS = "pdf-header-block";
 /**
  * Splits a CMS HTML document into inline-renderable parts.
  *
- * @returns {{html: string, css: string, scripts: Array<{src?: string, code?: string}>}}
+ * @returns {{html: string, css: string, scripts: Array<{src?: string, code?: string}>, stylesheets: string[]}}
  *   `html` is the document body with <style>/<script> removed, `css` is every
- *   stylesheet rewritten to the post scope, and `scripts` are the document's
- *   scripts in source order, to be replayed after mount.
+ *   stylesheet rewritten to the post scope, `scripts` are the document's
+ *   scripts in source order, to be replayed after mount, and `stylesheets` are
+ *   the external stylesheet URLs (web fonts) to load in the page head.
  */
 export function preparePostHtml(raw, scope = POST_SCOPE) {
   const doc = String(raw || "");
@@ -274,6 +275,15 @@ export function preparePostHtml(raw, scope = POST_SCOPE) {
     else if (m[2].trim()) scripts.push({ code: m[2] });
   }
 
+  // External stylesheets (e.g. Google Fonts) live in the document head, which
+  // is discarded below, so their URLs are carried over to the page head.
+  const stylesheets = [];
+  for (const m of doc.matchAll(/<link\b[^>]*>/gi)) {
+    if (!/\brel\s*=\s*["']?stylesheet\b/i.test(m[0])) continue;
+    const href = /\bhref\s*=\s*["']([^"']+)["']/i.exec(m[0]);
+    if (href) stylesheets.push(href[1]);
+  }
+
   const body = /<body\b[^>]*>([\s\S]*)<\/body>/i.exec(doc);
   let html = body
     ? body[1]
@@ -282,9 +292,13 @@ export function preparePostHtml(raw, scope = POST_SCOPE) {
         .replace(/<head\b[\s\S]*?<\/head>/gi, "")
         .replace(/<\/?html\b[^>]*>/gi, "");
 
+  // A document missing its </head> or <body> leaves head-only tags in the body
+  // markup; a stray <title> or <meta> there means nothing and is dropped.
   html = stripElementsByClass(html, PRINT_HEADER_CLASS)
     .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+    .replace(/<title\b[^>]*>[\s\S]*?<\/title>/gi, "")
+    .replace(/<\/?head\b[^>]*>|<(?:meta|link|base)\b[^>]*>/gi, "")
     .trim();
 
   const css =
@@ -292,5 +306,5 @@ export function preparePostHtml(raw, scope = POST_SCOPE) {
     styles.map((s) => scopeCss(s, selector)).join("\n") +
     CONTAINER_RESET(selector);
 
-  return { html, css, scripts };
+  return { html, css, scripts, stylesheets };
 }

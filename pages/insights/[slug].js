@@ -50,6 +50,9 @@ function PostDocument({ doc }) {
   return (
     <>
       <Head>
+        {doc.stylesheets.map((href) => (
+          <link key={href} rel="stylesheet" href={href} />
+        ))}
         <style key="post-css" dangerouslySetInnerHTML={{ __html: doc.css }} />
       </Head>
       <div className={POST_SCOPE} dangerouslySetInnerHTML={{ __html: doc.html }} />
@@ -87,8 +90,16 @@ export default function InsightPost({ post, doc }) {
       <Head>
         <title>{`Velaga Advisors - ${post.title}`}</title>
         <meta property="title" content={post.title} />
-        <meta name="description" content={postExcerpt(post)} />
-        <meta name="og:description" content={postExcerpt(post)} />
+        {/* A private post is shared by link only: kept out of search, and its
+            preview text left out of the page so link unfurls don't show it. */}
+        {post.private ? (
+          <meta name="robots" content="noindex, nofollow" />
+        ) : (
+          <>
+            <meta name="description" content={postExcerpt(post)} />
+            <meta name="og:description" content={postExcerpt(post)} />
+          </>
+        )}
         <meta property="og:title" content={post.title} />
         <meta property="og:site_name" content="Velaga Advisors" />
         <meta property="og:type" content="article" />

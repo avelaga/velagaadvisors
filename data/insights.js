@@ -40,23 +40,38 @@ export function postExcerpt(p) {
   return p.preview_text || p.meta_description || p.content_preview || "";
 }
 
-export async function getAllPosts() {
-  const res = await fetch(`${API_BASE}/api/posts?status=published&limit=100`);
+// Private (unlisted) posts are only returned to a caller holding the CMS build
+// token. Without it they are simply not built, never exposed.
+const BUILD_TOKEN = process.env.PEBBLE_BUILD_TOKEN;
+const buildAuth = BUILD_TOKEN ? { Authorization: `Bearer ${BUILD_TOKEN}` } : {};
+
+async function fetchPosts(query) {
+  const res = await fetch(`${API_BASE}/api/posts?status=published&limit=100${query}`, {
+    headers: buildAuth,
+  });
   if (!res.ok) throw new Error(`Failed to fetch posts: ${res.status}`);
   const data = await res.json();
   return data.posts || [];
 }
 
+// Public listing. The API already leaves private posts out; the filter is a
+// second guard so one can never reach a list page through a token mix-up.
+export async function getAllPosts() {
+  return (await fetchPosts("")).filter((p) => !p.private);
+}
+
 export async function getPost(slug) {
   const res = await fetch(
-    `${API_BASE}/api/posts/by-slug/${encodeURIComponent(slug)}`
+    `${API_BASE}/api/posts/by-slug/${encodeURIComponent(slug)}`,
+    { headers: buildAuth }
   );
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`Failed to fetch post ${slug}: ${res.status}`);
   return await res.json();
 }
 
+// Every page to build, private posts included.
 export async function getAllSlugs() {
-  const posts = await getAllPosts();
+  const posts = await fetchPosts(BUILD_TOKEN ? "&include_private=1" : "");
   return posts.map((p) => p.slug);
 }
