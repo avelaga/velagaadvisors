@@ -1,10 +1,10 @@
 {
   "header": "Start a Conversation",
-  "intro": "Meaningful wealth management is built on a foundation of trust, discretion, and a shared long-term perspective. We deliberately limit the number of families we serve, taking on very few new relationships, primarily through personal introductions and professional referrals. Inquiries to explore a potential advisory engagement are welcome.\n\nOur process begins with a mutual evaluation of fit between a family’s requirements and our disciplined approach to wealth stewardship. Please utilize the form below to initiate a confidential dialogue.",
-  "messageLabel": "Please let us know what you would like to discuss",
+  "intro": "Meaningful wealth management rests on trust, discretion, and a shared long-term perspective. We deliberately limit the number of families we serve, taking on very few new relationships, primarily through personal introductions and professional referrals. Inquiries to explore a potential advisory engagement are welcome.\n\nOur process begins with a mutual evaluation of fit between a family’s objectives and our disciplined approach to wealth stewardship. Please use the form below to initiate a confidential dialogue.",
+  "messageLabel": "What would you like to discuss?",
   "submitLabel": "Request Consultation",
   "discretionHeader": "Discretion & Security",
-  "discretionBody1": "All inquiries are held in strict confidence. To ensure the security of your information, please do not include any personal information, account numbers or sensitive financial data in this form. Existing clients should utilize the ",
+  "discretionBody1": "All inquiries are held in strict confidence. To ensure the security of your information, please do not include any personal information, account numbers or sensitive financial data in this form. Existing clients should use the ",
   "clientHubLinkText": "Client Hub",
   "discretionBody2": " for all secure communications and account access."
 }
